@@ -1,0 +1,40 @@
+
+										<ul>
+											{{ range $i, $e := sort (where $.Site.Pages "Type" "services") ".Params.ordre" "asce" }}
+												{{ if $e.Params.resume.titre }}
+												<li>
+													<a href="{{ .Permalink }}">{{ $e.Params.resume.titre }}</a>
+												</li>
+												{{ end }}
+											{{ end }}
+										</ul>
+									</li>
+								<ul>
+						{{with .Site.Data.settings.socials.facebookurl}}
+						<li class="social-facebook"><a href="{{.}}"><i class="fa fa-facebook"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.twitterurl}}
+						<li class="social-twitter"><a href="{{.}}"><i class="fa fa-twitter"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.googleplusurl}}
+						<li class="social-google"><a href="{{.}}"><i class="fa fa-google-plus"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.pinteresturl}}
+						<li class="social-pinterest"><a href="{{.}}"><i class="fa fa-pinterest"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.vimeourl}}
+						<li class="social-vimeo"><a href="{{.}}"><i class="fa fa-vimeo-square"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.linkedinurl}}
+						<li class="social-linkedin"><a href="{{.}}"><i class="fa fa-linkedin"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.dribbleurl}}
+						<li class="social-dribbble"><a href="{{.}}"><i class="fa fa-dribbble"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.youtubeurl}}
+						<li class="social-youtube"><a href="{{.}}"><i class="fa fa-youtube-play"></i></a></li>
+						{{ end }}
+						{{with .Site.Data.settings.socials.rssurl}}
+						<li class="social-rss"><a href="{{.}}"><i class="fa fa-rss"></i></a></li>
+						{{ end }}
+					</ul>
