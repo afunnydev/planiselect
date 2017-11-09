@@ -1,4 +1,4 @@
-baseURL = "https://www.planiselect.com/"
+baseURL = "https://financial-controller-dalton-86085.netlify.com/"
 DefaultContentLanguage = "fr"
 title = "Planiselect"
 theme = "planiselect"
