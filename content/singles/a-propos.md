@@ -7,4 +7,5 @@ slug: a-propos
 layout: a-propos
 image: null
 noindex: true
+draft: true
 ---

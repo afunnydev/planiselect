@@ -7,4 +7,5 @@ slug: equipe
 layout: equipe
 image: null
 noindex: true
+draft: true
 ---

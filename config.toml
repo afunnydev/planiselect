@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.planiselect.com/"
 DefaultContentLanguage = "fr"
 title = "Planiselect"
 theme = "planiselect"
@@ -7,7 +7,7 @@ description = " Nous sommes des spécialistes en installation de réseaux inform
 # Pointing to this file
 config = "config.toml"
 contentdir = "content"
-disableKinds = ["RSS"]
+disableKinds = ["RSS", "sitemap"]
 # Create an array of files you don't want hugo to build
 ignoreFiles = []
 # Enable Logging
@@ -24,15 +24,15 @@ defaultContentLanguageInSubdir = false
   ## Include google maps, with API Key
   googleapikey = ""
   ## This is used when the BaseURL does not need to modified (eg, in share links)
-  siteaddress = "/"
-  siteaddressno = ""
+  siteaddress = "https://www.planiselect.com/"
+  siteaddressno = "https://www.planiselect.com"
   ## FB share info
   fbpagename = ""
   fbappid = ""
   ## Business name in Schema.org
-  schemabiz = ""
+  schemabiz = "Planiselect"
   ## Google Tag Manager tracking ID
-  gtmid = ""
+  gtmid = "GTM-KSHK8KW"
 
 # MARKDOWN
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
