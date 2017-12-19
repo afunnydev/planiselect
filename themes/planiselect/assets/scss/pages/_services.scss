@@ -1,0 +1,478 @@
+/*================================
+=            Services            =
+================================*/
+
+#services-list-block {
+	font-size: 16px;
+	background:#eff2f3;
+	@include breakpoint(laptop) {
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 15px;
+	}
+	@include breakpoint(phone) {
+		font-size: 15px;
+	}
+	@include breakpoint(phone-xs) {
+		font-size: 14px;
+	}
+	header {
+		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		border-bottom:1px solid #d3d5d6;
+		@include small-lap {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@include breakpoint(laptop) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@include breakpoint(phone) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		@include breakpoint(tablet) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		p {
+			font-family: $font-light;
+			font-size: 1.7em;
+			line-height: 1.4;
+			color:$text;
+		}
+	}
+	#services-listing {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		@include breakpoint(phone) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.services-box {
+			background:$white;
+			padding:50px;
+			text-align: center;
+			padding-top: 0px;
+			height: 360px;
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 30px;
+			@include breakpoint(phone) {
+				margin-bottom: 15px;
+				padding:40px;
+			}
+			&:hover {
+				.content {
+					position: relative;
+					top:-190px;
+					@include breakpoint(phone) {
+						top:-210px;
+					}
+				}
+				svg {
+					opacity: 0.23;
+                	filter: blur(13.3333px);
+				}
+				.content-back {
+					bottom:0px;
+				}
+			}
+			.content {
+				position: relative;
+				top:0px;
+				@include animate-fade;
+			}
+			.content-back {
+				height: 220px;
+				background:$blue;
+				position: absolute;
+				width: 100%;
+				left:0px;
+				bottom:-232px;
+				padding:50px;
+				@include animate-fade;
+				@include breakpoint(laptop) {
+					padding:30px;
+					padding-top: 40px;
+				}
+				&:before {
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 12px 15px 12px;
+					border-color: transparent transparent $blue transparent;
+					content:'';
+					position: absolute;
+					top:-12px;
+					@include centre(x);
+
+				}
+				p {
+					font-size: 0.95em;
+					line-height: 1.5;
+					color:rgba(255,255,255,0.9);
+				}
+				a.read-btn {
+					@include read-btn;
+				}
+				ul {
+					li {
+						display: block;
+						padding-top: 8px;
+						padding-bottom: 8px;
+						border-bottom:1px solid rgba(255,255,255,0.3);
+						&:first-child {
+							padding-top: 0px;
+						}
+						a {
+							color:rgba(255,255,255,0.9);
+							font-size: 0.875em;
+							line-height: 1.4;
+							&:hover {
+								color:$red;
+							}
+						}
+					}
+				}
+			}
+			.image-holder {
+				height: 220px;
+				position: relative;
+				svg {
+					@include centre(both);
+					@include animate-fade;
+
+					* {
+						stroke:$red;
+					}
+				}
+			}
+			h4 {
+				font-size: 1.2em;
+				line-height: 1.4;
+				color:$blue;
+				position: relative;
+				top:0px;
+				@include breakpoint(laptop) {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Services  ======*/
+
+/*===================================
+=            Single Page            =
+===================================*/
+
+#gallery-section {
+	@include small-lap {
+		padding-bottom: 30px;
+	}
+	@include breakpoint(laptop) {
+		padding-bottom: 30px;
+	}
+	@include breakpoint(tablet) {
+		padding-bottom: 30px;
+	}
+	img {
+		width: 100%;
+		@include breakpoint(phone) {
+			margin-bottom: 15px;
+		}
+		&.main-image {
+			height: 450px;
+			object-fit: cover;
+			@include small-lap {
+				height: 420px;
+			}
+			@include breakpoint(phone) {
+				height: 210px;
+			}
+		}
+		&.small-image {
+			height: 210px;
+			object-fit: cover;
+			@include small-lap {
+				height: 195px;
+			}
+			&:first-child {
+				margin-bottom: 30px;
+				@include breakpoint(phone) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+#main-services-content {
+	background:#eff2f3;
+	font-size: 16px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@include small-lap {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(laptop) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(phone) {
+		font-size: 15px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	header {
+	padding-bottom: 50px;
+	@include small-lap {
+		padding-bottom: 25px;
+	}
+	@include breakpoint(laptop) {
+		padding-bottom: 25px;
+	}
+	@include breakpoint(tablet) {
+		padding-bottom: 25px;
+	}
+	@include breakpoint(phone) {
+		padding-bottom: 30px;
+	}
+	h3 {
+		@include section-subheading;
+		color:$blue;
+		}
+	}
+	p {
+		@include regular-text;
+		margin-bottom: 30px;
+	}
+	ul {
+		margin-bottom: 20px;
+		li {
+			display: block;
+			color:$text;
+			line-height: 1.4;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-left: 15px;
+			position: relative;
+			&:before {
+				content:'';
+				width: 6px;
+				height: 6px;
+				border-radius:100%;
+				background:$red;
+				display: block;
+				left:0px;
+				top:17px;
+				position: absolute;
+			}
+			a {
+				color:$red;
+			}
+		}
+	}
+}
+
+/*=====  End of Single Page  ======*/
+
+/*======================================
+=            Other Services            =
+======================================*/
+
+#other-services {
+	background:$blue;
+	font-size: 16px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@include small-lap {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(phone) {
+		font-size: 15px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	header {
+	padding-bottom: 50px;
+	@include small-lap {
+		padding-bottom: 25px;
+	}
+	@include breakpoint(laptop) {
+		padding-bottom: 25px;
+	}
+	@include breakpoint(phone) {
+		padding-bottom: 25px;
+	}
+	h4 {
+		@include section-subheading;
+		color:$white;
+		}
+	}	
+	.item {
+		padding:10px;
+		.services-box {
+			position: relative;
+			&:after {
+				width: 0%;
+				height: 1px;
+				background:rgba(255,255,255,0.5);
+				content:'';
+				display: block;
+				@include animate-fade;
+			}
+			@include animate-fade;
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+			}
+			.image-holder {
+				position: relative;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 350px;
+					object-fit: cover;
+					@include small-lap {
+						height: 300px;
+					}
+					@include breakpoint(laptop) {
+						height: 280px;
+					}
+					@include breakpoint(tablet) {
+						height: 250px;
+					}
+					@include breakpoint(phone) {
+						height: 300px;
+					}
+				}
+				.caption {
+					@extend .dark-overlay;
+					opacity: 0;
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba3486+0,ba3486+100&0.33+0,0.86+100 */
+					background: -moz-linear-gradient(top,  rgba(186,52,134,0.33) 0%, rgba(186,52,134,0.86) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top,  rgba(186,52,134,0.33) 0%,rgba(186,52,134,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom,  rgba(186,52,134,0.33) 0%,rgba(186,52,134,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54ba3486', endColorstr='#dbba3486',GradientType=0 ); /* IE6-9 */
+					i {
+						width: 80px;
+						height: 80px;
+						background:$white;
+						vertical-align: middle;
+						border-radius:100%;
+						line-height: 80px;
+						@include font-ico;
+						@include centre(both);
+						text-align: center;
+						font-size: 50px;
+						color:$red;			
+						&:before {
+							@include centre(both);
+							margin-left: 3px;
+						}			
+					}
+				}
+				a {
+					&:hover {
+						img {
+							transform: scale(1.1);
+						}
+						.caption {
+							opacity: 1;
+						}
+					}
+				}
+			}			
+		}
+		.content {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			h5 {
+				font-size: 1.1em;
+				font-family: $font-light;
+				line-height: 1.4;
+				padding-right: 50px;
+				height: 60px;
+				a {
+					color:$white;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Other Services  ======*/
+
+/*========================================
+=            Feauterd Content            =
+========================================*/
+
+#featured-main-content {
+	background:$white;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	font-size: 16px;
+	@include small-lap {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(laptop) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(phone) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-size: 15px;
+	}
+	img {
+		width: 100%;
+	}
+	.content {
+		padding-top: 20px;
+		h4 {
+			margin-bottom: 20px;
+			font-size: 2em;
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/*=====  End of Feauterd Content  ======*/

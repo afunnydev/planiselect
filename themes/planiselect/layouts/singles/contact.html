@@ -1,5 +1,151 @@
 {{ define "main" }}
-<main class="main" id="contact">
+<div class="inner-header">
+    <img src="/img/headers/contact.jpg" alt="" class="img-responsive">
+    <div class="caption">
+        <div class="container">
+            <header>
+                <h1>Contact Us</h1>
+                <p class="desc">Get in touch with us</p>
+            </header>
+        </div>
+        <!-- // container  -->
+    </div>
+    <!-- // caption  -->
+</div>
+<!-- // inner header   -->
 
-</main>
+<div class="breadcrumb-block">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // breadcrumb  -->
+
+<div id="contact-info-block">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <div class="image-holder">
+                        <img srcset="/img/ico/address.svg"  alt="" class="svg">
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">We are Here</span>
+                        <p>653, Avenue Léo Lacombe, Laval-des-rapides (Québec), H7N 3Y7</p>
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // contact box  -->
+
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <div class="image-holder">
+                        <img srcset="/img/ico/timer.svg"  alt="" class="svg">
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">Office Hours</span>
+                        <p>Monday – Friday <br> 8:00 AM to 6:00 PM</p>
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // contact box  -->
+
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <div class="image-holder">
+                        <img srcset="/img/ico/phone.svg"  alt="" class="svg">
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">Call us</span>
+                        <p>(450) 663-3973</p>
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // contact box  -->                                        
+
+        </div>
+        <!-- // row  -->
+    </div>
+</div>
+<!-- // contact info block  -->
+
+<section id="map-contact-block">
+    <div class="bcg" 
+    data-top-bottom="background-position: 50% -100px;" 
+    data-bottom-top="background-position: 50% 100px;" 
+    data-anchor-target="#map-contact-block"> 
+    <div class="overlay"></div> 
+
+        <a href="https://goo.gl/maps/fLS7kmQprxD2" target="_blank" class="view-btn">View Map</a>
+
+    </div>
+    <!-- // bcg -->
+</section>
+<!-- // map  -->
+
+<div id="contact-form-block">
+    <div class="container">
+        <header>
+            <h4>required fields are marked.</h4>
+            <h3>Send us a Message</h3>
+        </header>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+               
+                <div class="row">
+                    <div class="col-sm-6">
+                            <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="col-sm-6">
+                            <input type="text" placeholder="Last Name">
+                    </div>
+                    </div>
+                    <!-- // row  -->
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <!-- // row  -->      
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea name="" id="" placeholder="Message"></textarea>
+                        </div>
+                    </div>    
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button>Send Message</button>       
+                        </div>
+                    </div>              
+                    <!-- // submit  -->                    
+
+                </div>
+                <!-- // row  -->
+                
+            </div>
+            <!-- // offset  -->
+        </div>
+        <!-- // row  -->
+
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // form  -->
 {{ end }}

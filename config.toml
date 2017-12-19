@@ -42,8 +42,15 @@ defaultContentLanguageInSubdir = false
   angledQuotes = false
   latexDashes = true
 
-[permalinks]
+[Languages]
+[Languages.en]
+[Languages.en.permalinks]
   singles = "/:slug/"
+
+[Languages.fr]
+[Languages.fr.permalinks]
+  singles = "/:slug/"
+
 
 # [Languages.fr]
 # [Languages.fr.Taxonomies]

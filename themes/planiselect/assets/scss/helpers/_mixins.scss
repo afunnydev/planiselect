@@ -1,0 +1,300 @@
+/*=================================
+=            Animation            =
+=================================*/
+
+@mixin animate-fade {
+	transition:.25s ease-in-out;
+}
+
+@mixin slow-fade {
+    transition:.1s ease-in-out;
+}
+
+/*=====  End of Animation  ======*/
+
+/*=============================
+=            Fonts            =
+=============================*/
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) { 
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.eot');
+    src: url($file-name + '.eot?#iefix')  format('embedded-opentype'),
+         url($file-name + '.woff') format('woff'),
+         url($file-name + '.ttf')  format('truetype'),
+         url($file-name + '.svg##{$font-name}')  format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+ }
+
+/*=====  End of Fonts  ======*/
+
+/*==============================
+=            Extend            =
+==============================*/
+
+
+
+/*=====  End of Extend  ======*/
+
+
+
+/*=====================================
+=            Custom Mixins            =
+=====================================*/
+
+@mixin push-auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}
+
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+);
+
+.dark-overlay {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.3);
+    @include animate-fade;
+}
+
+@mixin font-ico {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    position: absolute;
+}
+
+@mixin small-lap {
+    @media screen and ( min-width: 1025px ) and ( max-height: 767px ) {
+        @content; 
+    }
+}
+
+@mixin clear-pos {
+    position: relative;
+    top:auto;
+    left:auto;
+    transform: none;
+}
+
+@mixin cta-btn {
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    background:$red-light;
+    font-size: 0.875em;
+    color:$white;
+    text-transform: uppercase;
+    font-family: $font-heading;
+    padding-left: 15px;
+    position: relative;
+    padding-right: 70px;
+    @include breakpoint(tablet) {
+        height: 48px;
+        line-height: 48px;
+        padding-left: 35px;
+        padding-right: 78px;
+    }
+    @include breakpoint(phone) {
+        height: 48px;
+        line-height: 48px;
+        padding-left: 35px;
+        padding-right: 78px;
+    }
+    &:after {
+        @include font-ico;
+        content:'\f105';
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 52px;
+        height: 52px;
+        background:$red;
+        text-align: center;
+        line-height: 52px;
+        font-size: 20px;
+        top:0px;
+        @include breakpoint(tablet) {
+            height: 48px;
+            line-height: 48px;
+            width: 48px;
+        }
+        @include breakpoint(phone) {
+            height: 48px;
+            line-height: 48px;
+            width: 48px;
+        }
+    }
+    &:hover {
+        background:$red;
+        &:after {
+            background:$red-light;
+        }
+    }    
+}
+
+@mixin small-cta {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: $font-heading;
+    color:$white;
+    background:$blue;
+    padding: 13px 25px;
+    padding-right: 50px;
+    font-size: 0.875em;
+    position: relative;
+    &:after {
+        @include font-ico;
+        content:'\f178';
+        @include centre(y);
+        right: 20px;
+        @include animate-fade;
+    }
+    &:hover {
+        background:$red;
+        &:after {
+            right: 15px;
+        }
+    }
+}
+
+@mixin read-btn {
+    font-weight: $bold;
+    color:$white;
+    font-size: 0.875em;
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+    &:after {
+        @include font-ico;
+        content:'\f178';
+        margin-left: 10px;
+        color:$red;
+        @include animate-fade;
+        margin-top: 1px;
+    }
+    &:hover {
+        &:after {
+            margin-left: 15px;
+        }
+    }    
+}
+
+@mixin regular-text {
+    font-size: 1em;
+    color:#666666;
+    line-height: 1.5;
+}
+
+@mixin section-heading {
+    color:$text;
+    font-size: 1.875em;
+    line-height: 1.2;
+    font-family: $font-heading;
+}
+
+@mixin section-subheading {
+    font-family: $font-heading;
+    padding-left: 46px;
+    position: relative;
+    color:$white;
+    font-size: 2.0em;
+    @include breakpoint(phone) {
+        padding-left: 20px;
+    }
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 80%;
+        width: 4px;
+        border-radius: 0;
+        margin: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: #b22476;   
+        content:'';     
+    }
+}
+
+@mixin upper-heading {
+    text-transform: uppercase;
+    color:$red;
+    font-size: 0.875em;
+    font-family: $font-medium;
+}
+
+/*=====  End of Custom Mixins  ======*/
+
+
+/*=============================
+=            Align            =
+=============================*/
+
+
+@mixin centre($axis: "both"){
+    position:absolute;
+    @if $axis == "y"{
+        top:50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @if $axis == "x"{
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    @if $axis == "both"{
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }   
+}
+
+/*=====  End of Align  ======*/
+
+/*=====================================
+=            Color pallete            =
+=====================================*/
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+
+/*=====  End of Color pallete  ======*/
+

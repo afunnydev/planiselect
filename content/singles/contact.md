@@ -7,5 +7,5 @@ slug: contact
 layout: contact
 image: null
 noindex: true
-draft: true
+draft: false
 ---

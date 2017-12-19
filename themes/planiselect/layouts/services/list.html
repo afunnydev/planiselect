@@ -1,0 +1,129 @@
+{{ define "main" }}
+<div id="services-list-block">
+    <div class="container">
+
+        <header>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aperiam?</p>
+                </div>
+            </div>
+        </header>
+        <!-- // header  -->
+
+        <div id="services-listing">
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-box">
+                        <div class="content">
+                            <div class="image-holder">
+                                <img srcset="/img/ico/service1.svg"  alt="" class="svg">
+                            </div>
+                            <!-- // image holder  -->
+                            <h4>Planification & installation de réseaux locaux et étendus</h4>
+                        </div>
+                        <!-- // content  -->
+                        <div class="content-back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cum, aliquid! Consequatur quisquam vero eum!</p>
+                            <a href="#" class="read-btn">Les Mer</a>
+                        </div>
+                        <!-- // content back  -->
+                    </div>
+                </div>
+                <!-- // services box  -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-box">
+                        <div class="content">
+                            <div class="image-holder">
+                                <img srcset="/img/ico/service2.svg"  alt="" class="svg">
+                            </div>
+                            <!-- // image holder  -->
+                            <h4>Installation de câblage structuré garantis par différents manufacturiers</h4>
+                        </div>
+                        <!-- // content  -->
+                        <div class="content-back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cum, aliquid! Consequatur quisquam vero eum!</p>
+                            <a href="#" class="read-btn">Les Mer</a>
+                        </div>
+                        <!-- // content back  -->
+                    </div>
+                </div>
+                <!-- // services box  -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-box">
+                        <div class="content">
+                            <div class="image-holder">
+                                <img srcset="/img/ico/service3.svg"  alt="" class="svg">
+                            </div>
+                            <!-- // image holder  -->
+                            <h4>Câblage</h4>
+                        </div>
+                        <!-- // content  -->
+                        <div class="content-back">
+                            <ul>
+                                <li><a href="#">Câblage catégorie 5e, catégorie 6, catégorie 6e</a></li>
+                                <li><a href="#">Câblage de fibre optique et fusion</a></li>
+                                <li><a href="#">Câblage coaxial, twinaxial, et IBM</a></li>
+                            </ul>
+                        </div>
+                        <!-- // content back  -->
+                    </div>
+                </div>
+                <!-- // services box  -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-box">
+                        <div class="content">
+                            <div class="image-holder">
+                                <img srcset="/img/ico/service4.svg"  alt="" class="svg">
+                            </div>
+                            <!-- // image holder  -->
+                            <h4>Équipements de réseautiques</h4>
+                        </div>
+                        <!-- // content  -->
+                        <div class="content-back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cum, aliquid! Consequatur quisquam vero eum!</p>
+                            <a href="#" class="read-btn">Les Mer</a>
+                        </div>
+                        <!-- // content back  -->
+                    </div>
+                </div>
+                <!-- // services box  -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="services-box">
+                        <div class="content">
+                            <div class="image-holder">
+                                <img srcset="/img/ico/service5.svg"  alt="" class="svg">
+                            </div>
+                            <!-- // image holder  -->
+                            <h4>Cabinets et rateliers pour salles d'équipements</h4>
+                        </div>
+                        <!-- // content  -->
+                        <div class="content-back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cum, aliquid! Consequatur quisquam vero eum!</p>
+                            <a href="#" class="read-btn">Les Mer</a>
+                        </div>
+                        <!-- // content back  -->
+                    </div>
+                </div>
+                <!-- // services box  -->                                                                                                
+
+            </div>
+            <!-- // row  -->
+        </div>
+        <!-- // listing  -->
+
+    </div>
+</div>
+<!-- // services  -->
+		<!-- {{ .Content}}
+			{{ range $i, $e := sort .Pages ".Params.ordre" "asce" }}
+			{{ $mod1 := modBool $i 1}}
+			{{ $mod2 := modBool $i 2}}
+			{{ $mod3 := modBool $i 3}}
+		{{ end }} -->
+{{ end }}

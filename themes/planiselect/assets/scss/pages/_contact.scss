@@ -1,0 +1,195 @@
+/*==========================================
+=            Contact Info Block            =
+==========================================*/
+
+#contact-info-block {
+	font-size: 16px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	@include small-lap {
+		font-size: 16px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 15px;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	}
+	@include breakpoint(phone) {
+		font-size: 15px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	.contact-box {
+		text-align: center;
+		border:1px solid #dce1e5;
+		padding:50px;
+		padding-top: 30px;
+		@include small-lap {
+			padding:25px;
+		}
+		@include breakpoint(laptop) {
+			padding:25px;
+		}
+		@include breakpoint(tablet) {
+			padding:15px;
+		}
+		@include breakpoint(phone) {
+			padding:25px;
+			margin-bottom: 15px;
+		}
+		.image-holder {
+			height: 120px;
+			position: relative;
+			@include breakpoint(tablet) {
+				height: 100px;
+			}
+			svg {
+				@include centre(both);
+				max-width: 80px;
+				width: 80px;
+				@include small-lap {
+					width: 70px;
+				}
+				@include breakpoint(laptop) {
+					width: 60px;
+				}
+				@include breakpoint(tablet) {
+					width: 60px;
+				}
+				* {
+					fill:$red;
+				}
+			}
+		}
+		.title {
+			text-transform: uppercase;
+			display: block;
+			font-family: $font-medium;
+			color:$dark;
+			line-height: 1.2;
+			font-size: 1.3em;
+			margin-bottom: 20px;
+		}		
+		p {
+			line-height: 1.5;
+			font-size: 1em;
+			color:$text-dark;
+		}
+	}
+}
+
+/*=====  End of Contact Info Block  ======*/
+
+/*=================================
+=            Map Block            =
+=================================*/
+
+#map-contact-block {
+	position: relative;
+	.overlay {
+		position: absolute;
+		top:0px;
+		left:0px;
+		width: 100%;
+		height: 100%;
+	}
+	.view-btn {
+		@include centre(both);
+		@include cta-btn;
+		font-size: 1em;
+		padding-left: 40px;
+		padding-right: 80px;
+		&:after {
+			content:'\f041';
+		}
+	}
+}
+
+/*=====  End of Map Block  ======*/
+
+/*====================================
+=            Contact Form            =
+====================================*/
+
+#contact-form-block {
+	background: $white;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 16px;
+	@include small-lap {
+		font-size: 15px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(phone) {
+		font-size: 15px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	header {
+		text-align: center;
+		padding-bottom: 60px;
+		@include small-lap {
+			padding-bottom: 30px;
+		}
+		@include breakpoint(laptop) {
+			padding-bottom: 30px;
+		}
+		@include breakpoint(phone) {
+			padding-bottom: 30px;
+		}
+		h4 {
+			display: block;
+			@include upper-heading;
+		}
+		h3 {
+			display: block;
+			@include section-heading;
+		}
+	}
+	input[type="text"], input[type="email"], input[type="tel"] {
+		width: 100%;
+		background:#eff2f3;
+		border:1px solid #e1e1e1;
+		padding:15px;
+		margin-bottom: 15px;
+		font-size: 1em;
+	}
+	textarea {
+		width: 100%;
+		background:#eff2f3;
+		border:1px solid #e1e1e1;
+		padding:15px;
+		font-size: 1em;
+		height: 120px;
+		&:focus {
+			outline: 0;
+		}
+	}
+	button {
+		@include cta-btn;
+		padding-left: 30px;
+		padding-right: 80px;
+		border:none;
+		margin-top: 20px;
+	}	
+}
+
+/*=====  End of Contact Form  ======*/

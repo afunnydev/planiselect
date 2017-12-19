@@ -1,0 +1,500 @@
+/*===============================
+=            Top Bar            =
+===============================*/
+
+#mas-header {
+	#top-bar {
+	    line-height: 40px;
+	    border-bottom: 1px solid #f0f0f0;	
+	    font-size: 16px;
+        background:#eff2f3;
+        @include animate-fade;
+        @include breakpoint(laptop) {
+            line-height: 35px;
+            font-size: 15px;
+        }
+        @include breakpoint(tablet) {
+            font-size: 14px;
+            line-height: 35px;
+        }
+	    .language-box {
+	    	ul {
+	    		li {
+	    			a {
+						color:$gray-light;
+						font-size: 0.875em;
+						padding-left: 15px;
+						position: relative;
+						&:before {
+							@include font-ico;
+							content: '\f105';
+							left:0px;
+							top:3px;
+						}
+						&:hover {
+							color:$red;
+						}
+	    			}
+	    		}
+	    	}
+	    }
+        .contact-cta {
+            text-align: right;
+            text-transform: uppercase;
+            position: relative;
+            @include breakpoint(phone) {
+                display: none;
+            }            
+            a {
+                background:$white;
+                display: inline-block;
+                font-family: $font-heading;
+                padding-left: 30px;
+                padding-right: 30px;
+                color:$red;
+                height: 40px;
+                line-height: 40px;
+                position: absolute;
+                right: 0px;
+                top:0px;
+                background:$blue;
+                color:$white;
+                background:$red-light;
+                @include breakpoint(laptop) {
+                    height: 35px;
+                    line-height: 35px;
+                }
+                @include breakpoint(tablet) {
+                    height: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
+	    /* info box */
+	    .info-box {
+	    	text-align: left;
+	    	font-size: 0.875em;
+            @include breakpoint(phone) {
+                text-align: center;
+            }
+	    	p {
+	    		display: inline-block;
+	    		color:$text;
+	    		padding-right: 10px;
+                @include breakpoint(phone) {
+                    display: none;
+                }                    
+	    		i {
+	    			margin-right: 5px;
+	    			color:$blue;
+	    		}
+	    	}
+    		ul {
+    			display: inline-block;            
+    			li {
+    				display: inline-block;
+    				padding-left: 10px;
+    				padding-right: 10px;
+    				&:last-child {
+    					padding-right: 0px;
+    				}
+    				a {
+    					display: inline-block;
+    					color:$text;
+    					text-transform: uppercase;
+    					position: relative;
+    					&:before {
+    						content:'';
+    						display: inline-block;
+    						width: 1px;
+    						height: 10px;
+    						background: rgba(255,255,255,0.5);
+    						@include centre(y);
+    						left:-12px;
+    					}
+    					&:hover {
+    						opacity: 0.6;
+    					}
+    				}
+    				i {
+    					margin-right: 5px;
+    					color:$blue;
+    				}
+    			}
+    		}	    	
+	    }
+	}	
+    /* branding bar */
+    .branding-bar {
+    	height: 90px;
+    	font-size: 16px;
+        background:$white;
+        @include small-lap {
+            height: 90px;
+            font-size: 15px;
+        }
+        @include breakpoint(laptop) {
+            height: 75px;
+            font-size: 15px;
+        }
+        @include breakpoint(tablet) {
+            height: 75px;
+            font-size: 14px;
+        }
+
+    }	
+}
+
+/*=====  End of Top Bar  ======*/
+
+/*===================================
+=            Hero Header            =
+===================================*/
+
+#hero-header {
+    margin-top: 130px;
+    font-size: 16px;
+    @include small-lap {
+        font-size: 15px;
+    }
+    @include breakpoint(laptop) {
+        margin-top: 110px;
+        font-size: 15px;
+    }
+    @include breakpoint(tablet) {
+        margin-top: 110px;
+        font-size: 14px;
+    }
+    @include breakpoint(phone) {
+        font-size: 14px;
+    }
+    @include breakpoint(phone-xs) {
+        font-size: 13px;
+    }
+    .hero-slide {
+        position: relative;
+        .overlay {
+            @extend .dark-overlay;
+            background:rgba(0,0,0,0.4);
+        }
+        img {
+            height: 770px;
+            object-fit: cover;
+            width: 100%;
+            @include small-lap {
+                height: 550px;
+            }
+            @include breakpoint(laptop) {
+                height: 600px;
+            }
+            @include breakpoint(tablet) {
+                height: 550px;
+            }
+            @include breakpoint(phone) {
+                height: 400px;
+            }
+        }
+        .slider-caption {
+            position: absolute;
+            top:0px;
+            left:0px;
+            width: 100%;
+            height: 100%;
+            .container {
+                height: 100%;
+                position: relative;
+                .slider-content {
+                    @include centre(both);
+                    background:$white;
+                    max-width: 800px;
+                    padding:25px;
+                    background:none;
+                    text-align: center;
+                    @include small-lap {
+                        padding:30px;
+                        max-width: 550px;
+                    }
+                    @include breakpoint(laptop) {
+                        width: 600px;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 550px;
+                    }
+                    @include breakpoint(phone) {
+                        width: 100%;
+                    }
+                    .title {
+                        font-size: 3.3em;
+                        color:$blue;
+                        display: block;
+                        font-family: $font-heading;
+                        color:$white;
+                        @include breakpoint(phone-xs) {
+                            font-size: 3em;
+                        }
+                    }
+                    p {
+                        color:$text;
+                        line-height: 1.7;
+                        font-size: 1.275em;
+                        margin-top: 15px;
+                        padding-bottom: 15px;
+                        color:$white;
+                        @include breakpoint(phone) {
+                            line-height: 1.4;
+                        }
+                    }
+                    .cta-btn {
+                        @include cta-btn;
+                        padding-left: 50px;
+                        padding-right: 100px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of Hero Header  ======*/
+
+/*====================================
+=            Inner Header            =
+====================================*/
+
+.inner-header {
+    margin-top: 130px;
+    font-size: 16px;
+    position: relative;
+    @include small-lap {
+        font-size: 15px;
+    }
+    @include breakpoint(laptop) {
+        font-size: 15px;
+        margin-top: 110px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 14px;
+        margin-top: 110px;
+    }
+    @include breakpoint(phone) {
+        font-size: 14px;
+    }
+    img {
+        height: 320px;
+        object-fit: cover;
+        width: 100%;
+        @include small-lap {
+            height: 270px;
+        }
+        @include breakpoint(laptop) {
+            height: 260px;
+        }
+        @include breakpoint(tablet) {
+            height: 250px;
+        }
+         @include breakpoint(phone) {
+            height: 280px;
+         }
+    }
+    .caption {
+        position: absolute;
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: 100%;
+        background:rgba(48,64,88,0.8);
+        @include animate-fade;
+        &.blur-this {
+            background:rgba(48,64,88,0.6);
+            header {
+                opacity: 0.23;
+                filter: blur(13.3333px);
+                background:rgba(48,64,88,0.4);
+            }
+        }
+        header {
+            position: absolute;
+            bottom:80px;
+            color:$white;
+            @include animate-fade;
+            &:after {
+                height: 4px;
+                display: block;
+                content:'';
+                background:$red;
+                margin-top: 10px;
+                width: 50px;
+            }
+            h1 {
+                text-transform: uppercase;
+                font-size: 3em;
+                letter-spacing: 2px;
+                filter: blur(0px);
+            }
+            p.desc {
+                margin-top: 5px;
+                font-family: $font-heading;
+                font-size: 1.2em;
+                color:rgba(255,255,255,0.7);
+            }
+        }
+    }
+}
+
+/*=====  End of Inner Header  ======*/
+
+/*==================================
+=            Breadcrumb            =
+==================================*/
+
+.breadcrumb-block {
+    background:$blue;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 16px;
+    @include small-lap {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+    @include breakpoint(laptop) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+    @include breakpoint(tablet) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 15px;
+    }
+     @include breakpoint(phone) {
+        font-size: 14px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+     }
+    ul {
+        li {
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right:1px solid rgba(255,255,255,0.3);
+            &:first-child {
+                padding-left: 0px;
+            }
+            &:last-child {
+                border:none;
+            }
+            a {
+                display: inline-block;
+                color:$white;
+                text-transform: uppercase;
+                font-size: 0.875em;
+                &:hover {
+                    color:$red;
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of Breadcrumb  ======*/
+
+/*====================================
+=            About Header            =
+====================================*/
+
+#about-header {
+    position: relative;
+    font-size: 16px;
+    @include small-lap {
+       font-size: 15px; 
+    }
+    @include breakpoint(laptop) {
+        font-size: 14px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 14px;
+    }
+    @include breakpoint(phone) {
+        font-size: 14px;
+    }
+    @include breakpoint(phone-xs) {
+        font-size: 13px;
+    }
+    .overlay {
+        position: absolute;
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: 100%;
+        background:rgba(0,0,0,0.7);        
+    }
+    .caption {
+        @include centre(both);
+        text-align: center;
+        svg {
+            margin-bottom: 20px;
+            width: 60px;
+            * {
+                stroke:$red;
+            }
+        }
+        h2 {
+            @include upper-heading;
+            margin-bottom: 5px;
+        }
+        h1 {
+            @include section-heading;
+            color:$white;
+            max-width: 600px;
+            margin:0px auto;
+            line-height: 1.4;
+            font-size: 2.5em;
+            @include breakpoint(phone) {
+                font-size: 2em;
+                line-height: 1.3;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 100%;
+            }
+        }        
+    }
+}
+
+/*=====  End of About Header  ======*/
+
+/*==================================
+=            Sticky Bar            =
+==================================*/
+
+.sticky {
+    #top-bar {
+        margin-top: -40px;
+    }
+    .branding-bar {
+        border-bottom:1px solid #ddd;
+        height: 70px!important;
+        .navbar-header {
+            height: 70px!important;
+            .navbar-brand {
+                svg {
+                    height: 50px!important;
+                }
+            }
+        }
+        .navbar {
+            .nav {
+                > li {
+                    > a {
+                        height: 70px!important;
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of Sticky Bar  ======*/

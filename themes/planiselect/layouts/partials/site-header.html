@@ -1,40 +1,145 @@
+<div class="menu-overlay"></div>
 
-										<ul>
-											{{ range $i, $e := sort (where $.Site.Pages "Type" "services") ".Params.ordre" "asce" }}
-												{{ if $e.Params.resume.titre }}
-												<li>
-													<a href="{{ .Permalink }}">{{ $e.Params.resume.titre }}</a>
-												</li>
-												{{ end }}
-											{{ end }}
-										</ul>
-									</li>
-								<ul>
-						{{with .Site.Data.settings.socials.facebookurl}}
-						<li class="social-facebook"><a href="{{.}}"><i class="fa fa-facebook"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.twitterurl}}
-						<li class="social-twitter"><a href="{{.}}"><i class="fa fa-twitter"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.googleplusurl}}
-						<li class="social-google"><a href="{{.}}"><i class="fa fa-google-plus"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.pinteresturl}}
-						<li class="social-pinterest"><a href="{{.}}"><i class="fa fa-pinterest"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.vimeourl}}
-						<li class="social-vimeo"><a href="{{.}}"><i class="fa fa-vimeo-square"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.linkedinurl}}
-						<li class="social-linkedin"><a href="{{.}}"><i class="fa fa-linkedin"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.dribbleurl}}
-						<li class="social-dribbble"><a href="{{.}}"><i class="fa fa-dribbble"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.youtubeurl}}
-						<li class="social-youtube"><a href="{{.}}"><i class="fa fa-youtube-play"></i></a></li>
-						{{ end }}
-						{{with .Site.Data.settings.socials.rssurl}}
-						<li class="social-rss"><a href="{{.}}"><i class="fa fa-rss"></i></a></li>
-						{{ end }}
-					</ul>
+<div class="main-menu-sidebar">
+    <header>
+        <span>Menu</span>
+        <a href="javascript:;" class="close-menu-btn"><img src="/img/ico/close-menu.svg" alt=""></a>
+    </header>
+
+    <div id="menu">
+
+        <ul class="nav-links">
+            <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
+            <li class="has-menu"> <a href='{{ $.Scratch.Get "servicesPage" }}'>{{ i18n "services" }}</a>
+                <ul>
+                    {{ range where .Site.Pages "Type" "services"}}
+                    {{ if eq .Parent.Params.identifiant "services" }}
+                    <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </li>                      
+            <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
+            <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li>
+            <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
+            <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>  
+
+        </ul>
+        <!-- // ul  -->
+    
+    </div>
+    <!-- // menu  -->
+
+</div>
+<!-- // menu sidebar  -->        
+
+<a name="top"></a>
+<header id="mas-header" class="navbar-fixed-top">
+
+    <div id="top-bar">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-md-8 col-sm-9">
+                    <div class="info-box">
+                        <p><i class="fa fa-building" aria-hidden="true"></i> {{.Site.Data.settings.address.road}}, {{.Site.Data.settings.address.city}}</p>
+                        <ul>
+                            <li><a href='{{ $.Scratch.Get "contactPage"}}'><i class="fa fa-map-marker" aria-hidden="true"></i> {{ i18n "find" }}</a></li>
+                            <li><a href="mailto:{{.Site.Data.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ i18n "email" }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // language  -->
+
+                <div class="col-lg-4 col-md-4 col-sm-3">
+                    <div class="contact-cta">
+                        <a href='{{ $.Scratch.Get "contactPage"}}' class="contact-btn">{{ i18n "contact" }}</a>
+                    </div>
+                </div>
+                <!-- // info  -->
+
+            </div>
+            <!-- // row  -->
+        </div>
+    </div>
+    <!-- // top bar  -->
+    
+    <div class="branding-bar">
+        <div class="container">
+
+              <div class="navbar navbar-default yamm">
+                  <div class="navbar-header">
+                    <a href="#" class="navbar-brand">
+                        <img srcset="/img/logos/site-logo.svg"  alt="" class="svg">
+                    </a>
+
+                    <div id="menu-btn-wrapepr" class="visible-xs">
+                        <span class="menu-btn">
+                            <a href="javascript:;">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </span>            
+                    </div>
+                    <!-- // wrapper  -->
+
+                  </div>
+                  <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <!-- Grid 12 Menu -->
+                  <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
+                  <li class="dropdown yamm-fw"><a href='{{ $.Scratch.Get "servicesPage" }}' data-toggle="dropdown" class="dropdown-toggle">{{ i18n "services" }}</a>
+                    <ul class="dropdown-menu animated fadeIn">
+                      <li class="grid-demo">
+                        <div class="row">
+
+                            <div class="col-md-3 col-sm-12">
+                                <h5>{{ i18n "services" }}</h5>
+                                <ul>
+                                    {{ range where .Site.Pages "Type" "services"}}
+                                    {{ if eq .Parent.Params.identifiant "services" }}
+                                    <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
+                                    {{ end }}
+                                    {{ end }}
+                                </ul>
+                            </div>   
+                            <!-- // mcol  -->
+                            {{ range where .Site.Pages "Type" "services"}}
+                            {{ if eq .Parent.Params.identifiant "cablage" }}
+                            <div class="col-md-3 col-sm-4">
+                                <h6><a href="{{.Permalink}}">{{.Params.titre}}</a></h6>
+                                <div class="image-holder">
+                                    <a href="{{.Permalink}}"><img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            {{ end }}
+                            {{ end }}
+
+                        </div>
+                        <!-- // row  -->                          
+                      </li>
+                    </ul>
+                  </li>
+                  <!--With Offsets 
+                  -->
+
+                    <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
+                    <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li>
+                    <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
+                    <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li> 
+
+                </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // menu  -->
+
+        </div>
+        <!-- // container  -->
+    </div>
+    <!-- // branding bar  -->
+
+</header>
+<!-- // header  -->
