@@ -44,6 +44,10 @@
   other = "View projects"
   one = "View project"
 
+[see_client]
+  other = "Our clients"
+  one = "Our client"
+
 [service_offered]
   other = "Services offered"
   one = "Service offered"
@@ -72,6 +76,10 @@
 
 [required_fields]
   other = "Required fields are marked"
+
+[other_service]
+  other = "Other services"
+  one = "Other service"
 
 # Form elements
 

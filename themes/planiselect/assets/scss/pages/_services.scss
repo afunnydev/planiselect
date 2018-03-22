@@ -182,7 +182,9 @@
 /*===================================
 =            Single Page            =
 ===================================*/
-
+#about-intro {
+	@include regular-text;
+}
 #gallery-section {
 	@include small-lap {
 		padding-bottom: 30px;
@@ -229,6 +231,10 @@
 	font-size: 16px;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	.col-md-6 {
+		@include regular-text;
+	}
+	@include regular-text;
 	@include small-lap {
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -267,6 +273,10 @@
 		@include section-subheading;
 		color:$blue;
 		}
+	}
+	h4 {
+		font-size: 1.5em;
+		color:$blue;
 	}
 	p {
 		@include regular-text;
@@ -451,6 +461,9 @@
 	padding-top: 70px;
 	padding-bottom: 70px;
 	font-size: 16px;
+	.content {
+		@include regular-text;
+	}
 	@include small-lap {
 		padding-top: 40px;
 		padding-bottom: 40px;
@@ -479,10 +492,37 @@
 		h4 {
 			margin-bottom: 20px;
 			font-size: 2em;
+			color: $blue;
 		}
 		p {
 			@include regular-text;
 			margin-bottom: 30px;
+		}
+	}
+	ul {
+		margin-bottom: 20px;
+		li {
+			display: block;
+			color:$text;
+			line-height: 1.4;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-left: 15px;
+			position: relative;
+			&:before {
+				content:'';
+				width: 6px;
+				height: 6px;
+				border-radius:100%;
+				background:$red;
+				display: block;
+				left:0px;
+				top:17px;
+				position: absolute;
+			}
+			a {
+				color:$red;
+			}
 		}
 	}
 }

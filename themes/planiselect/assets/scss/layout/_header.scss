@@ -436,8 +436,17 @@
         svg {
             margin-bottom: 20px;
             width: 60px;
+            max-height: 64px;
             * {
                 stroke:$red;
+            }
+            path.fil0 {
+                fill: $red;
+                stroke: none;
+            }
+            rect.fil1 {
+                fill: none;
+                stroke: none;
             }
         }
         h2 {

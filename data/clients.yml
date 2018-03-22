@@ -13,72 +13,57 @@ clients:
     weight: 1
 prive:
   - nom: Revenu Québec
-    logo: 
-    link:
+    logo: /img/logo-revenu-quebec.png
+    link: https://www.revenuquebec.ca/
   - nom: Uniselect
-    logo: 
-    link:
+    logo: /img/logo-uniselect.png 
+    link: http://www.uniselect.com/
   - nom: L’hôtel Fairmont / Le Reine Élizabeth 
-    logo: 
-    link:
-  - nom: Les stations du métro de Laval
-    logo: 
-    link:
+    logo: /img/fairmont-reine-elizabeth.jpg 
+    link: http://www.fairmont.com/queen-elizabeth-montreal/
   - nom: STM
-    logo: 
-    link:
+    logo: /img/stm-logo.png
+    link: http://stm.info/fr
   - nom: Le siège social d’Hydro-Québec
-    logo: 
-    link:
+    logo: /img/logo-hydro-quebec-couleur.png
+    link: https://www.hydroquebec.com
   - nom: Essilor
-    logo: 
-    link:
-  - nom: Société Québécoise des Infrastructures
-    logo: 
-    link:
+    logo: /img/essilor-logo.jpg
+    link: http://www.essilor.ca/Fr/Pages/default.aspx
   - nom: La Banque Scotia
-    logo: 
-    link:
-  - nom: Les palais de Justice de Montréal, Laval et Sorel Tracy
-    logo: 
-    link:
+    logo: /img/logo-scotiabank-lrg_fr.jpg
+    link: https://www.scotiabank.com/
   - nom: Bolloré Logistics Canada (800 câbles)
-    logo: 
-    link:
-  - nom: Avianor
-    logo: 
-    link:
+    logo: /img/bollore-logo.png
+    link: https://www.bollore-logistics.com/
   - nom: Nortek
-    logo: 
-    link:
+    logo: /img/nortek-logo.gif
+    link: https://www.nortek.com/
   - nom: CNESST
-    logo: 
-    link:
+    logo: /img/logo-cnesst.png
+    link: http://www.cnesst.gouv.qc.ca/Pages/accueil.aspx
 institution:
   - nom: La Commission scolaire Rivière-du-Nord
-    link:
-    logo:
+    link: http://www2.csrdn.qc.ca/
+    logo: /img/logo-csrdn.jpg
   - nom: La Commission scolaire de la Seigneurie-des-Mille-Îles
-    link:
-    logo:
-  - nom: La commission scolaire Lester B. Pearson
-    link:
-    logo:
-  - nom: La commission scolaire de Laval
-    link:
-    logo: 
-  - nom: La commission scolaire de Montréal
-    link:
-    logo:
+    link: https://www.cssmi.qc.ca/
+    logo: /img/logo-cssmi.png
+  - nom: La Commission scolaire de Laval
+    link: http://www2.cslaval.qc.ca/?
+    logo: /img/logo-csl.jpg
+  - nom: La Commission scolaire de Montréal
+    link: http://csdm.ca/
+    logo: /img/logo-csdm.png
   - nom: Collège Bois de Boulogne 
-    link:
-    logo: 
+    link: http://www.bdeb.qc.ca/
+    logo: /img/logo-cbdeb.png
   - nom: Collège Rosemont
-    link:
-    logo: 
+    link: http://www.crosemont.qc.ca/
+    logo: /img/logo-college-rosemont.png
   - nom: Collège Marie-Victorin
-    link:
-    logo: 
+    link: https://www.collegemv.qc.ca/
+    logo: /img/logo-marie-victorin.jpg
   - nom: Collège Maisonneuve
-    link:
-    logo: 
+    link: https://www.cmaisonneuve.qc.ca/
+    logo: /img/logo-college-maisonneuve.jpg

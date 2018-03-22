@@ -38,7 +38,7 @@
 "streetAddress": "653, Avenue Léo Lacombe" }, 
 "name":"Planiselect",
 "url":"https://www.planiselect.com/",
-"email":"mhowells@planiselect.com",
+"email":"info@planiselect.com",
 "telephone":"(450) 663-3973",
 "image":"https://www.planiselect.com/img/logo-planiselect-1.jpg",
 "openingHours": [ 
@@ -94,7 +94,7 @@
                 </ul>
             </li>                      
             <li><a href='https://planiselect.netlify.com/en/about-us/'>About us</a></li>
-            <li><a href='https://planiselect.netlify.com/en/articles/'>Blog</a></li>
+            
             <li><a href='https://planiselect.netlify.com/en/clients/'>Our clients</a></li>      
             <li><a href='https://planiselect.netlify.com/en/contact/'>Contact us</a></li>  
 
@@ -119,7 +119,7 @@
                         <p><i class="fa fa-building" aria-hidden="true"></i> 653, Avenue Léo Lacombe, Laval-des-rapides</p>
                         <ul>
                             <li><a href='https://planiselect.netlify.com/en/contact/'><i class="fa fa-map-marker" aria-hidden="true"></i> Find us</a></li>
-                            <li><a href="mailto:mhowells@planiselect.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+                            <li><a href="mailto:info@planiselect.com"><i class="fa fa-envelope" aria-hidden="true"></i> Email us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
 
               <div class="navbar navbar-default yamm">
                   <div class="navbar-header">
-                    <a href="#" class="navbar-brand">
+                    <a href='https://planiselect.netlify.com/en/' class="navbar-brand">
                         <img srcset="../../img/site-logo.svg"  alt="" class="svg">
                     </a>
 
@@ -185,7 +185,7 @@
                   
 
                     <li><a href='https://planiselect.netlify.com/en/about-us/'>About us</a></li>
-                    <li><a href='https://planiselect.netlify.com/en/articles/'>Blog</a></li>
+                    
                     <li><a href='https://planiselect.netlify.com/en/clients/'>Our clients</a></li>      
                     <li><a href='https://planiselect.netlify.com/en/contact/'>Contact us</a></li> 
 
@@ -206,12 +206,12 @@
 <div id="all-content-wrapper" class="all-content-wrapper">
 					
 <div class="inner-header">
-    <img src="../../img/contact.jpg" alt="" class="img-responsive">
+    <img src="" alt="" class="img-responsive">
     <div class="caption">
         <div class="container">
             <header>
-                <h1>Contact Us</h1>
-                <p class="desc">Get in touch with us</p>
+                <h1>Contact</h1>
+                <p class="desc"></p>
             </header>
         </div>
         
@@ -223,8 +223,8 @@
 <div class="breadcrumb-block">
     <div class="container">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="https://planiselect.netlify.com/">Home</a></li>
+            <li><a href="https://planiselect.netlify.com/en/contact/">Contact us</a></li>
         </ul>
     </div>
     
@@ -242,7 +242,7 @@
                     </div>
                     
                     <div class="content">
-                        <span class="title">We are Here</span>
+                        <span class="title">We are here</span>
                         <p>653, Avenue Léo Lacombe, Laval-des-rapides (Québec), H7N 3Y7</p>
                     </div>
                     
@@ -257,8 +257,14 @@
                     </div>
                     
                     <div class="content">
-                        <span class="title">Office Hours</span>
-                        <p>Monday – Friday <br> 8:00 AM to 6:00 PM</p>
+                        <span class="title">Office hours</span>
+                        
+                        
+                        <p>Monday - Friday <br> 08:00 - 16:30</p>
+                        
+                        <p>24h customer service <br> </p>
+                        
+                        
                     </div>
                     
                 </div>
@@ -268,11 +274,14 @@
             <div class="col-sm-4">
                 <div class="contact-box">
                     <div class="image-holder">
-                        <img srcset="../../img/ico/phone.svg"  alt="" class="svg">
+                        <img srcset="../../img/ico/phone.svg" alt="" class="svg hidden-xs">
+                        <a href="tel:&#43;14506633973" class="visible-xs">
+                            <img srcset="../../img/ico/phone.svg" alt="" class="svg">
+                        </a>
                     </div>
                     
                     <div class="content">
-                        <span class="title">Call us</span>
+                        <span class="title">Contact us</span>
                         <p>(450) 663-3973</p>
                     </div>
                     
@@ -293,7 +302,7 @@
     data-anchor-target="#map-contact-block"> 
     <div class="overlay"></div> 
 
-        <a href="https://goo.gl/maps/fLS7kmQprxD2" target="_blank" class="view-btn">View Map</a>
+        <a href="https://goo.gl/maps/fLS7kmQprxD2" target="_blank" class="view-btn">View map</a>
 
     </div>
     
@@ -303,47 +312,45 @@
 <div id="contact-form-block">
     <div class="container">
         <header>
-            <h4>required fields are marked.</h4>
-            <h3>Send us a Message</h3>
+            <h4>Required fields are marked</h4>
+            <h3>Contact us</h3>
         </header>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-               
-                <div class="row">
-                    <div class="col-sm-6">
-                            <input type="text" placeholder="First Name">
-                    </div>
-                    <div class="col-sm-6">
-                            <input type="text" placeholder="Last Name">
-                    </div>
+                <form action='/en/thank-you' netlify name="contact-en" role="form" method="post">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" name="first_name" placeholder='First name'>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="last_name" placeholder='Last name'>
+                        </div>
                     </div>
                     
 
                     <div class="row">
                         <div class="col-sm-6">
-                            <input type="email" placeholder="Email">
+                            <input type="email" name="email" placeholder='Email'>
                         </div>
                         <div class="col-sm-6">
-                            <input type="tel" placeholder="Phone Number">
+                            <input type="tel" name="phone" placeholder='Phone'>
                         </div>
                     </div>
                           
 
                     <div class="row">
                         <div class="col-md-12">
-                            <textarea name="" id="" placeholder="Message"></textarea>
+                            <textarea name="message" id="" placeholder="Message"></textarea>
                         </div>
                     </div>    
 
                     <div class="row">
                         <div class="col-md-12">
-                            <button>Send Message</button>       
+                            <button type="submit">Send message</button>       
                         </div>
                     </div>              
-                                        
-
-                </div>
-                
+                    
+                </form>
                 
             </div>
             
@@ -388,7 +395,7 @@
                          <img srcset="../../img/ico/email.svg"  alt="" class="svg">
                         <div class="content">
                            <p>Email</p>
-                            <span><a href="mailto:mhowells@planiselect.com">mhowells@planiselect.com</a></span>
+                            <span><a href="mailto:info@planiselect.com">info@planiselect.com</a></span>
                         </div>
                         
                     </div>
@@ -434,39 +441,9 @@
 
                 <div class="col-md-5 col-sm-5">
                     <div class="footer-box">
-                        <span class="title">Blog</span>
-                        
-                        <div class="blog-box">
-                            <div class="date-box">
-                                <span class="month">Jan</span>
-                                <span class="day">11</span>
-                            </div>
-                            
-                            <div class="content">
-                                <h6><a href="https://planiselect.netlify.com/en/articles/single2/">Qu&#39;est-ce qu&#39;un câblage coaxial?</a></h6>
-                                <p></p>
-                                <a href="https://planiselect.netlify.com/en/articles/single2/" class="read-btn"></a>
-                            </div>
-                            
-                        </div>
-                        
-                        
-                        <div class="blog-box">
-                            <div class="date-box">
-                                <span class="month">Jan</span>
-                                <span class="day">11</span>
-                            </div>
-                            
-                            <div class="content">
-                                <h6><a href="https://planiselect.netlify.com/en/articles/single1/">Comment reconnaître une bonne compagnie de câblage?</a></h6>
-                                <p></p>
-                                <a href="https://planiselect.netlify.com/en/articles/single1/" class="read-btn"></a>
-                            </div>
-                            
-                        </div>
-                        
-                                                      
 
+                        <img srcset="../../img/site-logo.svg"  alt="" class="svg">
+                                                     
                     </div>
                 </div>
                                                                 
@@ -483,7 +460,7 @@
 
                 <div class="col-md-6">
                     <div class="copy-notice">
-                        <small>&copy; 2017 Planiselect. All rights reserved. Made with <i class="fa fa-heart"></i> by <a href="#">Akia Marketing</a></small>
+                        <small>&copy; 2018 Planiselect. All rights reserved. Made with <i class="fa fa-heart"></i> by <a href="#">Akia Marketing</a></small>
                     </div>
                 </div>
                 
@@ -496,7 +473,7 @@
 
 
 <div id="floating-btns">
-    <a href="#" class="book-float-cta visible-xs"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
+    <a href='https://planiselect.netlify.com/en/contact/' class="book-float-cta visible-xs"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
     <a href="#top" id="to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </div>
 

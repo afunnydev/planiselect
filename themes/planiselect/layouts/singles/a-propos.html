@@ -139,110 +139,28 @@
         </header>
 
         <div class="row">
-            
+            {{ range sort .Site.Data.equipe.equipe "ordre" "asce" }}
             <div class="col-md-4 col-sm-6">
                 <div class="team-box">
                     <div class="image-holder">
+                        {{ if .both }}
                         <img srcset="/img/ico/male.svg"  alt="" class="svg">
-                    </div>
-                    <!-- // icon  -->
-                    <div class="content">
-                        <span class="title">Manager</span>
-                        <span class="team-title">John Doe Donson</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt?</p>
-                        <a href="#" class="read-btn">Contact</a>
-                    </div>
-                    <!-- // content  -->
-                </div>
-            </div>
-            <!-- // team box  -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="team-box">
-                    <div class="image-holder">
                         <img srcset="/img/ico/female.svg"  alt="" class="svg">
+                        {{ else }}
+                        <img srcset="/img/ico/{{- .sex -}}.svg"  alt="" class="svg">
+                        {{ end }}
                     </div>
                     <!-- // icon  -->
                     <div class="content">
-                        <span class="title">Manager</span>
-                        <span class="team-title">Steve Jorgensen</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt?</p>
-                        <a href="#" class="read-btn">Contact</a>
+                        <span class="title">{{ if eq $.Lang "fr" }}{{.titre}}{{ else if eq .Lang "en" }}{{.titreen}}{{end}}</span>
+                        <span class="team-title">{{ if eq $.Lang "fr" }}{{.nom}}{{ else if eq .Lang "en" }}{{.nomen}}{{end}}</span>
+                        <a href='{{ $.Scratch.Get "contactPage" }}' class="read-btn">Contact</a>
                     </div>
                     <!-- // content  -->
                 </div>
             </div>
             <!-- // team box  -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="team-box">
-                    <div class="image-holder">
-                        <img srcset="/img/ico/female.svg"  alt="" class="svg">
-                    </div>
-                    <!-- // icon  -->
-                    <div class="content">
-                        <span class="title">Expert</span>
-                        <span class="team-title">Jane Doe</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt?</p>
-                        <a href="#" class="read-btn">Contact</a>
-                    </div>
-                    <!-- // content  -->
-                </div>
-            </div>
-            <!-- // team box  -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="team-box">
-                    <div class="image-holder">
-                        <img srcset="/img/ico/male.svg"  alt="" class="svg">
-                    </div>
-                    <!-- // icon  -->
-                    <div class="content">
-                        <span class="title">CEO</span>
-                        <span class="team-title">Lisa Simpson</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt?</p>
-                        <a href="#" class="read-btn">Contact</a>
-                    </div>
-                    <!-- // content  -->
-                </div>
-            </div>
-            <!-- // team box  -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="team-box">
-                    <div class="image-holder">
-                        <img srcset="/img/ico/male.svg"  alt="" class="svg">
-                    </div>
-                    <!-- // icon  -->
-                    <div class="content">
-                        <span class="title">Manager</span>
-                        <span class="team-title">Jan Bushemy</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt?</p>
-                        <a href="#" class="read-btn">Contact</a>
-                    </div>
-                    <!-- // content  -->
-                </div>
-            </div>
-            <!-- // team box  -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="team-box">
-                    <div class="image-holder">
-                        <img srcset="/img/ico/male.svg"  alt="" class="svg">
-                    </div>
-                    <!-- // icon  -->
-                    <div class="content">
-                        <span class="title">Manager</span>
-                        <span class="team-title">John Doe Donson</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt?</p>
-                        <a href="#" class="read-btn">Contact</a>
-                    </div>
-                    <!-- // content  -->
-                </div>
-            </div>
-            <!-- // team box  -->
-
-                                                                                                                
+            {{ end }}                                                                                           
 
         </div>
         <!-- // row  -->

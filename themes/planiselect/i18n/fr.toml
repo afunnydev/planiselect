@@ -44,6 +44,10 @@
   other = "Voir les projets"
   one = "Voir le projet"
 
+[see_client]
+  other = "Voir nos clients"
+  one = "Voir notre client"
+
 [service_offered]
   other = "Services offerts"
   one = "Service offert"
@@ -72,6 +76,11 @@
 
 [required_fields]
   other = "Les champs obligatoires sont indiqués"
+
+[other_service]
+  other = "Autres services"
+  one = "Autre service"
+
 # Form elements
 
 [name]

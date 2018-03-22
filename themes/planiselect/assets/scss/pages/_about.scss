@@ -1,7 +1,18 @@
 /*===================================
 =            About Intro            =
 ===================================*/
-
+#about-header {
+	.caption {
+		@include breakpoint(phone) {
+			width: 90%;
+		}
+		h2 {
+			@include breakpoint(phone) {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
 #about-intro {
 	padding-top: 80px;
 	padding-bottom: 50px;
@@ -361,6 +372,10 @@
 				    div.overflowed {
 				    	overflow: scroll;
 				    	max-height: 180px;
+				    	&::-webkit-scrollbar {
+						    width: 0px;  /* remove scrollbar space */
+						    background: transparent;  /* optional: just make scrollbar invisible */
+						}
 				    }
 				  	p.text {
 						max-height: 0;
@@ -533,6 +548,10 @@
 						margin: 0 auto 25px;
 						border: 1px solid black;
 						position: static;
+						max-height: none;
+						div.overflowed {
+							max-height: none;
+						}
 					}
 				}
 				&.opened-btm {
@@ -621,6 +640,9 @@
 				width: 32px;
 				path {
 					stroke:$black;
+				}
+				&:nth-child(2) {
+					left: 40px;
 				}
 			}
 		}

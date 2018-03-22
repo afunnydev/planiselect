@@ -81,24 +81,22 @@
 
                 <div class="col-md-5 col-sm-5">
                     <div class="footer-box">
-                        <span class="title">{{ i18n "blog" }}</span>
+
+                        <img srcset="/img/site-logo.svg"  alt="" class="svg">
+                        <!-- <span class="title">{{ i18n "blog" }}</span>
                         {{ range where .Site.RegularPages "Type" "articles"}}
                         <div class="blog-box">
                             <div class="date-box">
                                 <span class="month">Jan</span>
                                 <span class="day">11</span>
                             </div>
-                            <!-- // date  -->
                             <div class="content">
                                 <h6><a href="{{.Permalink}}">{{.Title}}</a></h6>
                                 <p>{{.Summary}}</p>
                                 <a href="{{.Permalink}}" class="read-btn">{{ i18n "read_more" }}</a>
                             </div>
-                            <!-- // content      -->
                         </div>
-                        <!-- // blog box  -->
-                        {{ end }}                              
-
+                        {{ end }}  -->                             
                     </div>
                 </div>
                 <!-- // footer box  -->                                                

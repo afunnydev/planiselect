@@ -20,7 +20,7 @@
                 </ul>
             </li>                      
             <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
-            <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li>
+            <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
             <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
             <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>  
 
@@ -94,7 +94,7 @@
                       <li class="grid-demo">
                         <div class="row">
 
-                            <div class="col-md-3 col-sm-12">
+                            <!-- <div class="col-md-3 col-sm-12">
                                 <h5>{{ i18n "our_services" }}</h5>
                                 <ul>
                                     {{ range where .Site.Pages "Type" "services"}}
@@ -103,11 +103,11 @@
                                     {{ end }}
                                     {{ end }}
                                 </ul>
-                            </div>   
+                            </div>  -->  
                             <!-- // mcol  -->
                             {{ range where .Site.Pages "Type" "services"}}
-                            {{ if eq .Parent.Params.identifiant "cablage" }}
-                            <div class="col-md-3 col-sm-4">
+                            {{ if eq .Parent.Params.identifiant "services" }}
+                            <div class="col-md-3 col-sm-6">
                                 <h6><a href="{{.Permalink}}">{{.Params.titre}}</a></h6>
                                 <div class="image-holder">
                                     <a href="{{.Permalink}}"><img src="{{.Params.image}}" alt="{{.Params.titre}}" class="img-responsive"></a>
@@ -125,7 +125,7 @@
                   -->
 
                     <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
-                    <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li>
+                    <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
                     <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
                     <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li> 
 

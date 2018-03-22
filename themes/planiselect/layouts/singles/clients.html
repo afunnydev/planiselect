@@ -38,9 +38,9 @@
                 </div>    
                 <div class="container logos">
         
-                    {{ range sort .Site.Data.partenaires.partenaires "weight" "asce"}}
+                    {{ range .Site.Data.clients.prive}}
                     <div class="logos-box">
-                        <img src="{{.logo}}" alt="{{.name}}" class="img-responsive">
+                        <a href="{{.link}}" target="_blank" title="{{.name}}"><img src="{{.logo}}" alt="{{.name}}" class="img-responsive"></a>
                     </div>
                     <!-- // logos box  -->
                     {{ end }}
@@ -59,9 +59,9 @@
                 </div>
                 <div class="container logos">
         
-                    {{ range sort .Site.Data.partenaires.partenaires "weight" "asce"}}
+                    {{ range .Site.Data.clients.institution }}
                     <div class="logos-box">
-                        <img src="{{.logo}}" alt="{{.name}}" class="img-responsive">
+                        <a href="{{.link}}" target="_blank" title="{{.name}}"><img src="{{.logo}}" alt="{{.name}}" class="img-responsive"></a>
                     </div>
                     <!-- // logos box  -->
                     {{ end }}

@@ -1,7 +1,33 @@
 equipe:
-  - description: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cupiditate, reiciendis impedit unde similique sit nesciunt ex sapiente quidem aspernatur provident expedita corrupti nulla laborum corporis incidunt vel nostrum! Debitis?
-    nom: 'John Doe'
+  - nom: Alain Paquette
     ordre: 1
-    photo: /images/johndoe.jpg
-    titre: A really good guy
+    titre: Président
+    titreen: President
+    sex: male
+  - nom: "Joël Paquette"
+    ordre: 2
+    titre: Vice-Président
+    titreen: Vice-President
+    sex: male
+  - nom: Yahya Fares
+    ordre: 3
+    titre: Contrôleur
+    titreen: Inspector
+    sex: male
+  - nom: Marguerite Howells
+    ordre: 4
+    titre: Chargée de projet
+    titreen: Project manager
+    sex: female
+  - nom: Éric Belmont
+    ordre: 5
+    titre: Directeur des ventes
+    titreen: Sales director
+    sex: male
+  - nom: Compétents et minutieux
+    nomen: Qualified and meticulous
+    ordre: 6
+    titre: Techniciens
+    titreen: Technicians
+    both: true
+
