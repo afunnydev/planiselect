@@ -3,6 +3,7 @@
     <div id="hero-slider">
 
         {{ range .Params.slider }}
+        {{ $link := .btnlink }}
         <div class="item hero-slide">
             <img src="{{.img}}" alt="">
             <div class="overlay"></div>
@@ -11,7 +12,7 @@
                     <div class="slider-content" data-animation="fadeIn" data-delay="0.3s">
                         <span class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </span>
                         <p data-animation="fadeInUp" data-delay="0.2s">{{.desc}}</p>
-                        <a href="#" class="cta-btn" data-animation="fadeInUp" data-delay="0.7s">{{ i18n "know_more" }}</a>
+                        <a href='{{ $.Scratch.Get $link }}' class="cta-btn" data-animation="fadeInUp" data-delay="0.7s">{{ .btntxt }}</a>
                     </div>
                     <!-- // content  -->
                 </div>
@@ -82,21 +83,19 @@
         </header>
         <div class="row">
             
-            {{ range where .Site.Pages "Type" "services"}}
-            {{ if eq .Parent.Params.identifiant "cablage" }}
+            {{ range .Site.Data.cablage.cablage }}
             <div class="col-sm-4">
                 <div class="cables-box">
                     <div class="image-holder">
-                        <img src="{{.Params.image}}" alt="" class="img-responsive">
-                        <div class="caption"><a href="{{.Permalink}}"><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
+                        <img src="{{.image}}" alt="" class="img-responsive">
+                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
                     </div>
-                    <h4><a href="{{.Permalink}}">{{.Params.titre}}</a></h4>
-                    <p>{{.Params.desc}}</p>
-                    <a href="{{.Permalink}}" class="read-btn">{{ i18n "know_more" }}</a>
+                    <h4><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'>{{.nom}}</a></h4>
+                    <p>{{.description}}</p>
+                    <a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}' class="read-btn">{{ i18n "know_more" }}</a>
                 </div>
             </div>
             <!-- // cables box  -->
-            {{ end }}
             {{ end }}                                       
 
         </div>

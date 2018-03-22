@@ -8,9 +8,11 @@
 	{{ $.Scratch.Add "clientsPage" ("clients/" | absLangURL) }}
 	{{ if eq .Lang "fr" }}
 	{{ $.Scratch.Add "aboutPage" ("a-propos/" | absLangURL) }}
+	{{ $.Scratch.Add "cablagePage" ("services/cablage/" | absLangURL) }}
 
 	{{ else if eq .Lang "en" }}
 	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
+	{{ $.Scratch.Add "cablagePage" ("services/cablage/" | absLangURL) }}
 
 	{{ end }}
 	<body>

@@ -9,11 +9,15 @@ slider:
   - img: /img/slider2.jpg
     title: Nos services
     desc: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iusto blanditiis aspernatur nemo voluptatibus minus, fugit vero sapiente eum unde eos in, eligendi adipisci quo? Laudantium esse dolores numquam labore.
+      L’expérience et la connaissance acquises avec des années de travail, jumelées à une formation régulière, confèrent à notre entreprise les qualités de base pour planifier, installer et livrer un produit sur lequel le client pourra se fier. 
+    btntxt: Découvrez nos services
+    btnlink: servicesPage
   - img: /img/planiselect-cablage.jpg
     title: Nos câblages
     desc: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus similique, dolorem commodi tenetur est quisquam autem itaque maiores nam non quas suscipit, impedit cumque aspernatur aut iure! Dignissimos, quos natus!
+      Que ce soit pour du câblage téléphonique, informatique ou de fibre optique, l'expérience de notre équipe est un atout dans l'atteinte de vos objectifs.
+    btntxt: En savoir plus
+    btnlink: cablagePage
 about:
   title: À propos
   secondtitle: Reseau de Cablage informatique& fibre optique
