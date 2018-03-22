@@ -11,10 +11,10 @@ draft: false
 section1:
   titre: 40 ans de clients satisfaits
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, reiciendis minima. Assumenda mollitia quos eveniet modi repellat, in aperiam iusto iste error labore autem sequi accusamus tempore, libero, repudiandae expedita.
+    L’entreprise est en affaire depuis 1979, sous le nom de Câblage R.P. et ensuite, depuis 1989, sous le nom de Planiselect Inc. Nous sommes fiers d’être à la troisième génération, de père en fils, de chef d’entreprise toujours aussi passionné. Nous avons à votre service une équipe de techniciens tout aussi rigoureux les uns que les autres.
 
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque, et quam possimus corporis. Maiores architecto minima dolores dicta labore, pariatur officiis eligendi beatae rerum a, accusamus reiciendis corporis adipisci.
+    LEVITON, qui nous certifie depuis nombreuses années, n’hésite pas à recommander Planiselect inc. pour des projets d’envergure. La rigueur de nos installations nous mérite une réputation enviable dans le domaine du câblage structuré et nos clients connaissent la qualité de notre travail. Afin de fournir un produit plus large, nous avons à travers les années ajouté la fibre optique, l’intercommunication et nous sommes maintenant certifiés TOA. 
 icons:
   - icon: /img/ico/why1.svg
     titre: "01. Think"
@@ -36,10 +36,7 @@ gallery:
 section2:
   titre: Notre histoire
   description: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos non, dolorum ex unde officiis. Adipisci a nulla, distinctio molestias inventore asperiores illo quia nostrum quidem ut, et, similique ex deleniti.
-
-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, recusandae. Corporis iste a reiciendis sint eaque cupiditate, ullam debitis iure dicta cum, asperiores, eligendi ut consequatur non placeat esse sapiente.
+    Planiselect inc. a une fierté qui se traduit dans la qualité de nos travaux et la satisfaction de nos clients. Nous serions heureux de travailler avec vous et vous faire bénéficier de notre expérience.
   btn1:
     txt: Nous contacter
     link: contactPage

@@ -285,11 +285,15 @@
 		    	border:1px solid $blue;
 		    }
 		}
+		p {
+			@include regular-text;
+			margin-bottom: 30px;
+		}
 	}
 	.timeline {
 		white-space: nowrap;
 		overflow: hidden;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		ol {
 			font-size: 0;
 			width: 100vw;

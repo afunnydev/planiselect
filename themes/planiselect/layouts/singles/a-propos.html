@@ -85,7 +85,6 @@
                 
             <header>
                 <h5>{{ .Params.section2.titre }}</h5>
-                {{ .Params.section2.description | markdownify }}
             </header>
 
             <section class="timeline">
@@ -114,6 +113,7 @@
             </section>
 
             <footer>
+                <p>{{.Params.section2.description}}</p>
                 {{ with .Params.section2.btn1}}
                 {{ $link1 := .link }}
                 <a href='{{ $.Scratch.Get $link1 }}' class="meet-btn">{{.txt}}</a>
