@@ -55,7 +55,7 @@
                         <span class="title">{{ i18n "sitemap" }}</span>
                         <ul>
                             <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
-                            <li><a href='{{ $.Scratch.Get "servicesPage" }}'>{{ i18n "services" }}</a></li>
+                            <li><a href='{{ $.Scratch.Get "servicesPage" }}'>{{ i18n "our_services" }}</a></li>
                             <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
                             <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li>
                             <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
@@ -67,7 +67,7 @@
 
                 <div class="col-md-4 col-sm-4">
                     <div class="footer-box">
-                        <span class="title">{{ i18n "services" }} </span>
+                        <span class="title">{{ i18n "our_services" }} </span>
                         <ul>
                             {{ range where .Site.Pages "Type" "services"}}
                             {{ if eq .Parent.Params.identifiant "services" }}
@@ -92,7 +92,7 @@
                             <div class="content">
                                 <h6><a href="{{.Permalink}}">{{.Title}}</a></h6>
                                 <p>{{.Summary}}</p>
-                                <a href="{{.Permalink}}" class="read-btn">{{ i18n "readmore" }}</a>
+                                <a href="{{.Permalink}}" class="read-btn">{{ i18n "read_more" }}</a>
                             </div>
                             <!-- // content      -->
                         </div>
@@ -115,7 +115,7 @@
 
                 <div class="col-md-6">
                     <div class="copy-notice">
-                        <small>&copy; 2017 Planiselect. {{ i18n "copyright" }}. {{ safeHTML (i18n "akiatagline") }}</small>
+                        <small>&copy; 2018 Planiselect. {{ i18n "copyright" }}. {{ safeHTML (i18n "akiatagline") }}</small>
                     </div>
                 </div>
                 <!-- // motice  -->
@@ -128,7 +128,7 @@
 <!-- // page footer  -->
 
 <div id="floating-btns">
-    <a href="#" class="book-float-cta visible-xs"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
+    <a href='{{ $.Scratch.Get "contactPage" }}' class="book-float-cta visible-xs"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
     <a href="#top" id="to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </div>
 <!-- // bnts  -->

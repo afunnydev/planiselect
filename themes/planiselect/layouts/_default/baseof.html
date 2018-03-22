@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{.Lang}}">
+	{{- partial "site-head.html" . -}}
 	{{ $.Scratch.Add "homePage" ("/" | absLangURL) }}
 	{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
 	{{ $.Scratch.Add "servicesPage" ("services/" | absLangURL) }}
@@ -12,20 +13,23 @@
 	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
 
 	{{ end }}
-	{{- partial "site-head.html" . -}}
 	<body>
 		{{ `<!--[if lt IE 9]>
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
 	<![endif]-->` | safeHTML }}
 		{{- partial "header/google-tag-manager.html" . -}}
-
-		{{- partial "site-header.html" . -}}
-
-		{{- block "main" . -}}
-		{{- end -}}
-
-		{{- partial "site-footer.html" . -}}
-
+		<div id="canvas">
+			<div id="box_wrapper">
+		  	{{- partial "site-header.html" . -}}
+				<div id="all-content-wrapper" class="all-content-wrapper">
+					{{block "main" . }}
+					{{end}}
+				</div>
+				{{- partial "site-footer.html" . -}}
+			</div>
+			<!-- eof #box_wrapper -->
+		</div>
+		<!-- eof #canvas -->
 		{{- partial "footer/site-scripts.html" . -}}
 	</body>
 </html>

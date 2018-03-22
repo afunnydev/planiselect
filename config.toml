@@ -2,7 +2,7 @@ baseURL = "https://planiselect.netlify.com/"
 DefaultContentLanguage = "fr"
 title = "Planiselect"
 theme = "planiselect"
-description = " Nous sommes des spécialistes en installation de réseaux informatiques : câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique."
+description = "Nous sommes des spécialistes en installation de réseaux informatiques: câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique."
 
 # Pointing to this file
 config = "config.toml"

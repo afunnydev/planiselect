@@ -7,6 +7,7 @@ var del = require('del');
 var exec = require('child_process').exec;
 
 // image resizing variables
+const imagexl = 2620;
 const imagefull = 1920;
 const imagehalf = 1024;
 const imagequart = 600;
@@ -15,23 +16,29 @@ const imagethumb = 80;
 // clean images from dir
 gulp.task("clean-image", function(){
   return del([
-    'themes/airevisuelle/static/img/**/*',
+    'themes/planiselect/static/quart/**/*',
+    'themes/planiselect/static/half/**/*',
+    'themes/planiselect/static/thumb/**/*',
+    'themes/planiselect/static/xl/**/*',
+    'themes/planiselect/static/img/*',
     // we don't want to clean this file though so we negate the pattern
-    '!themes/airevisuelle/static/img/icons'
+    '!themes/planiselect/static/img/ico'
   ]);
 });
 // resize and optimize images
 gulp.task("image-resize", () => {
-  return gulp.src("themes/airevisuelle/source-images/*.{jpg,png,jpeg,gif}")
+  return gulp.src("themes/planiselect/source-images/*.{jpg,png,jpeg,gif}")
     .pipe(imagemin())
+    .pipe(imageresize({ width: imagexl}))
+    .pipe(gulp.dest("themes/planiselect/static/xl/img"))
     .pipe(imageresize({ width: imagefull }))
-    .pipe(gulp.dest("themes/airevisuelle/static/img"))
+    .pipe(gulp.dest("themes/planiselect/static/img"))
     .pipe(imageresize({ width: imagehalf }))
-    .pipe(gulp.dest("themes/airevisuelle/static/img/half"))
+    .pipe(gulp.dest("themes/planiselect/static/half/img"))
     .pipe(imageresize({ width: imagequart }))
-    .pipe(gulp.dest("themes/airevisuelle/static/img/quart"))
+    .pipe(gulp.dest("themes/planiselect/static/quart/img"))
     .pipe(imageresize({ width: imagethumb }))
-    .pipe(gulp.dest("themes/airevisuelle/static/img/thumb"));
+    .pipe(gulp.dest("themes/planiselect/static/thumb/img"));
 });
 
 // hugo production call
@@ -45,7 +52,7 @@ gulp.task("hugo", function (cb) {
 
 // watching images and resizing
 gulp.task("watch", function() {
-  gulp.watch('themes/airevisuelle/source-images/*.{jpg,png,jpeg,gif}', function(){ runSequence('clean-image', 'image-resize') });
+  gulp.watch('themes/planiselect/source-images/*.{jpg,png,jpeg,gif}', function(){ runSequence('clean-image', 'image-resize') });
 });
 
 // watching images and resizing

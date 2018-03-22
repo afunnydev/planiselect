@@ -5,6 +5,9 @@
   other = "Accueil"
 
 [services]
+  other = "Services"
+
+[our_services]
   other = "Nos services"
 
 [about]
@@ -19,10 +22,7 @@
 [find]
   other = "Nous trouver"
 
-[email]
-  other = "Courriel"
-
-[call]
+[call_us]
   other = "Appelez-nous"
 
 [sitemap]
@@ -34,5 +34,67 @@
 [akiatagline]
   other = 'Fait avec <i class="fa fa-heart"></i> par <a href="#">Akia Marketing</a>'
 
-[readmore]
+[read_more]
   other = "Lire la suite"
+
+[know_more]
+  other = "En savoir plus"
+
+[view_project]
+  other = "Voir les projets"
+  one = "Voir le projet"
+
+[service_offered]
+  other = "Services offerts"
+  one = "Service offert"
+
+[category]
+  other = "Catégories"
+  one = "Catégorie"
+
+[link_en]
+  other = "#"
+
+[write_us]
+  other = "Nous écrire"
+
+[contact_us]
+  other = "Nous contactez"
+
+[we_are_here]
+  other = "Nous trouver"
+
+[office_hours]
+  other = "Heures d'ouverture"
+
+[view_map]
+  other = "Voir la carte"
+
+[required_fields]
+  other = "Les champs obligatoires sont indiqués"
+# Form elements
+
+[name]
+  other = "Nom"
+
+[first_name]
+  other = "Prénom"
+
+[last_name]
+  other = "Nom"
+
+[phone]
+  other = "Téléphone"
+
+[phone_numer]
+  other = "Numéro de téléphone"
+
+[email]
+  other = "Courriel"
+
+[send]
+  other = "Envoyer"
+
+[send_message]
+  other = "Envoyer un message"
+

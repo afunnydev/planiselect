@@ -1,11 +1,13 @@
 {{ define "main" }}
+{{ $mymonths := $.Site.Data.mois.mois }}
+{{ $mydays := $.Site.Data.jour.jour }}
 <div class="inner-header">
-    <img src="/img/headers/blog.jpg" alt="" class="img-responsive">
+    <img src="{{.Params.image}}" alt="" class="img-responsive">
     <div class="caption">
         <div class="container">
             <header>
-                <h1>Blog</h1>
-                <p class="desc">Our latest articles</p>
+                <h1>{{.Params.titre}}</h1>
+                <p class="desc">{{.Params.subtitle}}</p>
             </header>
         </div>
         <!-- // container  -->
@@ -17,8 +19,8 @@
 <div class="breadcrumb-block">
     <div class="container">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="{{.Site.BaseURL}}">{{ i18n "home" }}</a></li>
+            <li><a href="{{.Permalink}}">{{ i18n "blog" }}</a></li>
         </ul>
     </div>
     <!-- // container  -->
@@ -45,11 +47,11 @@
                         </div>
                         <!-- // image holder  -->
                         <div class="meta-info">
-                            <small><i class="fa fa-clock-o" aria-hidden="true"></i> February 19, 2016</small>
+                            <small><i class="fa fa-clock-o" aria-hidden="true"></i> {{ if eq $.Lang "fr" }}{{.Date.Day}} {{ index $mymonths .Date.Month }}{{ else if eq $.Lang "en" }}{{.Date.Month}} {{ index $mydays .Date.Day }},{{ end }} {{.Date.Year}}</small>
                         </div>
                         <!-- //  metas  -->
                         <p>{{.Summary}}</p>
-                        <a href="{{.Permalink}}" class="read-btn">{{ i18n "readmore" }}</a>
+                        <a href="{{.Permalink}}" class="read-btn">{{ i18n "read_more" }}</a>
                     </article>
                     <!-- // article  -->
                     {{ end }}                                                      
@@ -61,45 +63,23 @@
             <div class="col-md-4 col-sm-4">
                 <aside id="blog-sidebar">
 
-                    <nav class="cat-box">
-                        <h4>Archives</h4>
-                        <ul>
-                           <li><a href="#">July 2016</a></li>
-                            <li><a href="#">June 2016</a></li>
-                            <li><a href="#">February 2016</a></li>
-                            <li><a href="#">January 2016</a></li>
-                        </ul>
-                    </nav>
-                    <!-- // cat box  -->
-
-                    <nav class="cat-box">
-                        <h4>Categories</h4>
-                        <ul>
-                           <li><a href="#">Featured News</a></li>
-                            <li><a href="#">Summer Hits</a></li>
-                            <li><a href="#">Cables</a></li>
-                            <li><a href="#">IBM Stuff</a></li>
-                            <li><a href="#">WIFI Signals</a></li>
-                        </ul>
-                    </nav>
-                    <!-- // cat box  -->
-
                     <div class="recent-box">
-                        <h5>Recent Posts</h5>
+                        <h5>{{ i18n "our_services" }}</h5>
                         <ul>
-                            <li><a href="#">
-                                <time><i class="fa fa-clock-o" aria-hidden="true"></i> February 19, 2016</time>
-                                Increasing productivity</a></li>
-                            <li><a href="#">
-                                <time><i class="fa fa-clock-o" aria-hidden="true"></i> February 19, 2016</time>
-                                Lorem title Lorem ipsum dolor sit.</a></li>
-                            <li><a href="#">
-                                <time><i class="fa fa-clock-o" aria-hidden="true"></i> February 19, 2016</time>
-                                Lorem title Lorem ipsum dolor sit Lorem ipsum dolor.</a></li>    
+                            {{ range where .Site.Pages "Type" "services"}}
+                            {{ if eq .Parent.Params.identifiant "services" }}
+                            <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
+                            {{ end }}
+                            {{ end }}   
                         </ul>
                     </div>
                     <!-- // recnet box  -->
 
+                    <nav class="cat-box">
+                        <h4>{{ i18n "about" }}</h4>
+                        <p>{{.Params.sidebartext}}</p>
+                    </nav>
+                    <!-- // cat box  -->
 
                 </aside>
             </div>
@@ -112,17 +92,6 @@
 </div>
 <!-- // blog wrapper block  -->
 
-<div class="small-cta-bottom">
-    <div class="container">
-        <p>looking for a first-class business plan consultant?</p>
-        <a href="#">Contact us now</a>
-    </div>
-</div>
-<!-- // small cta bottom  -->
-		<!-- {{ .Content}}
-			{{ range $i, $e := sort .Pages ".Params.ordre" "asce" }}
-			{{ $mod1 := modBool $i 1}}
-			{{ $mod2 := modBool $i 2}}
-			{{ $mod3 := modBool $i 3}}
-		{{ end }} -->
+{{- partial "site/bottomcta.html" . -}}
+
 {{ end }}

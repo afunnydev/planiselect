@@ -28,7 +28,7 @@
 	}
 	.header {
 		height: 500px;
-		background:url(../img/bg/err-bg.jpg) no-repeat center top;
+		background:url(../img/err-bg.jpg) no-repeat center top;
 		background-size:cover;
 		background-color:$blue;	
 		@include breakpoint(tablet) {

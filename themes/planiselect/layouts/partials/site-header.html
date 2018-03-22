@@ -10,7 +10,7 @@
 
         <ul class="nav-links">
             <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
-            <li class="has-menu"> <a href='{{ $.Scratch.Get "servicesPage" }}'>{{ i18n "services" }}</a>
+            <li class="has-menu"> <a href='{{ $.Scratch.Get "servicesPage" }}'>{{ i18n "our_services" }}</a>
                 <ul>
                     {{ range where .Site.Pages "Type" "services"}}
                     {{ if eq .Parent.Params.identifiant "services" }}
@@ -45,7 +45,7 @@
                         <p><i class="fa fa-building" aria-hidden="true"></i> {{.Site.Data.settings.address.road}}, {{.Site.Data.settings.address.city}}</p>
                         <ul>
                             <li><a href='{{ $.Scratch.Get "contactPage"}}'><i class="fa fa-map-marker" aria-hidden="true"></i> {{ i18n "find" }}</a></li>
-                            <li><a href="mailto:{{.Site.Data.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ i18n "email" }}</a></li>
+                            <li><a href="mailto:{{.Site.Data.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ i18n "write_us" }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-3">
                     <div class="contact-cta">
-                        <a href='{{ $.Scratch.Get "contactPage"}}' class="contact-btn">{{ i18n "contact" }}</a>
+                        <a href='{{ $.Scratch.Get "contactPage"}}' class="contact-btn">{{ i18n "contact_us" }}</a>
                     </div>
                 </div>
                 <!-- // info  -->
@@ -69,8 +69,8 @@
 
               <div class="navbar navbar-default yamm">
                   <div class="navbar-header">
-                    <a href="#" class="navbar-brand">
-                        <img srcset="/img/logos/site-logo.svg"  alt="" class="svg">
+                    <a href='{{.Site.BaseURL}}{{ i18n "link_en" }}' class="navbar-brand">
+                        <img srcset="/img/site-logo.svg"  alt="" class="svg">
                     </a>
 
                     <div id="menu-btn-wrapepr" class="visible-xs">
@@ -89,13 +89,13 @@
                <ul class="nav navbar-nav navbar-right">
                   <!-- Grid 12 Menu -->
                   <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
-                  <li class="dropdown yamm-fw"><a href='{{ $.Scratch.Get "servicesPage" }}' class="dropdown-toggle">{{ i18n "services" }}</a>
+                  <li class="dropdown yamm-fw"><a href='{{ $.Scratch.Get "servicesPage" }}' class="dropdown-toggle">{{ i18n "our_services" }}</a>
                     <ul class="dropdown-menu animated fadeIn">
                       <li class="grid-demo">
                         <div class="row">
 
                             <div class="col-md-3 col-sm-12">
-                                <h5>{{ i18n "services" }}</h5>
+                                <h5>{{ i18n "our_services" }}</h5>
                                 <ul>
                                     {{ range where .Site.Pages "Type" "services"}}
                                     {{ if eq .Parent.Params.identifiant "services" }}

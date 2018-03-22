@@ -1,0 +1,14 @@
+<div class="small-cta-bottom">
+    <div class="container">
+    	{{ if eq .Lang "fr" }}
+        {{ $link := .Site.Data.cta.bottomcta.fr.link }}
+        <p>{{.Site.Data.cta.bottomcta.fr.title}}</p>
+        <a href='{{ $.Scratch.Get $link }}'>{{.Site.Data.cta.bottomcta.fr.btn}}</a>
+        {{ else if eq .Lang "en" }}
+        {{ $link := .Site.Data.cta.bottomcta.en.link }}
+        <p>{{.Site.Data.cta.bottomcta.en.title}}</p>
+        <a href='{{ $.Scratch.Get $link }}'>{{.Site.Data.cta.bottomcta.en.btn}}</a>
+        {{ end }}
+    </div>
+</div>
+<!-- // small cta bottom  -->

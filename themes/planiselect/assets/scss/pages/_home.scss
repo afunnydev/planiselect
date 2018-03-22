@@ -130,6 +130,7 @@
 			}
 			svg {
 				max-width: 60px;
+				max-height: 64px;
 				position: relative;
 				top:0px;
 				@include animate-fade;
@@ -153,6 +154,7 @@
 			background:$red;
 			position: relative;
 			padding:0px;
+			width: 66.6666%;
 			&:hover {
 				background:$red-light;
 				h6 {
@@ -183,6 +185,9 @@
 				text-transform: uppercase;
 				width: 90%;
 				margin-top: 0px;
+			}
+			@include breakpoint(phone) {
+				width: 100%;
 			}
 		}
 	}
@@ -452,15 +457,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 #brands {
 	border-top:1px solid #ddd;
-	padding-top: 20px;
+	padding-top: 100px;
 	padding-bottom: 50px;
+	font-size: 16px;
+	@include small-lap {
+		font-size: 15px;
+	}
 	@include breakpoint(laptop) {
-		padding-bottom: 40px;
+		font-size: 14px;
+		padding-top: 50px;
 	}
 	@include breakpoint(tablet) {
-		padding-bottom: 40px;
+		padding-top: 50px;
+		font-size: 15px;
 	}
-	.container {
+	@include breakpoint(phone) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 14px;
+	}
+	header {
+		padding-bottom: 50px;
+		@include breakpoint(phone) {
+			padding-bottom: 30px;
+		}
+		h4 {
+			@include section-subheading;
+			color:$blue;
+		}
+	}
+	.container.logos {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;

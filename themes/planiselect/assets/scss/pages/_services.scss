@@ -22,6 +22,7 @@
 		padding-top: 70px;
 		padding-bottom: 70px;
 		border-bottom:1px solid #d3d5d6;
+		margin-top: 130px;
 		@include small-lap {
 			padding-top: 50px;
 			padding-bottom: 50px;
@@ -29,6 +30,7 @@
 		@include breakpoint(laptop) {
 			padding-top: 50px;
 			padding-bottom: 50px;
+			margin-top: 110px;
 		}
 		@include breakpoint(phone) {
 			padding-top: 40px;
@@ -37,10 +39,11 @@
 		@include breakpoint(tablet) {
 			padding-top: 30px;
 			padding-bottom: 30px;
+			margin-top: 110px;
 		}
-		p {
+		h1 {
 			font-family: $font-light;
-			font-size: 1.7em;
+			font-size: 2em;
 			line-height: 1.4;
 			color:$text;
 		}
@@ -145,9 +148,18 @@
 				svg {
 					@include centre(both);
 					@include animate-fade;
+					max-width: 64px;
 
 					* {
 						stroke:$red;
+					}
+					path.fil0 {
+						fill: $red;
+						stroke: none;
+					}
+					rect.fil1 {
+						fill: none;
+						stroke: none;
 					}
 				}
 			}

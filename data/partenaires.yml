@@ -1,0 +1,22 @@
+partenaires:
+  - name: General Cable
+    logo: /img/general-cable-logo.png
+    weight: 0
+  - name: Hubbell
+    logo: /img/hubbell-logo.png
+    weight: 1
+  - name: Kramer
+    logo: /img/kramer-logo.png
+    weight: 2
+  - name: Leviton
+    logo: /img/leviton-logo.jpg
+    weight: 3
+  - name: SFM
+    logo: /img/sfm-logo.png
+    weight: 4
+  - name: TOA
+    logo: /img/toa-logo.png
+    weight: 5
+  - name: Vellone Communication
+    logo: /img/vellone-communication-logo.png
+    weight: 6 

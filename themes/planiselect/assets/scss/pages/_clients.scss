@@ -58,11 +58,170 @@
 	}
 	.caption {
 		padding-top: 30px;
+		padding-bottom: 30px;
 		@include breakpoint(tablet) {
 			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 		@include breakpoint(laptop) {
 			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.client-box {
+			@include breakpoint(tablet) {
+				margin-bottom: 20px;
+			}
+			@include breakpoint(phone) {
+				margin-bottom: 15px;
+			}
+			.image-holder {
+				float: left;
+				width: 50%;
+				@include breakpoint(phone) {
+					float: none;
+					width: 100%;
+				}
+				img {
+					height: 350px;
+					object-fit: cover;
+					width: 100%;
+					@include breakpoint(laptop) {
+						height: 320px;
+					}
+					@include breakpoint(phone) {
+						height: 320px;
+					}
+				}
+				position: relative;
+				.overlay {
+					position: absolute;
+					bottom:0px;
+					left:0px;
+					height: 100px;
+					width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+				    text-align: right;
+				    color:$white;	
+				    padding-right: 30px;	
+				    a {
+				    	color:$white;
+				    	font-weight: $bold;
+				    	position: absolute;
+				    	right: 20px;
+				    	bottom:20px;
+				    	padding-right: 30px;
+				    	text-transform: uppercase;
+					    &:after {
+					        @include font-ico;
+					        content:'\f178';
+					        @include centre(y);
+					        right: 0px;
+					    }	
+					    &:hover {
+					    	color:$red;
+					    }		    	
+				    }		
+				}
+			}
+			.content {
+				float: right;
+				width: 50%;
+				height: 350px;
+				background:#eff2f3;
+				padding:25px;
+				padding-top: 50px;
+				@include breakpoint(laptop) {
+					height: 320px;
+				}
+				@include breakpoint(phone) {
+					float: none;
+					width: 100%;
+					height: auto;
+					padding:20px;
+				}
+				.title {
+					display: block;
+					font-family: $font-heading;
+					margin-bottom: 15px;
+					font-size: 1.3em;
+					color:$blue;
+				}
+				.service-label {
+					display: block;
+					text-transform: uppercase;
+					font-family: $font-medium;
+					font-size: 1em;
+					color:$red;
+					margin-bottom: 10px;
+					margin-top: 15px;
+				}
+				p {
+					@include regular-text;
+				}
+				.value {
+					color:$text;
+					font-size: 1em;
+					opacity: 0.7;
+				}
+			}
+		}
+		header {
+			padding-bottom: 30px;
+			padding-top: 40px;
+			@include breakpoint(phone) {
+				padding-bottom: 20px;
+				padding-top: 30px;
+			}
+			&.no-top-padding{
+				padding-top: 0;
+			}
+			h4 {
+				@include section-subheading;
+				color:$blue;
+				margin-bottom: 20px;
+			}
+			p {
+				@include regular-text;
+			}
+		}
+		.container.logos {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			.logos-box {
+				width: 24%;
+			    position: relative;
+			    height: 180px;
+			    padding: 50px;
+			    @include breakpoint(laptop) {
+			    	padding:30px;
+			    	height: 160px;
+			    }
+			    @include breakpoint(tablet) {
+			    	padding:25px;
+			    	height: 140px;
+			    }
+			    &:hover {
+			    	img {
+			    		opacity: 1;
+			    		filter: grayscale(0%);
+			    	}
+			    }
+			    img {
+			    	@include centre(both);
+	    			max-width: 180px;	
+	    			filter: grayscale(100%);
+	    			opacity: 0.3;	
+	    			@include breakpoint(tablet) {
+	    				max-width: 140px;
+	    			}    	
+			    }
+			}
 		}
 		.client-desc {
 			padding-right: 50px;
