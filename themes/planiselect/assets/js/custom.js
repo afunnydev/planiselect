@@ -5,19 +5,17 @@
 //@prepros-prepend jquery.matchHeight.js
 //@prepros-prepend libs/hammer.min.js
 //@prepros-prepend wow.min.js
-//@propros-prepend libs/fancybox.js
-
 
 $(document).ready(function(){
 
   new WOW().init();
 
   // Fancybox
-
-  $().fancybox({
-    selector : '[data-fancybox="images"]',
-    loop     : true
-  });
+  if(jQuery().fancybox) {
+     console.log('Helloooo');
+ } else {
+  console.log("still not working");
+ }
   // Remove placeholder
   $('input,textarea').focus(function(){
      $(this).data('placeholder',$(this).attr('placeholder'))
