@@ -144,16 +144,16 @@
 		overflow: hidden;
 		img {
 			width: 100%;
-			height: 500px;
+			height: 300px;
 			object-fit: cover;
 			@include small-lap {
-				height: 400px;
+				height: 250px;
 			}
 			@include breakpoint(laptop) {
-				height: 350px;
+				height: 250px;
 			}
 			@include breakpoint(tablet) {
-				height: 350px;
+				height: 200px;
 			}
 			@include breakpoint(phone) {
 				height: 250px;
@@ -390,7 +390,8 @@
 						-o-transition: 1s;
 						transition: 1s;
 						font-size: 0.8em;
-						line-height: 1.4;
+						line-height: 1.5;
+						color: #666666;
 						@include breakpoint(phone) {
 							opacity: 1;
 							max-height: 300px;

@@ -3,7 +3,7 @@
     <div class="bcg" 
     data-top-bottom="background-position: 50% -100px;" 
     data-bottom-top="background-position: 50% 100px;" 
-    data-anchor-target="#about-header"> 
+    data-anchor-target="#about-header" style="background-image: url('{{.Params.banner}}'); background-size: cover"> 
     <div class="overlay"></div> 
 
         <div class="caption">
@@ -52,13 +52,14 @@
 
                     </div>
                     <!--// md 12 -->
-
+                    {{ with .Params.section2.image3 }}
                     <div class="col-md-12">
 
-                        <img class="img-responsive small-image" alt="" src="{{.Params.section2.image3}}" />
+                        <img class="img-responsive small-image" alt="" src="{{- . -}}" />
 
                     </div>
                     <!--// md 12 -->
+                    {{ end }}
 
                 </div>
                 <!--// row -->

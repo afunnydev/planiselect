@@ -2,22 +2,23 @@
 title: Planification et installation de réseaux locaux et étendus
 description:  
 titre: Planification et installation de réseaux locaux et étendus
-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cum, aliquid! Consequatur quisquam vero eum!
+desc: "Le réseau est de nos jours d'une importance capitale dans une entreprise. Laissez-nous vous guider parmi les différentes solutions qui s'offrent à vous."
 identifiant: planification-et-installation-reseaux-locaux-et-etendus
 icon: /img/ico/connected-devices.svg
-image: /img/cover2.jpg
+image: /img/planification-et-installation-7.jpg
+banner: /img/planification-et-installation-8.jpg
 draft: false
 section1:
-  title:
+  title: De l'élaboration à l'installation
   description: >-
     Nous parlons beaucoup de notre expérience et de la qualité de notre travail, mais au bout du compte, le tout doit fonctionner. Le réseau est souvent le cœur même d’une entreprise, surtout avec l’avènement du « sans-papier ». Les réseaux doivent être fiables à 100%. 
 
 
     L’expérience et la connaissance acquises avec des années de travail, jumelées à une formation régulière, confèrent à notre entreprise les qualités de base pour planifier, installer et livrer un produit sur lequel le client pourra se fier. 
 section2:
-  image1: /img/cover1.jpg
-  image2: /img/cover2.jpg
-  image3: /img/cover3.jpg
+  image1: /img/planification-et-installation-5.png
+  image2: /img/planification-et-installation-2.jpg
+  image3: /img/planification-et-installation-3.jpg
 section3:
   title: Certifications du manufacturier
   col1: >-

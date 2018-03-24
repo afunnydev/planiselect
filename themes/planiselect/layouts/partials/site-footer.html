@@ -49,8 +49,14 @@
     <div class="sitemap-bar">
          <div class="container">
                 <div class="row">
-        
+
                 <div class="col-md-3 col-sm-3">
+                    <div class="footer-box">
+                        <img srcset="/img/site-logo.svg"  alt="" class="svg">
+                    </div>
+                </div>
+        
+                <div class="col-md-2 col-sm-2">
                     <div class="footer-box">
                         <span class="title">{{ i18n "sitemap" }}</span>
                         <ul>
@@ -65,7 +71,7 @@
                 </div>
                 <!-- // footer box  -->
 
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-3 col-sm-3">
                     <div class="footer-box">
                         <span class="title">{{ i18n "our_services" }} </span>
                         <ul>
@@ -79,10 +85,11 @@
                 </div>
                 <!-- // footer box  -->
 
-                <div class="col-md-5 col-sm-5">
+                <div class="col-md-4 col-sm-4">
                     <div class="footer-box">
 
-                        <img srcset="/img/site-logo.svg"  alt="" class="svg">
+                        <span class="title">{{ i18n "about" }} </span>
+                        <p>{{ if eq .Lang "fr" }}{{.Site.Data.globals.footertxt.fr}}{{ else if eq .Lang "en" }}{{.Site.Data.globals.footertxt.en}}{{ end }}</p>
                         <!-- <span class="title">{{ i18n "blog" }}</span>
                         {{ range where .Site.RegularPages "Type" "articles"}}
                         <div class="blog-box">

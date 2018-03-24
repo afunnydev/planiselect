@@ -333,6 +333,11 @@
 				font-family: $font-light;
 				margin-bottom: 15px;
 			}
+			p {
+				@include regular-text;
+				color: white;
+				opacity: 0.7;
+			}
 			ul {
 				li {
 					a {

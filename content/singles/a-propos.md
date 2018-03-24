@@ -11,32 +11,39 @@ draft: false
 section1:
   titre: 40 ans de clients satisfaits
   description: >-
-    L’entreprise est en affaire depuis 1979, sous le nom de Câblage R.P. et ensuite, depuis 1989, sous le nom de Planiselect Inc. Nous sommes fiers d’être à la troisième génération, de père en fils, de chef d’entreprise toujours aussi passionné. Nous avons à votre service une équipe de techniciens tout aussi rigoureux les uns que les autres.
+    L’entreprise est en affaires depuis 1979 sous le nom de Câblage R.P., et ensuite, depuis 1989, sous le nom de Planiselect Inc. Nous sommes fiers d’en être à la troisième génération, de père en fils, de chef d’entreprise toujours aussi passionné. Nous mettons à votre service une équipe de techniciens tous plus rigoureux les uns que les autres.
 
 
-    LEVITON, qui nous certifie depuis nombreuses années, n’hésite pas à recommander Planiselect inc. pour des projets d’envergure. La rigueur de nos installations nous mérite une réputation enviable dans le domaine du câblage structuré et nos clients connaissent la qualité de notre travail. Afin de fournir un produit plus large, nous avons à travers les années ajouté la fibre optique, l’intercommunication et nous sommes maintenant certifiés TOA. 
+    LEVITON, qui nous certifie depuis de nombreuses années, n’hésite pas à recommander Planiselect inc. pour des projets d’envergure. La rigueur de nos installations nous confère une réputation enviable dans le domaine du câblage structuré et nos clients connaissent la qualité de notre travail. Afin de fournir un produit plus large, nous avons au fil des ans ajouté la fibre optique, l’intercommunication et nous sommes maintenant certifiés TOA. 
 icons:
-  - icon: /img/ico/why1.svg
-    titre: "01. Think"
-    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
-  - icon: /img/ico/why2.svg
-    titre: "02. Think"
-    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
-  - icon: /img/ico/why3.svg
-    titre: "03. Think"
-    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
-  - icon: /img/ico/why4.svg
-    titre: "04. Think"
-    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia."
+  - icon: /img/ico/connector-wire.svg
+    titre: "01. Expérience"
+    description: "En affaire depuis plus de 40 ans, Planiselect est l'entreprise québécoise avec le plus d'expertise en câblage structuré."
+  - icon: /img/ico/checklist.svg
+    titre: "02. Connaissance"
+    description: "Fort d'une équipe de techniciens qualifiés, vous pouvez comptez sur nous vous guider vers le type d'installation qui répondra à vos besoins"
+  - icon: /img/ico/handshake.svg
+    titre: "03. Fiabilité"
+    description: "Au fil des années, Planiselect a fait ses preuves et s'est taillé une réputation en servant certaines des plus grosses entreprises au Québec."
+  - icon: /img/ico/cle-en-main.svg
+    titre: "04. Clé en main"
+    description: "Nous facilitons l'avancement de votre projet en vous supportant dans toute les étapes de sa réalisation, de l'idéation à l'installation."
 gallery:
   - image: /img/gal1.jpg
-  - image: /img/gal2.jpg
-  - image: /img/gal3.jpg
   - image: /img/gal4.jpg
 section2:
   titre: Notre histoire
   description: >-
     Planiselect inc. a une fierté qui se traduit dans la qualité de nos travaux et la satisfaction de nos clients. Nous serions heureux de travailler avec vous et vous faire bénéficier de notre expérience.
+  gallery:
+    - image: /img/historique-planiselect1.jpeg
+    - image: /img/historique-planiselect2.jpeg
+    - image: /img/historique-planiselect3.jpeg
+    - image: /img/historique-planiselect4.jpeg
+    - image: /img/historique-planiselect5.jpeg
+    - image: /img/historique-planiselect6.jpeg
+    - image: /img/historique-planiselect7.jpeg
+    - image: /img/historique-planiselect8.jpeg
   btn1:
     txt: Nous contacter
     link: contactPage

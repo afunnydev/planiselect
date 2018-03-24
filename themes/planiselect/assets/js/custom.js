@@ -3,14 +3,21 @@
 //@prepros-prepend libs/jquery-ui.min.js
 //@prepros-prepend libs/slick.min.js
 //@prepros-prepend jquery.matchHeight.js
+//@prepros-prepend libs/hammer.min.js
 //@prepros-prepend wow.min.js
+//@propros-prepend libs/fancybox.js
 
 
 $(document).ready(function(){
 
   new WOW().init();
 
+  // Fancybox
 
+  $().fancybox({
+    selector : '[data-fancybox="images"]',
+    loop     : true
+  });
   // Remove placeholder
   $('input,textarea').focus(function(){
      $(this).data('placeholder',$(this).attr('placeholder'))
@@ -58,10 +65,29 @@ $(document).ready(function(){
 
 });
 
+$(function() {
+  setTimeout(function() {
+    if (location.hash) {
+      /* we need to scroll to the top of the window first, because the browser will always jump to the anchor first before JavaScript is ready, thanks Stack Overflow: http://stackoverflow.com/a/3659116 */
+      window.scrollTo(0, 0);
+      target = location.hash.split('#');
+      smoothScrollTo($('#'+target[1]));
+    }
+  }, 1);
+  
+  function smoothScrollTo(target) {
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top - 70
+      }, 1000);
+    }
+  }
+});
 
 
-
- $(function() {
+$(function() {
   $('a[href*="#mas-header"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -200,14 +226,12 @@ $( '#hero-slider' )
     });
     $('#hero-slider').slick({
        autoplay: true,
-       autoplaySpeed: 10000,
+       autoplaySpeed: 7000,
        arrows:true,
        dots: false,
        fade: true,
-        autoplay: true,
-        autoplaySpeed: 3500,
         pauseOnFocus: false,
-        pauseOnHover:false,
+        pauseOnHover: true,
         pauseOnDotsHover: false,     
     });
     function doAnimations(elements) {

@@ -2,25 +2,26 @@
 title: AV (Équipement audiovisuel)
 description:  
 titre: AV (Équipement audiovisuel) 
-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores cum, aliquid! Consequatur quisquam vero eum!
+desc: Nous proposons des systèmes fiables et évolués pour vous aider dans l'élaboration de vos projets audiovisuels.
 identifiant: equipement-audiovisuel
 icon: /img/ico/service5.svg
-image: /img/cover2.jpg
+image: /img/audiovisuel-2.jpg
+banner: /img/audiovisuel-banner.jpg
 section1:
-  title:
+  title: Vaste gamme de systèmes audiovisuels fiables
   description: >-
     L’audiovisuel désigne à la fois les matériels, techniques et méthodes d'information, de communication ou d'enseignement associant le son et l'image. Voilà la définition offerte sur internet.
 
 
-    Notre gamme de produits audio-visuels saura combler toute demande. Si vous ne voyez pas vos produits préférés sur notre site, n’hésitez pas à nous contacter pour vous informer sur le produit dont vous avez besoin. Nous saurons vous aider à trouver ce qu’il faut. 
+    Notre gamme de produits audiovisuels saura combler toute demande. Si vous ne voyez pas vos produits préférés sur notre site, n’hésitez pas à nous contacter pour vous informer sur le produit dont vous avez besoin. Nous saurons vous aider à trouver ce qu’il faut. 
 section2:
-  image1: /img/cover1.jpg
-  image2: /img/cover2.jpg
-  image3: /img/cover3.jpg
+  image1: /img/audiovisuel-1.jpg
+  image2: /img/audiovisuel-3.jpg
+  image3: /img/audiovisuel-4.jpg
 section3:
-  title: Lorem
+  title: Certifications et partenaires
   col1: >-
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quaerat velit vel, aspernatur odit minima asperiores. Illo dolorum aliquam architecto debitis, accusantium quo. Sapiente obcaecati quos ea blanditiis, earum nostrum. 
+    Au fil des années, Planiselect s'est bâti un réseau de partenaire de confiance, en plus d'aller chercher diverses certifications reconnues dans le domaine. 
   col2: >-
     - Partenaire du programme certification SCCL de Leviton 
     - Intégrateur certifié par Oasis 

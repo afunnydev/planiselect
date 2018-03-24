@@ -90,17 +90,25 @@
 				@include animate-fade;
 			}
 			.content-back {
-				height: 220px;
+				height: 180px;
 				background:$blue;
 				position: absolute;
 				width: 100%;
 				left:0px;
-				bottom:-232px;
+				bottom:-192px;
 				padding:50px;
 				@include animate-fade;
 				@include breakpoint(laptop) {
 					padding:30px;
 					padding-top: 40px;
+				}
+				@include breakpoint(tablet) {
+					padding:30px;
+					padding-top: 30px;
+				}
+				@include breakpoint(phone) {
+					padding:30px;
+					padding-top: 30px;
 				}
 				&:before {
 					width: 0;

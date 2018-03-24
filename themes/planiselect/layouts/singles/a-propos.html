@@ -62,7 +62,7 @@
         {{ range .Params.gallery }}
         <div class="col-sm-6">
             <div class="image-holder">
-                <a href="{{.image}}">
+                <a data-fancybox="images" href="{{.image}}">
                 <img src="{{.image}}" alt="" class="img-responsive">
                 <div class="caption">
                     <i class="fa fa-search-plus" aria-hidden="true"></i>
@@ -111,6 +111,27 @@
                     </button>
                 </div>
             </section>
+
+            <div id="about-gallery" style="margin-bottom: 30px;">
+                <div class="row no-gutter">
+                    {{ range .Params.section2.gallery }}
+                    <div class="col-sm-3">
+                        <div class="image-holder">
+                            <a data-fancybox="images" href="{{.image}}">
+                            <img src="{{.image}}" alt="" class="img-responsive">
+                            <div class="caption">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                            <!-- // caption  -->
+                            </a>                                
+                        </div>                    
+                    </div>
+                    <!-- // col  -->
+                    {{ end }}
+                </div>
+                <!-- // row  -->
+            </div>
+            <!-- // about gallery  -->
 
             <footer>
                 <p>{{.Params.section2.description}}</p>

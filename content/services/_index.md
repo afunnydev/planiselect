@@ -1,5 +1,5 @@
 ---
 title: Services
 identifiant: services
-titre: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, aperiam?
+titre: Découvrez notre gamme de services de câblage et de réseautique
 ---
