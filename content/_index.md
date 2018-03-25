@@ -20,7 +20,7 @@ slider:
     btnlink: cablagePage
 about:
   title: À propos
-  secondtitle: Entreprise familiale dans le domaine du câblage
+  secondtitle: Entreprise spécialisée en installation et configuration de réseaux informatiques
   desc: Découvrez notre vaste gamme de services commerciaux. Votre projet requiert une expertise particulière? Ne cherchez plus!
   cta: Intéressé par nos services? Contactez-nous maintenant!
   link: contactPage
