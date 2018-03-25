@@ -27,7 +27,7 @@ about:
 cablage:
   title: Nos services de câblage
 clients:
-  title: Nos clients
+  title: Ils nous font confiance
 partenaires:
   title: Nos nombreux partenaires
   single:

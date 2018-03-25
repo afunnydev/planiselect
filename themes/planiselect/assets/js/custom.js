@@ -10,12 +10,6 @@ $(document).ready(function(){
 
   new WOW().init();
 
-  // Fancybox
-  if(jQuery().fancybox) {
-     console.log('Helloooo');
- } else {
-  console.log("still not working");
- }
   // Remove placeholder
   $('input,textarea').focus(function(){
      $(this).data('placeholder',$(this).attr('placeholder'))
@@ -452,7 +446,9 @@ $('.menu-btn').click(function(){
       disabledClass = "disabled";
 
   // START
-  window.addEventListener("load", init);
+  if (timeline) {
+    window.addEventListener("load", init);
+  }
 
   function init() {
     // setEqualHeights(elH);
@@ -562,7 +558,9 @@ $('.menu-btn').click(function(){
       }
     });
   }
-  timeline.style.transform = "translateX(-2200px)";
-  setBtnState(arrowPrev, false);
-  setBtnState(arrowNext);
+  if (timeline) {
+    timeline.style.transform = "translateX(-2200px)";
+    setBtnState(arrowPrev, false);
+    setBtnState(arrowNext);
+  }
 })();
