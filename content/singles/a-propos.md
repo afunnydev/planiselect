@@ -2,7 +2,7 @@
 title: À propos
 description: >-
   This is a desc
-titre: Planiselect - Entreprise familiale dans le domaine du câblage
+titre: Planiselect - Spécialistes en installation de réseaux informatiques
 slug: a-propos
 layout: a-propos
 image: null
