@@ -1,11 +1,12 @@
 ---
-title: Contact - EN
+title: Contact
 description: >-
   This is a desc
-titre: Contact
+titre: Nous contacter
+subtitle: "Vous avez un projet en tête?"
 slug: contact
 layout: contact
-image: null
+image: /img/cable-management.jpg
 noindex: true
 draft: false
 ---

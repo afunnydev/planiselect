@@ -5,7 +5,7 @@ titre: Câblage
 identifiant: cablage
 desc: Découvrez nos services de câblage informatique, téléphonique et de fibre optique.
 slug: cablage
-i18nlanguage: fr
+i18nlanguage: en
 icon: /img/ico/connector-wire.svg
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg

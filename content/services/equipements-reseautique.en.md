@@ -4,7 +4,7 @@ description:
 titre: Équipements de réseautique
 desc: Installation de la structure qui va accueillir tout le matériel du système de réseautique.
 identifiant: equipements-reseautique
-i18nlanguage: fr
+i18nlanguage: en
 icon: /img/ico/service3.svg
 image: /img/planification-et-installation-1.jpg
 banner: /img/planification-et-installation-9.png

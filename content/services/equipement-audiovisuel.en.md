@@ -3,8 +3,8 @@ title: AV (Équipement audiovisuel)
 description:  
 titre: AV (Équipement audiovisuel) 
 desc: Nous proposons des systèmes fiables et évolués pour vous aider dans l'élaboration de vos projets audiovisuels.
+i18nlanguage: en
 identifiant: equipement-audiovisuel
-i18nlanguage: fr
 icon: /img/ico/service5.svg
 image: /img/audiovisuel-2.jpg
 banner: /img/audiovisuel-banner.jpg

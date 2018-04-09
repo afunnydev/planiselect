@@ -4,7 +4,7 @@ description:
 titre: Planification et installation de réseaux locaux et étendus
 desc: "Le réseau est de nos jours d'une importance capitale dans une entreprise. Laissez-nous vous guider parmi les différentes solutions qui s'offrent à vous."
 identifiant: planification-et-installation-reseaux-locaux-et-etendus
-i18nlanguage: fr
+i18nlanguage: en
 icon: /img/ico/connected-devices.svg
 image: /img/planification-et-installation-7.jpg
 banner: /img/planification-et-installation-8.jpg
