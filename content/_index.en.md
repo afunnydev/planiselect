@@ -15,23 +15,20 @@ slider:
     img: /img/slider2.jpg
     title: 'Our services '
   - btnlink: cablagePage
-    btntxt: En savoir plus
+    btntxt: Know more
     desc: >-
-      Que ce soit pour du câblage téléphonique, informatique ou de fibre
-      optique, l'expérience de notre équipe est un atout dans l'atteinte de vos
-      objectifs.
+      Whether for phone, computer or optic fiber cabling, the experience of our
+      team is an asset in achieving your goals.
     img: /img/fibre-optique-2.jpg
-    title: Nos câblages
+    title: Our cablings
 about:
   btnlink: ''
-  cta: Intéressé par nos services? Contactez-nous maintenant!
+  cta: Interested in our services? Contact us now!
   desc: >-
-    Découvrez notre vaste gamme de services commerciaux. Votre projet requiert
-    une expertise particulière? Ne cherchez plus!
-  secondtitle: >-
-    Entreprise spécialisée en installation et configuration de réseaux
-    informatiques
-  title: À propos
+    Discover our wide range of commercial services. Does your project require
+    special expertise? Don't search anymore!
+  secondtitle: ' Company specialized in installation and configuration of computer networks'
+  title: About us
 cablage:
   title: Nos services de câblage
 clients:
