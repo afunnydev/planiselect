@@ -1,38 +1,48 @@
 ---
-title: "Câblage"
-description:
-titre: Câblage
-identifiant: cablage
-desc: Découvrez nos services de câblage informatique, téléphonique et de fibre optique.
-slug: cablage
-i18nlanguage: en
+title: Cabling
+slug: cabling
+identifiant: cabling
+titre: Cabling
 icon: /img/ico/connector-wire.svg
+desc: 'Discover our services of computer, phone and fiber optic cabling.'
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
+i18nlanguage: en
 section1:
-  title: Informatique
+  title: Data processing
   description: >-
-    Nous offrons un câblage de type Cat5, Cat5e, Cat6 et Cat6e selon les normes de l’industrie et des codes du bâtiment. Notre expertise ets soutenue par l'expérience et les formations régulières de notre équipe de techniciens.
+    We offer Cat5, Cat5e, Cat6 and Cat6e cabling in accordance with industry
+    standards and building codes. Our expertise is supported by the experience
+    and regular training of our team of technicians.
 
 
-    Nous effectuons l’installation de tout le réseau interne de votre entreprise, et sommes des spécialistes de tout ce qui a trait aux réseaux filaires et sans-fil. L’objectif est de tout connecter ensemble, et de permettre une communication entre les ordinateurs et l’extérieur. 
+    We install all of your company's internal network, and are specialists in
+    wired and wireless networks. The goal is to connect everything together, and
+    to allow communication between computers and the outside world.
 
 
-    Certification complète de l’installation: **Certification Leviton**, **Hubbell**
+    Complete Certification of Installation: **Leviton Certification, Hubbell**
 section2:
   image1: /img/cablage-informatique-et-telephonique.jpg
   image2: /img/cablage-telephonique.jpg
   image3: /img/cablage-informatique.jpg
 section3:
-  title: Téléphonie standard et IP
   col1: >-
-    Souvent, les services de câblage informatique et téléphonique vont de paire. C’est pourquoi nous offrons également des installations de câblage téléphonique de qualité.
+    Often, computer and telephone cabling services go hand in hand. That's why
+    we also offer quality phone wiring facilities.
   col2: >-
-    Les systèmes téléphoniques standards utilisent le même type d’installation que celui du câblage structuré. En contrepartie, la téléphonie IP a l’avantage de passer par le réseau de câblage structuré, généralement réservé au Data.
+    Standard telephone systems use the same type of installation as structured
+    cabling. On the other hand, IP telephony has the advantage of going through
+    the structured cabling network, generally reserved for Data.
+  title: Standard telephony and IP
 section4:
   need: true
-  title: Fibre optique et fusion
-  image: /img/fibre-optique-2.jpg
+  title: Optical fiber and fusion
   description: >-
-    Monomode, multimode, 6 brins et plus, la fibre est un incontournable. Avec les exigences toujours plus élevées de nos clients, la fibre est devenue une norme de plus en plus accessible et utilisée. Nous nous assurons de rester en tête de notre domaine et de vous offrir une expertise imbattable en installation de fibre optique et fusion.
+    Singlemode, multimode, 6 strands and more, fiber is a must. With the
+    ever-increasing demands of our customers, fiber has become a standard that
+    is increasingly accessible and used. We make sure to stay ahead of our field
+    and offer unbeatable expertise in fiber optic and fusion installations.
+  image: /img/fibre-optique-2.jpg
 ---
+
