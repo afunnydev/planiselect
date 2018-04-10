@@ -138,9 +138,9 @@ timeline:
       current projects are transferred to Planiselect Inc.
   - date1: 2017
     text: >-
-      Aujourd’hui, Joël Paquette, le petit fils de Robert Paquette, administre
-      avec son père Alain la continuation des opérations de Planiselect Inc. Les
-      certifications, les accréditations ainsi que les contrats se multiplient.
+      Today, Joël Paquette, grandson of Robert Paquette, administers with his
+      father Alain the continuation of the operations of Planiselect Inc.
+      Certifications, accreditations as well as contracts multiply.
 titre3: Our experienced team
 titre4: Our partners
 ---
