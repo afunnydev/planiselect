@@ -126,12 +126,10 @@ timeline:
       at their current address on Léo-Lacombe Street.
   - date1: 2003
     text: >-
-      Ils gagnent des clients comme le Château Montebello, l’Hôtel Reine
-      Élizabeth et la Commission des Normes du travail.  
+      They win clients such as Château Montebello, Hôtel Reine Élizabeth and the
+      Commission des Normes du Travail.
   - date1: 2005
-    text: >-
-      Ils se voient attribuer le contrat de câblage pour la nouvelle ligne du
-      Métro de Laval.
+    text: They are assigned the cabling contract for the new Laval subway line.
   - date1: 2008
     text: >-
       En 2000, « Installation de Câbles R.P. » subit le déclin continuel des
