@@ -70,10 +70,10 @@ timeline:
   - date1: 1979
     text: >-
       Bell Canada invites Robert Paquette to bid for a phone cabling contract.
-      He founds "Installation of Cables R.P." and obtains the contract. With his
+      He founds "R.P. Cables Installation" and obtains the contract. With his
       son, Alain Paquette, he will make phone cabling for the city of Laval,
       where he will then settle on Alexandre Street. Soon, the company wins the
-      contract for East Montreal, and then downtown. Installation of Cables R.P.
+      contract for East Montreal, and then downtown. R.P. Cables Installation
       will increase from 1 to 22 installation teams from 1979 to 1989. Fun fact:
       their contract with Bell will lead them to make the call services on the
       residential side, like changing the small light bulbs in the Princess
@@ -112,12 +112,12 @@ timeline:
       Vimont.
   - date1: 1994
     text: >-
-      "Installation of Cables R.P." signs a milestone contract with
-      Hydro-Quebec's head office for all computer cabling.
+      "R.P. Cables Installation" signs a milestone contract with Hydro-Quebec's
+      head office for all computer cabling.
   - date1: 1996
     text: >-
       Bell establishes Entourage Technology Solutions Inc and, as a result, the
-      contract with Installation of Cables R.P. is not renewed and ends in 1997.
+      contract with R.P. Cables Installation is not renewed and ends in 1997.
   - date1: 1997
     text: They do the cabling for the Frontenac Castle in Quebec City.
   - date1: 2000
@@ -132,9 +132,9 @@ timeline:
     text: They are assigned the cabling contract for the new Laval subway line.
   - date1: 2008
     text: >-
-      In 2000, "R.P. Cable Installation" experiences the inevitable decline in
+      In 2000, "R.P. Cables Installation" experiences the inevitable decline in
       traditional phone cabling contracts. In 2008, when founder Robert Paquette
-      dies, R.P. Cable Installation ceases operations completely. The remaining
+      dies, R.P. Cables Installation ceases operations completely. The remaining
       current projects are transferred to Planiselect Inc.
   - date1: 2017
     text: >-
