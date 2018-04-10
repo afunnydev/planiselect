@@ -1,5 +1,5 @@
 ---
-title: Planiselect | Installation de réseaux informatiques
+title: ' Planiselect | Installation of computer networks'
 identifiant: home
 description: >-
   Nous sommes des spécialistes en installation de réseaux informatiques :
