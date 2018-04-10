@@ -48,10 +48,10 @@ gallery:
 section2:
   btn1:
     link: contactPage
-    txt: Nous contacter
+    txt: Contact us
   btn2:
     link: clientsPage
-    txt: Nos clients
+    txt: Our clients
   description: >-
     Planiselect inc. a une fierté qui se traduit dans la qualité de nos travaux
     et la satisfaction de nos clients. Nous serions heureux de travailler avec
