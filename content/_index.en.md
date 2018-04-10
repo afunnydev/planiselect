@@ -7,14 +7,13 @@ description: >-
 i18nlanguage: fr
 slider:
   - btnlink: servicesPage
-    btntxt: Découvrez nos services
+    btntxt: Discover our services
     desc: >-
-      L’expérience et la connaissance acquises avec des années de travail,
-      jumelées à une formation régulière, confèrent à notre entreprise les
-      qualités de base pour planifier, installer et livrer un produit sur lequel
-      le client pourra se fier. 
+      The experience and knowledge gained from years of work, combined to
+      regular training, give our company the basic skills to plan, install and
+      deliver a product that the customer can rely on.
     img: /img/slider2.jpg
-    title: Nos services
+    title: 'Our services '
   - btnlink: cablagePage
     btntxt: En savoir plus
     desc: >-
