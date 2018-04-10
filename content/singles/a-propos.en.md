@@ -53,10 +53,10 @@ section2:
     link: clientsPage
     txt: Our clients
   description: >-
-    Planiselect inc. a une fierté qui se traduit dans la qualité de nos travaux
-    et la satisfaction de nos clients. Nous serions heureux de travailler avec
-    vous et vous faire bénéficier de notre expérience.
-  titre: Notre histoire
+    Planiselect Inc. has a pride that translates into the quality of our work
+    and the satisfaction of our customers. We would be happy to work with you
+    and make you benefit from our experience.
+  titre: Our story
   gallery:
     - image: /img/historique-planiselect1.jpeg
     - image: /img/historique-planiselect2.jpeg
