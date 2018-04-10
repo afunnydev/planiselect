@@ -1,62 +1,82 @@
 ---
-title: Équipements de réseautique
-description:   
-titre: Équipements de réseautique
-desc: Installation de la structure qui va accueillir tout le matériel du système de réseautique.
-identifiant: equipements-reseautique
-i18nlanguage: en
+title: Network equipement
+slug: network-equipment
+identifiant: network-equipment
+titre: Network equipement
 icon: /img/ico/service3.svg
+desc: >-
+  Installation of the structure that will host all the hardware of the network
+  system.
 image: /img/planification-et-installation-1.jpg
 banner: /img/planification-et-installation-9.png
-draft: false
+i18nlanguage: en
 section1:
-  title: Réseautique
+  title: Networking
   description: >-
-    Installation de la structure qui va accueillir tout le matériel du système de réseautique.
+    Installation of the structure that will host all the hardware of the network
+    system.
 section2:
   image1: /img/reseautique-1.jpg
   image2: /img/reseautique-2.jpg
-  image3: 
 section3:
-  title: Définitions
   col1: >-
-    **Cabinet (râteliers)**: Hammond, Sysracks, Panduit, Électron Métal et plus. Modèle autoportant, vissé au plancher ou fixé au mur. Neuf ou usagé. Une gamme complète de râtelier qui pourra satisfaire vos besoins en câblage structuré.
+    **Cabinet (racks)**: Hammond, Sysracks, Panduit, Electron Metal and more.
+    Self-supporting model, screwed to the floor or fixed to the wall. New or
+    used. A complete range of rack that will meet your structured cabling needs.
 
 
-    **Commutateurs (switch)**: Un commutateur réseau (en anglais switch), est un équipement qui relie plusieurs segments (câbles ou fibres) dans un réseau informatique et de télécommunication et qui permet de créer des circuits virtuels.
+    **Switches**: A network switch is a device that connects several segments
+    (cables or fibers) in a computer and telecommunication network and that
+    makes it possible to create virtual circuits.
 
 
-    **Panneau de Brassage (Patch panel)**: Le panneau de brassage, un item important dans tout réseau, permet une structure claire et organisée en plus d’être plus facile d’entretien.
+    **Patch panel**: The patch panel, an important item in any network, allows a
+    clear and organized structure in addition to being easier to maintain.
   col2: >-
-    **Cordon de Brassage (Patch cord)**: Ce petit lien de câblage qui se situe entre le panneau de Brassage et le commutateur, quand il est de la longueur appropriée, permet une organisation visuelle plus claire de l’assemblage dans le râtelier. Comme les câbles, les cordons sont disponibles en plusieurs couleurs. L’assignation des couleurs, quand il y plusieurs services utilisant les réseaux de câbles dans une bâtisse, promets une identification claire par le technicien et évite des coupure de services déplaisantes.
+    **Patch cord**: This small wiring link between the patch panel and the
+    switch, when of the proper length, allows a clearer visual organization of
+    the assembly in the rack. Like the cables, the cords are available in
+    several colors. The assignment of colors, when there are several services
+    using cable networks in a building, allows clear identification by the
+    technician and avoids unpleasant service interruptions.
 
 
-    **UPS (Uninterruptible Power Supply) ou Alimentation sans interruption**: Un élément important dans un réseau. Il sert à régulariser le courant et garder la charge sur des équipements sensibles ou qui doivent rester en fonction assez longtemps pour permettre une mise hors tension sécuritaire si la panne de courant doit durer plus longtemps. 
-
-
+    **UPS (Uninterruptible Power Supply)**: An important element in a network.
+    It is used to regulate the current and keep the load on sensitive equipment
+    or that must remain in operation long enough to allow a safe power off if
+    the power outage is to last longer.
+  title: Definitions
 section4:
   need: true
   title: Intercommunication
-  image: /img/intercom-planiselect.jpg
   description: >-
-    La clientèle principale pour les intercoms (ou interphone) sont les écoles. Planiselect Inc est heureux d’avoir plusieurs écoles et commissions scolaires à son actif. Nous travaillons exclusivement avec les produits TOA. La qualité de leurs produits nous permet des installations sans anicroches.
+    The main clientele for intercoms are schools. Planiselect Inc. is pleased to
+    have several schools and school boards to its credit. We work exclusively
+    with TOA products. The quality of their products allows us smooth
+    installations.
 
 
-    Lors d’installation dans des établissements neufs, les défis sont surtout liés aux contraintes de temps. Quand nous devons travailler dans une école existante, l’attention est plutôt portée à l’horaire des classes, aux restrictions même de la bâtisse et à la présence d’amiante. 
+    When installing in new establishments, the challenges are mainly related to
+    time constraints. When we have to work in an existing school, the attention
+    is rather focused on the class schedule, the restrictions of the building
+    and the presence of asbestos.
 
 
-    L’installation du système comprend généralement les éléments suivants:
+    The system installation usually includes the following elements:
 
 
-    - Interface de station
+    * Station interface
 
-    - Commutateurs 
+    * Switches
 
-    - Barres d’alimentation
+    * Power bars
 
-    - UPS (uninterrupted power supply)
+    * UPS (Uninterrupted Power Supply)
 
-    - Gestionnaire de câble
+    * Cable Manager
 
-    - Et plus selon les besoins du système
+    * And more according to the needs of the system
+  image: /img/intercom-planiselect.jpg
+draft: false
 ---
+
