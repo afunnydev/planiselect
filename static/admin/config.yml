@@ -416,7 +416,7 @@ collections:
       - {label: "Description SEO", name: "description", widget: "text", required: false}
       - {label: "Titre de la page", name: "titre", widget: "string"}
       - {label: "Image principale", name: "image", widget: "image" , required: false}
-      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
+      - {label: "Langue", name: "i18nlanguage", widget: "string", default: "fr"}
       - label: "Section 1"
         name: "section1"
         widget: "object"
