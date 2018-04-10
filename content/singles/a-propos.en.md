@@ -6,7 +6,7 @@ titre: Planiselect - Spécialistes en installation de réseaux informatiques
 slug: a-propos
 layout: a-propos
 image: null
-noindex: true
+i18nlanguage: en
 draft: false
 section1:
   titre: 40 ans de clients satisfaits

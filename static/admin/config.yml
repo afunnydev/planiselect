@@ -190,7 +190,7 @@ collections:
                     widget: "select"
                     options:
                       - { label: "Page d'accueil", value: "homePage" }
-                      - { label: "Page contact", value: "contactPagePage" }
+                      - { label: "Page contact", value: "contactPage" }
                       - { label: "Page services", value: "servicesPage" }
                       - { label: "Page articles", value: "articlesPage" }
                       - { label: "Page clients", value: "clientsPage" }
@@ -207,7 +207,7 @@ collections:
                     widget: "select"
                     options:
                       - { label: "Page d'accueil", value: "homePage" }
-                      - { label: "Page contact", value: "contactPagePage" }
+                      - { label: "Page contact", value: "contactPage" }
                       - { label: "Page services", value: "servicesPage" }
                       - { label: "Page articles", value: "articlesPage" }
                       - { label: "Page clients", value: "clientsPage" }
@@ -228,7 +228,7 @@ collections:
                     widget: "select"
                     options:
                       - { label: "Page d'accueil", value: "homePage" }
-                      - { label: "Page contact", value: "contactPagePage" }
+                      - { label: "Page contact", value: "contactPage" }
                       - { label: "Page services", value: "servicesPage" }
                       - { label: "Page articles", value: "articlesPage" }
                       - { label: "Page clients", value: "clientsPage" }
@@ -245,7 +245,7 @@ collections:
                     widget: "select"
                     options:
                       - { label: "Page d'accueil", value: "homePage" }
-                      - { label: "Page contact", value: "contactPagePage" }
+                      - { label: "Page contact", value: "contactPage" }
                       - { label: "Page services", value: "servicesPage" }
                       - { label: "Page articles", value: "articlesPage" }
                       - { label: "Page clients", value: "clientsPage" }
@@ -330,19 +330,163 @@ collections:
               - {label: "Logo", name: "logo", widget: "image", required: false}
               - {label: "Ordre", name: "weight", widget: "number", required: false}
 ### Pages
-  # - name: "services-fr" # Used in routes, e.g. /admin/collections/blog
-  #   label: "Services - FR" # Used in the UI
-  #   folder: "content/services" # The path to the folder where the documents are stored
-  #   slug: "{{identifiant}}"
-  #   extension: "md"
-  #   format: "yaml-frontmatter"
-  #   editor:
-  #     preview: true
-  #   create: true # Allow users to create new documents in this collection
-  #   filter: 
-  #     field: "i18nlanguage"
-  #     value: "fr"
-  #   fields:
+  - name: "page-accueil" # Used in routes, e.g. /admin/collections/blog
+    label: "Page d'accueil" # Used in the UI
+    folder: "content" # The path to the folder where the documents are stored
+    editor:
+      preview: true
+    create: false
+    filter: 
+      field: "identifiant"
+      value: "home"
+    fields:
+      - {label: "Titre SEO", name: "title", widget: "string"}
+      - {label: "Identifiant (utilisé à l'interne seulement pour identifier l'article)", name: "identifiant", default: "04-exemple-article", widget: "hidden"}
+      - {label: "Description SEO", name: "description", widget: "text", required: false}
+      - {label: "Langue", name: "i18nlanguage", widget: "string"}
+      - {label: "Image principale", name: "image", widget: "image" , required: false}
+      - label: "Bannière déroulante"
+        name: "slider"
+        widget: "list"
+        create: true
+        fields:
+          - {label: "Image", name: "img", widget: "image"}
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "desc", widget: "markdown"}
+          - {label: "Texte du bouton", name: "btntxt", widget: "string"}
+          - label: "Lien du bouton"
+            name: "btnlink"
+            widget: "select"
+            options:
+              - { label: "Page d'accueil", value: "homePage" }
+              - { label: "Page contact", value: "contactPage" }
+              - { label: "Page services", value: "servicesPage" }
+              - { label: "Page articles", value: "articlesPage" }
+              - { label: "Page clients", value: "clientsPage" }
+              - { label: "Page à propos", value: "aboutPage" }
+              - { label: "Page service - câblages", value: "cablagePage" }
+      - label: "Section À propos"
+        name: "about"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Sous-titre", name: "secondtitle", widget: "string"}
+          - {label: "Description", name: "desc", widget: "text"}
+          - {label: "Texte du CTA", name: "cta", widget: "string"}
+          - label: "Lien du bouton"
+            name: "btnlink"
+            widget: "select"
+            options:
+              - { label: "Page d'accueil", value: "homePage" }
+              - { label: "Page contact", value: "contactPage" }
+              - { label: "Page services", value: "servicesPage" }
+              - { label: "Page articles", value: "articlesPage" }
+              - { label: "Page clients", value: "clientsPage" }
+              - { label: "Page à propos", value: "aboutPage" }
+              - { label: "Page service - câblages", value: "cablagePage" }
+      - label: "Section Câblage"
+        name: "cablage"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+      - label: "Section Clients"
+        name: "clients"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+      - label: "Section Partenaires"
+        name: "partenaires"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Rendre l'article invisible?", name: "draft", widget: "boolean", required: false, default: false}
+  - name: "page-a-propos" # Used in routes, e.g. /admin/collections/blog
+    label: "Page À propos" # Used in the UI
+    folder: "content" # The path to the folder where the documents are stored
+    editor:
+      preview: true
+    create: false
+    filter: 
+      field: "layout"
+      value: "a-propos"
+    fields:
+      - {label: "Titre SEO", name: "title", widget: "string"}
+      - {label: "Lien interne (ce qui suit le https://www.planiselect/services)", name: "slug", widget: "string", default: "ceci-est-un-example", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+      - {label: "Layout", name: "layout", default: "04-exemple-article", widget: "hidden"}
+      - {label: "Description SEO", name: "description", widget: "text", required: false}
+      - {label: "Titre de la page", name: "titre", widget: "string"}
+      - {label: "Image principale", name: "image", widget: "image" , required: false}
+      - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
+      - label: "Section 1"
+        name: "section1"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Icônes"
+        name: "icons"
+        widget: "list"
+        create: "false"
+        fields:
+          - {label: "Icone", name: "icon", widget: "string"}
+          - {label: "Titre", name: "titre", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+      - label: "Gallerie 1"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+      - label: "Section - Notre histoire"
+        name: "section2"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+          - label: "Gallerie 1"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Bouton 1"
+            name: "btn1"
+            widget: "object"
+            fields:
+              - {label: "Texte du CTA", name: "txt", widget: "string"}
+              - label: "Lien du bouton"
+                name: "link"
+                widget: "select"
+                options:
+                  - { label: "Page d'accueil", value: "homePage" }
+                  - { label: "Page contact", value: "contactPage" }
+                  - { label: "Page services", value: "servicesPage" }
+                  - { label: "Page articles", value: "articlesPage" }
+                  - { label: "Page clients", value: "clientsPage" }
+                  - { label: "Page à propos", value: "aboutPage" }
+          - label: "Bouton 2"
+            name: "btn2"
+            widget: "object"
+            fields:
+              - {label: "Texte du CTA", name: "txt", widget: "string"}
+              - label: "Lien du bouton"
+                name: "link"
+                widget: "select"
+                options:
+                  - { label: "Page d'accueil", value: "homePage" }
+                  - { label: "Page contact", value: "contactPage" }
+                  - { label: "Page services", value: "servicesPage" }
+                  - { label: "Page articles", value: "articlesPage" }
+                  - { label: "Page clients", value: "clientsPage" }
+                  - { label: "Page à propos", value: "aboutPage" }
+      - label: "Ligne du temps"
+        name: "timeline"
+        widget: "list"
+        fields:
+          - {label: "Date 1", name: "date1", widget: "string"}
+          - {label: "Date 2", name: "date2", widget: "string", required: false}
+          - {label: "Description", name: "text", widget: "markdown"}
+      - {label: "Titre - Équipe", name: "titre3", widget: "string"}
+      - {label: "Titre - Partenaires", name: "titre4", widget: "string"}
+
   #         - name: frits
   #           label: "Frit's"
   #           widget: list
