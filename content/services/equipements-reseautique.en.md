@@ -50,32 +50,32 @@ section4:
   need: true
   title: Intercommunication
   description: >-
-    La clientèle principale pour les intercoms (ou interphone) sont les écoles.
-    Planiselect Inc est heureux d’avoir plusieurs écoles et commissions
-    scolaires à son actif. Nous travaillons exclusivement avec les produits TOA.
-    La qualité de leurs produits nous permet des installations sans anicroches.
+    The main clientele for intercoms are schools. Planiselect Inc. is pleased to
+    have several schools and school boards to its credit. We work exclusively
+    with TOA products. The quality of their products allows us smooth
+    installations.
 
 
-    Lors d’installation dans des établissements neufs, les défis sont surtout
-    liés aux contraintes de temps. Quand nous devons travailler dans une école
-    existante, l’attention est plutôt portée à l’horaire des classes, aux
-    restrictions même de la bâtisse et à la présence d’amiante. 
+    When installing in new establishments, the challenges are mainly related to
+    time constraints. When we have to work in an existing school, the attention
+    is rather focused on the class schedule, the restrictions of the building
+    and the presence of asbestos.
 
 
-    L’installation du système comprend généralement les éléments suivants:
+    The system installation usually includes the following elements:
 
 
-    - Interface de station
+    * Station interface
 
-    - Commutateurs 
+    * Switches
 
-    - Barres d’alimentation
+    * Power bars
 
-    - UPS (uninterrupted power supply)
+    * UPS (Uninterrupted Power Supply)
 
-    - Gestionnaire de câble
+    * Cable Manager
 
-    - Et plus selon les besoins du système
+    * And more according to the needs of the system
   image: /img/intercom-planiselect.jpg
 draft: false
 ---
