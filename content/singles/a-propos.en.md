@@ -69,17 +69,15 @@ section2:
 timeline:
   - date1: 1979
     text: >-
-      Bell Canada invite Robert Paquette à soumissionner pour un contrat de
-      câblage téléphonique. Il fonde **« Installation de Câbles R.P. »** et
-      obtient le contrat. Avec son fils, Alain Paquette, il fera le câblage
-      téléphonique pour la ville de Laval, où il s’installera par la suite sur
-      la rue Alexandre. Rapidement, la compagnie décroche le contrat pour l’Est
-      de Montréal, et ensuite le Centre-ville. Installation de Câbles R.P.
-      passera de 1 à 22 équipes d’installateurs de 1979 à 1989. Petit fait
-      inusité : leur contrat avec Bell va les amener à faire les services
-      d’appels du côté résidentiel, dont changer les petites ampoules dans les
-      téléphones Princesse. Il feront aussi l’entretien des cabines
-      téléphoniques.
+      Bell Canada invites Robert Paquette to bid for a phone cabling contract.
+      He founds "Installation of Cables R.P." and obtains the contract. With his
+      son, Alain Paquette, he will make phone cabling for the city of Laval,
+      where he will then settle on Alexandre Street. Soon, the company wins the
+      contract for East Montreal, and then downtown. Installation of Cables R.P.
+      will increase from 1 to 22 installation teams from 1979 to 1989. Fun fact:
+      their contract with Bell will lead them to make the call services on the
+      residential side, like changing the small light bulbs in the Princess
+      phones. They will also do the phone booths maintenance.
   - date1: Circa
     date2: 1981
     text: >-
