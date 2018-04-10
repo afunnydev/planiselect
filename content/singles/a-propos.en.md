@@ -95,17 +95,16 @@ timeline:
       They earn phone cabling contracts with companies like Incotel, Mitel and
       others in the same field.
   - date1: 1987
-    text: 'Ils occuperont une place d’affaire sur la rue le Corbusier '
+    text: They will occupy a business place on Le Corbusier Street.
   - date1: 1989
     text: >-
-      Alain Paquette, le fils, achète l’entreprise Planiselect de Ottawa. Michel
-      Gaudet, un des anciens propriétaires, restera avec la nouvelle
-      administration pendant quelques années afin de continuer le développement
-      dans la région d’Ottawa. C’est sous la bannière Planiselect Inc. qu’ils
-      commenceront les installations de câblage structuré. Ils signent des
-      contrats avec IBM pour l’installation de AS-400. Ils acquièrent
-      l’accréditation pour les produits IBM et continueront les installations
-      pour IBM jusqu’en 1990.
+      Alain Paquette, the son, buys Planiselect from Ottawa. Michel Gaudet, one
+      of the former owners, will remain with the new administration for a few
+      years to continue the development in the Ottawa area. It's under the
+      banner Planiselect Inc. that they will begin structured cabling
+      installations. They sign contracts with IBM for the installation of
+      AS-400. They acquire accreditation for IBM products and will continue to
+      install IBM until 1990.
   - date1: 1993
     text: >-
       Ils signent plusieurs contrats, entre autres avec Microtech (système
