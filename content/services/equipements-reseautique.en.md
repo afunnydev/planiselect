@@ -20,10 +20,9 @@ section2:
   image2: /img/reseautique-2.jpg
 section3:
   col1: >-
-    **Cabinet (râteliers)**: Hammond, Sysracks, Panduit, Électron Métal et plus.
-    Modèle autoportant, vissé au plancher ou fixé au mur. Neuf ou usagé. Une
-    gamme complète de râtelier qui pourra satisfaire vos besoins en câblage
-    structuré.
+    **Cabinet (racks)**: Hammond, Sysracks, Panduit, Electron Metal and more.
+    Self-supporting model, screwed to the floor or fixed to the wall. New or
+    used. A complete range of rack that will meet your structured cabling needs.
 
 
     **Commutateurs (switch)**: Un commutateur réseau (en anglais switch), est un
