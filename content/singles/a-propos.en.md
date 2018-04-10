@@ -132,10 +132,10 @@ timeline:
     text: They are assigned the cabling contract for the new Laval subway line.
   - date1: 2008
     text: >-
-      En 2000, « Installation de Câbles R.P. » subit le déclin continuel des
-      contrats de câblage téléphonique traditionnel. En 2008, quand le fondateur
-      Robert Paquette décède, Installation de Câbles R.P. cesse complètement ses
-      opérations. Le reste des projets en cours est transféré à Planiselect Inc.
+      In 2000, "R.P. Cable Installation" experiences the inevitable decline in
+      traditional phone cabling contracts. In 2008, when founder Robert Paquette
+      dies, R.P. Cable Installation ceases operations completely. The remaining
+      current projects are transferred to Planiselect Inc.
   - date1: 2017
     text: >-
       Aujourd’hui, Joël Paquette, le petit fils de Robert Paquette, administre
