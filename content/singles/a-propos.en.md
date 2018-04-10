@@ -148,7 +148,7 @@ timeline:
       Aujourd’hui, Joël Paquette, le petit fils de Robert Paquette, administre
       avec son père Alain la continuation des opérations de Planiselect Inc. Les
       certifications, les accréditations ainsi que les contrats se multiplient.
-titre3: Notre équipe d'expérience
-titre4: Nos partenaires
+titre3: Our experienced team
+titre4: Our partners
 ---
 
