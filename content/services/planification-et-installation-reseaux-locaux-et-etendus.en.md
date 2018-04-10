@@ -1,42 +1,45 @@
 ---
-title: Planification et installation de réseaux locaux et étendus
-description:  
-titre: Planification et installation de réseaux locaux et étendus
-desc: "Le réseau est de nos jours d'une importance capitale dans une entreprise. Laissez-nous vous guider parmi les différentes solutions qui s'offrent à vous."
-identifiant: planification-et-installation-reseaux-locaux-et-etendus
-i18nlanguage: en
+title: Planning and installation of local and wide area networks
+slug: planning-and-installation-of-local-and-wide-area-networks
+identifiant: planning-and-installation-of-local-and-wide-area-networks
+titre: Planning and installation of local and wide area networks
 icon: /img/ico/connected-devices.svg
+desc: >-
+  Nowadays, the network occupies a crucial place in a business. Let us guide you
+  through the different options available to you. 
 image: /img/planification-et-installation-7.jpg
 banner: /img/planification-et-installation-8.jpg
-draft: false
+i18nlanguage: en
 section1:
-  title: De l'élaboration à l'installation
+  title: From elaboration to installation
   description: >-
-    Nous parlons beaucoup de notre expérience et de la qualité de notre travail, mais au bout du compte, le tout doit fonctionner. Le réseau est souvent le cœur même d’une entreprise, surtout avec l’avènement du « sans-papier ». Les réseaux doivent être fiables à 100%. 
+    We talk a lot about our experience and the quality of our work, but at the
+    end of the day everything must run smoothly. The network is often the heart
+    of a business, especially with the advent of the "paperless". Networks must
+    be 100% reliable.
 
 
-    L’expérience et la connaissance acquises avec des années de travail, jumelées à une formation régulière, confèrent à notre entreprise les qualités de base pour planifier, installer et livrer un produit sur lequel le client pourra se fier. 
+    The experience and knowledge gained from years of work, combined with
+    regular training, give our company the basic skills to plan, install and
+    deliver a product that the customer can rely on.
 section2:
   image1: /img/planification-et-installation-5.png
   image2: /img/planification-et-installation-2.jpg
   image3: /img/planification-et-installation-3.jpg
 section3:
-  title: Certifications du manufacturier
   col1: >-
-    Il existe plusieurs options pour les réseaux locaux et étendus. Le choix final, adapté à chaque client, se fait principalement en fonction des besoins en terme de performance et du budget. Notre équipe s’assure de bien guider ses clients afin que le produit final installé réponde parfaitement aux attentes. 
+    There are several options for local and wide area networks. The final
+    choice, adapted to each client, is mainly based on the needs in terms of
+    performance and budget. Our team makes sure to guide its customers so that
+    the final installed product meets all expectations.
 
 
-    Toutes nos installations viennent avec une garantie du manufacturier, afin de vous assurer une paix d’esprit totale. Vous pouvez voir la liste de nos certifications du manufacturier à droite.
-  col2: >-
-    - Partenaire du programme certification SCCL de Leviton 
-    - Intégrateur certifié par Oasis 
-    - Intégrateur certifié par NCC 
-    - Revendeur autorisé à valeur ajoutée 3M Volition 
-    - Concepteur et distributeur agréé de système AMP Netconnect 
-    - Concepteur et distributeur agréé de système (Hubbell) programme de garantie MISSION CRITICAL 
-
+    All our installations come with a manufacturer's warranty, to ensure total
+    peace of mind. On the right is the list of our manufacturer certifications.
+  col2: "* Partner of Leviton's SCCL Certification Program - Oasis Certified Integrator\n  \\- NCC Certified Integrator - Authorized Added Value Reseller 3M Volition\L - Authorized AMP Netconnect System Designer and Distributor - Authorized System Designer and Distributor (Hubbell) MISSION CRITICAL Warranty Program"
+  title: Manufacturer certifications
 section4:
   need: false
-  title:
-  description:
+draft: false
 ---
+
