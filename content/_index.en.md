@@ -22,7 +22,7 @@ slider:
     img: /img/fibre-optique-2.jpg
     title: Our cablings
 about:
-  btnlink: ''
+  btnlink: contactPage
   cta: Interested in our services? Contact us now!
   desc: >-
     Discover our wide range of commercial services. Does your project require
@@ -30,11 +30,11 @@ about:
   secondtitle: ' Company specialized in installation and configuration of computer networks'
   title: About us
 cablage:
-  title: Nos services de câblage
+  title: Our cabling services
 clients:
-  title: Ils nous font confiance
+  title: They trusted us
 partenaires:
-  title: Nos nombreux partenaires
+  title: Our many partners
 draft: false
 ---
 
