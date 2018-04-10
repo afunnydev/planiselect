@@ -31,9 +31,7 @@
             <div class="row">
                 <div class="container">
                     <header class="no-top-padding">
-                        <h4>Privé et publique</h4>
-                        <p><strong>Services offerts:</strong> Câblage, Fibre optique, Télécom, Audio/Visuel</p>
-                        <p>Nos clients sont pour nous une opportunité de démontrer notre savoir faire, et nous obligent à relever les défis particuliers à chacun avec rigueur et passion. Plusieurs de nos clients nous font confiance depuis plus de 20 ans.</p>
+                        {{ .Params.prive | markdownify }}
                     </header>
                 </div>    
                 <div class="container logos">
@@ -52,9 +50,7 @@
             <div class="row">
                 <div class="container">
                     <header>
-                        <h4>Institutions d’enseignement</h4>
-                        <p><strong>Services offerts:</strong> Câblage, Fibre optique, Télécom, Audio/Visuel, Intercommunication</p>
-                        <p>Toujours soucieux de mettre en place des produits de bonne qualité et une installation du plus haut niveau, nous prenons au sérieux notre devoir envers l’utilisateur.</p>
+                        {{ .Params.institution | markdownify }}
                     </header>
                 </div>
                 <div class="container logos">

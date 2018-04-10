@@ -4,7 +4,7 @@ identifiant: home
 description: >-
   Nous sommes des spécialistes en installation de réseaux informatiques :
   câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique.
-i18nlanguage: fr
+i18nlanguage: en
 slider:
   - btnlink: servicesPage
     btntxt: Découvrez nos services
@@ -24,7 +24,7 @@ slider:
     img: /img/fibre-optique-2.jpg
     title: Nos câblages
 about:
-  btnlink: ''
+  link: contactPage
   cta: Intéressé par nos services? Contactez-nous maintenant!
   desc: >-
     Découvrez notre vaste gamme de services commerciaux. Votre projet requiert
