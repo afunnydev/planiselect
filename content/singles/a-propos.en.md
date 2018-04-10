@@ -81,8 +81,8 @@ timeline:
   - date1: Circa
     date2: 1981
     text: >-
-      Il débute une longue relation d’affaires avec la RIO pour le câblage. Ils
-      signent aussi des contrats avec la ville de Laval. 
+      He starts a long business relationship with the RIO for cabling. They also
+      sign contracts with the city of Laval.
   - date1: 1982
     text: >-
       L’expansion rapide de la compagnie les oblige à occuper des locaux sur
