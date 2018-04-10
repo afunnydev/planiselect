@@ -85,16 +85,15 @@ timeline:
       sign contracts with the city of Laval.
   - date1: 1982
     text: >-
-      L’expansion rapide de la compagnie les oblige à occuper des locaux sur
-      Rose de Lima et ensuite très rapidement sur la rue Godin dans le parc
-      Industriel.
+      The fast expansion of the company forces them to occupy premises on Rose
+      de Lima, and then very quickly on Godin Street in the Industrial Park.
   - date1: 1983
-    text: Ils aménagent sur la rue St-Nicholas. Ils y resteront environ 4 ans.
+    text: They move on St. Nicholas Street. They will stay there for about 4 years.
   - date1: Circa
     date2: 1986
     text: >-
-      Ils gagnent des contrats de câblage téléphonique avec des compagnies comme
-      Incotel, Mitel et autres dans le même domaine.  
+      They earn phone cabling contracts with companies like Incotel, Mitel and
+      others in the same field.
   - date1: 1987
     text: 'Ils occuperont une place d’affaire sur la rue le Corbusier '
   - date1: 1989
