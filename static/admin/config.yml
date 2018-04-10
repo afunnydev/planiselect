@@ -138,7 +138,7 @@ collections:
               - {label: "Google+", name: "googleplusurl", widget: "string", required: false}
               - {label: "Pinterest", name: "pinteresturl", widget: "string", required: false}
               - {label: "Vimeo", name: "vimeourl", widget: "string", required: false}
-              - {label: "Dribble", name: "dribbleurl, widget: "string", required: false}
+              - {label: "Dribble", name: "dribbleurl", widget: "string", required: false}
           - name: twitter
             label: Twitter
             widget: object
@@ -329,6 +329,20 @@ collections:
               - {label: "Nom", name: "name", widget: "string", required: false}
               - {label: "Logo", name: "logo", widget: "image", required: false}
               - {label: "Ordre", name: "weight", widget: "number", required: false}
+### Pages
+  # - name: "services-fr" # Used in routes, e.g. /admin/collections/blog
+  #   label: "Services - FR" # Used in the UI
+  #   folder: "content/services" # The path to the folder where the documents are stored
+  #   slug: "{{identifiant}}"
+  #   extension: "md"
+  #   format: "yaml-frontmatter"
+  #   editor:
+  #     preview: true
+  #   create: true # Allow users to create new documents in this collection
+  #   filter: 
+  #     field: "i18nlanguage"
+  #     value: "fr"
+  #   fields:
   #         - name: frits
   #           label: "Frit's"
   #           widget: list
