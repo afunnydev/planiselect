@@ -107,13 +107,13 @@ timeline:
       install IBM until 1990.
   - date1: 1993
     text: >-
-      Ils signent plusieurs contrats, entre autres avec Microtech (système
-      d’alarme). Ils changeront d’adresse de nouveau pour s’établir sur la rue
-      Industriel dans Vimont.  
+      They sign several contracts, among others with Microtech (alarm system).
+      They will change their address again to settle on Industriel Street in
+      Vimont.
   - date1: 1994
     text: >-
-      « Installation de Câbles R.P. » signe un contrat marquant avec la maison
-      mère de Hydro-Québec pour tout le câblage informatique.
+      "Installation of Cables R.P." signs a milestone contract with
+      Hydro-Quebec's head office for all computer cabling.
   - date1: 1996
     text: >-
       Bell fonde la Cie « Entourage Technology Solutions Inc » et, par le fait
