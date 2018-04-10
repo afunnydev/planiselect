@@ -116,15 +116,14 @@ timeline:
       Hydro-Quebec's head office for all computer cabling.
   - date1: 1996
     text: >-
-      Bell fonde la Cie « Entourage Technology Solutions Inc » et, par le fait
-      même, le contrat avec « Installations de Câbles R.P. » n’est pas renouvelé
-      et se termine en 1997.   
+      Bell establishes Entourage Technology Solutions Inc and, as a result, the
+      contract with Installation of Cables R.P. is not renewed and ends in 1997.
   - date1: 1997
-    text: 'Ils font le câblage pour le Château Frontenac à Québec.   '
+    text: They do the cabling for the Frontenac Castle in Quebec City.
   - date1: 2000
     text: >-
-      Ils établiront leur domicile permanent avec l’achat d’une bâtisse à leur
-      adresse actuelle, sur la rue Léo-Lacombe.  
+      They will establish their permanent home with the purchase of a building
+      at their current address on Léo-Lacombe Street.
   - date1: 2003
     text: >-
       Ils gagnent des clients comme le Château Montebello, l’Hôtel Reine
