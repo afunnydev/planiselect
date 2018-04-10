@@ -2,8 +2,8 @@
 title: ' Planiselect | Installation of computer networks'
 identifiant: home
 description: >-
-  Nous sommes des spécialistes en installation de réseaux informatiques :
-  câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique.
+  We are specialists in the installation of computer networks: category 5,
+  category 5e, category 6 structured cabling and optic fiber.
 i18nlanguage: fr
 slider:
   - btnlink: servicesPage
