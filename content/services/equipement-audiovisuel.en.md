@@ -1,38 +1,38 @@
 ---
-title: AV (Équipement audiovisuel)
-description:  
-titre: AV (Équipement audiovisuel) 
-desc: Nous proposons des systèmes fiables et évolués pour vous aider dans l'élaboration de vos projets audiovisuels.
-i18nlanguage: en
-identifiant: equipement-audiovisuel
+title: AV (Audiovisual equipment)
+slug: audiovisual-equipement
+identifiant: audiovisual-equipement
+titre: AV (Audiovisual equipment)
 icon: /img/ico/service5.svg
+desc: >
+  We offer reliable and advanced systems to help you in the planning of your
+  audiovisual projects
 image: /img/audiovisuel-2.jpg
 banner: /img/audiovisuel-banner.jpg
+i18nlanguage: en
 section1:
-  title: Vaste gamme de systèmes audiovisuels fiables
+  title: Wide range of reliable audiovisual systems
   description: >-
-    L’audiovisuel désigne à la fois les matériels, techniques et méthodes d'information, de communication ou d'enseignement associant le son et l'image. Voilà la définition offerte sur internet.
+    Audiovisual means both materials, techniques and methods of information,
+    communication or teaching associating sound and image. This is the
+    definition offered on the internet.
 
 
-    Notre gamme de produits audiovisuels saura combler toute demande. Si vous ne voyez pas vos produits préférés sur notre site, n’hésitez pas à nous contacter pour vous informer sur le produit dont vous avez besoin. Nous saurons vous aider à trouver ce qu’il faut. 
+    Our range of audiovisual products will satisfy any request. If you do not
+    see your favorite products on our website, don’t hesitate. We’ll be pleased
+    to inform you about the desired product, and will help you find what you
+    need.
 section2:
   image1: /img/audiovisuel-1.jpg
   image2: /img/audiovisuel-3.jpg
   image3: /img/audiovisuel-4.jpg
 section3:
-  title: Certifications et partenaires
   col1: >-
-    Au fil des années, Planiselect s'est bâti un réseau de partenaire de confiance, en plus d'aller chercher diverses certifications reconnues dans le domaine. 
-  col2: >-
-    - Partenaire du programme certification SCCL de Leviton 
-    - Intégrateur certifié par Oasis 
-    - Intégrateur certifié par NCC 
-    - Revendeur autorisé à valeur ajoutée 3M Volition 
-    - Concepteur et distributeur agréé de système AMP Netconnect 
-    - Concepteur et distributeur agréé de système (Hubbell) programme de garantie MISSION CRITICAL 
-
+    Over the years, Planiselect has built itself a network of trusted partners,
+    in addition to getting various certifications well recognized in the field.
+  col2: "* Partner of Leviton's SCCL Certification Program - Oasis Certified Integrator\L - NCC Certified Integrator - Authorized Added Value Reseller 3M Volition - Authorized AMP Netconnect System Designer and Distributor\L - Authorized System Designer and Distributor (Hubbell) MISSION CRITICAL Warranty Program"
+  title: Certifications and partners
 section4:
   need: false
-  title:
-  description:
 ---
+
