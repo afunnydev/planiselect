@@ -25,31 +25,26 @@ section3:
     used. A complete range of rack that will meet your structured cabling needs.
 
 
-    **Commutateurs (switch)**: Un commutateur réseau (en anglais switch), est un
-    équipement qui relie plusieurs segments (câbles ou fibres) dans un réseau
-    informatique et de télécommunication et qui permet de créer des circuits
-    virtuels.
+    **Switches**: A network switch is a device that connects several segments
+    (cables or fibers) in a computer and telecommunication network and that
+    makes it possible to create virtual circuits.
 
 
-    **Panneau de Brassage (Patch panel)**: Le panneau de brassage, un item
-    important dans tout réseau, permet une structure claire et organisée en plus
-    d’être plus facile d’entretien.
+    **Patch panel**: The patch panel, an important item in any network, allows a
+    clear and organized structure in addition to being easier to maintain.
   col2: >-
-    **Cordon de Brassage (Patch cord)**: Ce petit lien de câblage qui se situe
-    entre le panneau de Brassage et le commutateur, quand il est de la longueur
-    appropriée, permet une organisation visuelle plus claire de l’assemblage
-    dans le râtelier. Comme les câbles, les cordons sont disponibles en
-    plusieurs couleurs. L’assignation des couleurs, quand il y plusieurs
-    services utilisant les réseaux de câbles dans une bâtisse, promets une
-    identification claire par le technicien et évite des coupure de services
-    déplaisantes.
+    **Patch cord**: This small wiring link between the patch panel and the
+    switch, when of the proper length, allows a clearer visual organization of
+    the assembly in the rack. Like the cables, the cords are available in
+    several colors. The assignment of colors, when there are several services
+    using cable networks in a building, allows clear identification by the
+    technician and avoids unpleasant service interruptions.
 
 
-    **UPS (Uninterruptible Power Supply) ou Alimentation sans interruption**: Un
-    élément important dans un réseau. Il sert à régulariser le courant et garder
-    la charge sur des équipements sensibles ou qui doivent rester en fonction
-    assez longtemps pour permettre une mise hors tension sécuritaire si la panne
-    de courant doit durer plus longtemps. 
+    **UPS (Uninterruptible Power Supply)**: An important element in a network.
+    It is used to regulate the current and keep the load on sensitive equipment
+    or that must remain in operation long enough to allow a safe power off if
+    the power outage is to last longer.
   title: Definitions
 section4:
   need: true
