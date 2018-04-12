@@ -82,8 +82,8 @@
             <h3>{{.Params.cablage.title}}</h3>
         </header>
         <div class="row">
-            
-            {{ range .Site.Data.cablage.cablage }}
+            {{ if eq .Lang "fr" }}
+            {{ range .Site.Data.cablage.fr }}
             <div class="col-sm-4">
                 <div class="cables-box">
                     <div class="image-holder">
@@ -96,7 +96,23 @@
                 </div>
             </div>
             <!-- // cables box  -->
-            {{ end }}                                       
+            {{ end }}
+            {{ else if eq .Lang "en" }}
+            {{ range .Site.Data.cablage.en }}
+            <div class="col-sm-4">
+                <div class="cables-box">
+                    <div class="image-holder">
+                        <img src="{{.image}}" alt="" class="img-responsive">
+                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
+                    </div>
+                    <h4><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'>{{.nom}}</a></h4>
+                    <p>{{.description}}</p>
+                    <a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}' class="read-btn">{{ i18n "know_more" }}</a>
+                </div>
+            </div>
+            <!-- // cables box  -->
+            {{ end }}
+            {{ end }}                                      
 
         </div>
         <!-- // row  -->

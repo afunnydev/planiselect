@@ -21,10 +21,10 @@
                             <span class="subtitle">{{.Site.Data.globals.contact.en.subtitle}}</span>
                             {{ end }}
                         </header>
-                        <form action='{{ if eq .Lang "fr" }}/merci{{ else if eq .Lang "en" }}/en/thank-you{{end}}' netlify name="cta-contact-{{.Lang}}" role="form" method="post">
+                        <form action='{{ if eq .Lang "fr" }}/merci{{ else if eq .Lang "en" }}/en/thank-you{{end}}' netlify name="cta-contact-{{.Lang}}" role="form" method="post" class="contact-validate" id="contact-snippet-form">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <input type="text" name="first_name" placeholder='{{ i18n "first_name" }}*'>
+                                    <input type="text" name="first_name" placeholder='{{ i18n "first_name" }}*' required>
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="text" name="last_name" placeholder='{{ i18n "last_name" }}'>
@@ -34,7 +34,7 @@
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <input type="email" name="email" placeholder='{{ i18n "email" }}*'>
+                                    <input type="email" name="email" placeholder='{{ i18n "email" }}*' required>
                                 </div>
                                 <div class="col-sm-6">
                                     <input type="tel" name="phone" placeholder='{{ i18n "phone" }}'>
@@ -44,7 +44,7 @@
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <textarea name="message" id="" placeholder="Message*"></textarea>
+                                    <textarea name="message" id="" placeholder="Message*" required></textarea>
                                 </div>
                             </div>    
 

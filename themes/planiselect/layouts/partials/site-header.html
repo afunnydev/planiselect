@@ -22,7 +22,15 @@
             <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
             <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
             <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
-            <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>  
+            <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li> 
+            {{ if .Params.translationlink }}
+                {{ $link := .Params.translationlink }}
+                <li><a href='{{ $link | absURL }}' class="title lang">{{ if eq $.Lang "fr" }}EN{{ else if eq $.Lang "en" }}FR{{ end }}</a></li>
+            {{ else if .Translations }}
+                {{ range .Translations }}
+                <li><a href="{{.Permalink}}" class="title lang">{{ upper .Lang}}</a></li>
+                {{ end }}
+            {{ end }} 
 
         </ul>
         <!-- // ul  -->
@@ -127,7 +135,15 @@
                     <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
                     <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
                     <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
-                    <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li> 
+                    <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>
+                    {{ if .Params.translationlink }}
+                        {{ $link := .Params.translationlink }}
+                        <li><a href='{{ $link | absURL }}' class="title lang">{{ if eq $.Lang "fr" }}EN{{ else if eq $.Lang "en" }}FR{{ end }}</a></li>
+                    {{ else if .Translations }}
+                        {{ range .Translations }}
+                        <li><a href="{{.Permalink}}" class="title lang">{{ upper .Lang}}</a></li>
+                        {{ end }}
+                    {{ end }}  
 
                 </ul>
                   </div>

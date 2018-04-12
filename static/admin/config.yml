@@ -256,8 +256,16 @@ collections:
         file: "data/cablage.yml"
         description: "Cablage - Accueil"
         fields:
-          - name: cta
-            label: Colonne
+          - name: fr
+            label: Français
+            widget: list
+            fields:
+              - {label: "Titre", name: "nom", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Lien", name: "link", widget: "hidden", default: "about-intro"}
+          - name: en
+            label: Anglais
             widget: list
             fields:
               - {label: "Titre", name: "nom", widget: "string", required: false}

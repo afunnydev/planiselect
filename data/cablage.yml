@@ -1,4 +1,4 @@
-cablage:
+fr:
   - nom: Câblage informatique
     image: /img/drop1.jpg
     description: Connecter les ordinateurs et l'extérieur à l'aide d'un réseau filaire ou sans-fil
@@ -10,4 +10,17 @@ cablage:
   - nom: Fibre optique et fusion
     image: /img/fibre-optique.jpg
     description: La nouvelle norme dans l'industrie au niveau de la vitesse 
+    link: featured-main-content
+en:
+  - nom: Internal network
+    image: /img/drop1.jpg
+    description: Connect computers to the outside using a wired or wireless network
+    link: about-intro
+  - nom: Telephone cabling
+    image: /img/cablage-informatique-et-telephonique.jpg
+    description: High quality standard or IP phone systems
+    link: main-services-content
+  - nom: Optical fiber and fusion
+    image: /img/fibre-optique.jpg
+    description: The new industry standard regarding speed
     link: featured-main-content

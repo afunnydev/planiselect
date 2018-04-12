@@ -5,11 +5,16 @@
 //@prepros-prepend jquery.matchHeight.js
 //@prepros-prepend libs/hammer.min.js
 //@prepros-prepend wow.min.js
+//@prepros-prepend jquery-validate.min.js
+//@prepros-prepend messages_fr.js
+
 
 $(document).ready(function(){
 
   new WOW().init();
 
+  $("#contact-page-form").validate();
+  $("#contact-snippet-form").validate();
   // Remove placeholder
   $('input,textarea').focus(function(){
      $(this).data('placeholder',$(this).attr('placeholder'))

@@ -111,5 +111,15 @@
 		}
 	}
 }
+form.contact-validate {
+	input.error, textarea.error {
+		border-color: $red !important;
+	}
+	label.error {
+		margin-bottom: 10px;
+	    display: block;
+	    color: $red;
+	}
+}
 
 /*=====  End of 404 Page  ======*/

@@ -1,25 +1,30 @@
 equipe:
   - nom: Alain Paquette
+    nomen: Alain Paquette
     ordre: 1
     titre: Président
     titreen: President
     sex: male
   - nom: "Joël Paquette"
+    nomen: "Joël Paquette"
     ordre: 2
     titre: Vice-Président
     titreen: Vice-President
     sex: male
   - nom: Yahya Fares
+    nomen: Yahya Fares
     ordre: 3
     titre: Contrôleur
     titreen: Inspector
     sex: male
   - nom: Marguerite Howells
+    nomen: Marguerite Howells
     ordre: 4
     titre: Chargée de projet
     titreen: Project manager
     sex: female
   - nom: Éric Belmont
+    nomen: Éric Belmont
     ordre: 5
     titre: Directeur des ventes
     titreen: Sales director
