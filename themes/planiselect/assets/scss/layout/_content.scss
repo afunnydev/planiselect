@@ -111,6 +111,43 @@
 		}
 	}
 }
+#merci {
+	margin-top: 200px;
+	min-height: 300px;
+	font-size: 16px;
+    padding: 40px;
+    margin: auto;
+    max-width: 800px;
+	@include small-lap {
+		font-size: 15px;
+		margin-top: 160px;
+		min-height: 200px;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+		margin-top: 180px;
+		min-height: 200px;
+	}
+	@include breakpoint(tablet) {
+		margin-top: 190px;
+		font-size: 15px;
+		min-height: 200px;
+	}
+	@include breakpoint(phone) {
+		font-size: 14px;
+		min-height: 150px;
+		margin-top: 150px;
+	}
+	p {
+		letter-spacing: 1px;
+	    line-height: 25px;
+	    font-size: 16px;
+	    text-align: justify;
+		a {
+			color: $red;
+		}
+	}
+}
 form.contact-validate {
 	input.error, textarea.error {
 		border-color: $red !important;
