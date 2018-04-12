@@ -69,85 +69,78 @@ section2:
 timeline:
   - date1: 1979
     text: >-
-      Bell Canada invite Robert Paquette à soumissionner pour un contrat de
-      câblage téléphonique. Il fonde **« Installation de Câbles R.P. »** et
-      obtient le contrat. Avec son fils, Alain Paquette, il fera le câblage
-      téléphonique pour la ville de Laval, où il s’installera par la suite sur
-      la rue Alexandre. Rapidement, la compagnie décroche le contrat pour l’Est
-      de Montréal, et ensuite le Centre-ville. Installation de Câbles R.P.
-      passera de 1 à 22 équipes d’installateurs de 1979 à 1989. Petit fait
-      inusité : leur contrat avec Bell va les amener à faire les services
-      d’appels du côté résidentiel, dont changer les petites ampoules dans les
-      téléphones Princesse. Il feront aussi l’entretien des cabines
-      téléphoniques.
+      Bell Canada invites Robert Paquette to bid for a phone cabling contract.
+      He founds "R.P. Cables Installation" and obtains the contract. With his
+      son, Alain Paquette, he will make phone cabling for the city of Laval,
+      where he will then settle on Alexandre Street. Soon, the company wins the
+      contract for East Montreal, and then downtown. R.P. Cables Installation
+      will increase from 1 to 22 installation teams from 1979 to 1989. Fun fact:
+      their contract with Bell will lead them to make the call services on the
+      residential side, like changing the small light bulbs in the Princess
+      phones. They will also do the phone booths maintenance.
   - date1: Circa
     date2: 1981
     text: >-
-      Il débute une longue relation d’affaires avec la RIO pour le câblage. Ils
-      signent aussi des contrats avec la ville de Laval. 
+      He starts a long business relationship with the RIO for cabling. They also
+      sign contracts with the city of Laval.
   - date1: 1982
     text: >-
-      L’expansion rapide de la compagnie les oblige à occuper des locaux sur
-      Rose de Lima et ensuite très rapidement sur la rue Godin dans le parc
-      Industriel.
+      The fast expansion of the company forces them to occupy premises on Rose
+      de Lima, and then very quickly on Godin Street in the Industrial Park.
   - date1: 1983
-    text: Ils aménagent sur la rue St-Nicholas. Ils y resteront environ 4 ans.
+    text: They move on St. Nicholas Street. They will stay there for about 4 years.
   - date1: Circa
     date2: 1986
     text: >-
-      Ils gagnent des contrats de câblage téléphonique avec des compagnies comme
-      Incotel, Mitel et autres dans le même domaine.  
+      They earn phone cabling contracts with companies like Incotel, Mitel and
+      others in the same field.
   - date1: 1987
-    text: 'Ils occuperont une place d’affaire sur la rue le Corbusier '
+    text: They will occupy a business place on Le Corbusier Street.
   - date1: 1989
     text: >-
-      Alain Paquette, le fils, achète l’entreprise Planiselect de Ottawa. Michel
-      Gaudet, un des anciens propriétaires, restera avec la nouvelle
-      administration pendant quelques années afin de continuer le développement
-      dans la région d’Ottawa. C’est sous la bannière Planiselect Inc. qu’ils
-      commenceront les installations de câblage structuré. Ils signent des
-      contrats avec IBM pour l’installation de AS-400. Ils acquièrent
-      l’accréditation pour les produits IBM et continueront les installations
-      pour IBM jusqu’en 1990.
+      Alain Paquette, the son, buys Planiselect from Ottawa. Michel Gaudet, one
+      of the former owners, will remain with the new administration for a few
+      years to continue the development in the Ottawa area. It's under the
+      banner Planiselect Inc. that they will begin structured cabling
+      installations. They sign contracts with IBM for the installation of
+      AS-400. They acquire accreditation for IBM products and will continue to
+      install IBM until 1990.
   - date1: 1993
     text: >-
-      Ils signent plusieurs contrats, entre autres avec Microtech (système
-      d’alarme). Ils changeront d’adresse de nouveau pour s’établir sur la rue
-      Industriel dans Vimont.  
+      They sign several contracts, among others with Microtech (alarm system).
+      They will change their address again to settle on Industriel Street in
+      Vimont.
   - date1: 1994
     text: >-
-      « Installation de Câbles R.P. » signe un contrat marquant avec la maison
-      mère de Hydro-Québec pour tout le câblage informatique.
+      "R.P. Cables Installation" signs a milestone contract with Hydro-Quebec's
+      head office for all computer cabling.
   - date1: 1996
     text: >-
-      Bell fonde la Cie « Entourage Technology Solutions Inc » et, par le fait
-      même, le contrat avec « Installations de Câbles R.P. » n’est pas renouvelé
-      et se termine en 1997.   
+      Bell establishes Entourage Technology Solutions Inc and, as a result, the
+      contract with R.P. Cables Installation is not renewed and ends in 1997.
   - date1: 1997
-    text: 'Ils font le câblage pour le Château Frontenac à Québec.   '
+    text: They do the cabling for the Frontenac Castle in Quebec City.
   - date1: 2000
     text: >-
-      Ils établiront leur domicile permanent avec l’achat d’une bâtisse à leur
-      adresse actuelle, sur la rue Léo-Lacombe.  
+      They will establish their permanent home with the purchase of a building
+      at their current address on Léo-Lacombe Street.
   - date1: 2003
     text: >-
-      Ils gagnent des clients comme le Château Montebello, l’Hôtel Reine
-      Élizabeth et la Commission des Normes du travail.  
+      They win clients such as Château Montebello, Hôtel Reine Élizabeth and the
+      Commission des Normes du Travail.
   - date1: 2005
-    text: >-
-      Ils se voient attribuer le contrat de câblage pour la nouvelle ligne du
-      Métro de Laval.
+    text: They are assigned the cabling contract for the new Laval subway line.
   - date1: 2008
     text: >-
-      En 2000, « Installation de Câbles R.P. » subit le déclin continuel des
-      contrats de câblage téléphonique traditionnel. En 2008, quand le fondateur
-      Robert Paquette décède, Installation de Câbles R.P. cesse complètement ses
-      opérations. Le reste des projets en cours est transféré à Planiselect Inc.
+      In 2000, "R.P. Cables Installation" experiences the inevitable decline in
+      traditional phone cabling contracts. In 2008, when founder Robert Paquette
+      dies, R.P. Cables Installation ceases operations completely. The remaining
+      current projects are transferred to Planiselect Inc.
   - date1: 2017
     text: >-
-      Aujourd’hui, Joël Paquette, le petit fils de Robert Paquette, administre
-      avec son père Alain la continuation des opérations de Planiselect Inc. Les
-      certifications, les accréditations ainsi que les contrats se multiplient.
+      Today, Joël Paquette, grandson of Robert Paquette, administers with his
+      father Alain the continuation of the operations of Planiselect Inc.
+      Certifications, accreditations as well as contracts multiply.
 titre3: Our experienced team
 titre4: Our partners
 ---
