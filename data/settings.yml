@@ -32,8 +32,10 @@ heures:
 phone: "(450) 663-3973"
 mphone: '+14506633973'
 email: "info@planiselect.com"
-sitedescription: "Nous sommes des spécialistes en installation de réseaux informatiques : câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique."
-sitetitle: "Planiselect | Installation de réseaux informatiques"
+sitedescription: "Planiselect est votre expert en installation de réseaux informatiques dans la ville de Laval, QC. Nous nous spécialisons en cablâge et en équipement de réseautique."
+sitedescriptionen: "Planiselect is your expert in computer networks installation in the city of Laval in Quebec. We specialize in cabling and networking equipment."
+sitetitle: "Installation de cablage et réseaux informatiques à Laval"
+sitetitleen: "Cabling and computer network installation in Laval"
 titleautocompletion: true
 defaultsocialimage: "/img/logo-planiselect-1.jpg"
 removefromexternalsearch: false

@@ -13,7 +13,8 @@ slider:
       regular training, give our company the basic skills to plan, install and
       deliver a product that the customer can rely on.
     img: /img/slider2.jpg
-    title: 'Our services '
+    title: 'Computer Networks Installation And Configuration Specialized Business'
+    weight: 
   - btnlink: cablagePage
     btntxt: Know more
     desc: >-
@@ -21,6 +22,7 @@ slider:
       team is an asset in achieving your goals.
     img: /img/fibre-optique-2.jpg
     title: Our cablings
+    weight: 
 about:
   link: contactPage
   cta: Interested in our services? Contact us now!
