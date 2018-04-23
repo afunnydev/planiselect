@@ -1,7 +1,8 @@
 ---
-title: Planning and installation of local and wide area networks
+title: Local and wide area networks planification and installation in Laval
+description: "Planiselect is your reference for all local and wide networks planification and installation."
 slug: planning-and-installation-of-local-and-wide-area-networks
-identifiant: planning-and-installation-of-local-and-wide-area-networks
+identifiant: planification-et-installation-reseaux-locaux-et-etendus
 titre: Planning and installation of local and wide area networks
 icon: /img/ico/connected-devices.svg
 desc: >-
@@ -9,6 +10,7 @@ desc: >-
   through the different options available to you. 
 image: /img/planification-et-installation-7.jpg
 banner: /img/planification-et-installation-8.jpg
+slidertitle: "Local And Wide Area Networks Planification And Installation"
 i18nlanguage: en
 section1:
   title: From elaboration to installation

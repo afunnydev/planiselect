@@ -1,10 +1,10 @@
 ---
-title: Clients
+title: Our Clients
 slug: clients
 layout: clients
-description: This is a desc
-titre: Our clients
-subtitle: 'They trusted us, and you?'
+description: "Whether you need a computer network for your house or your business, contact Planiselect in Laval."
+titre: Our Clients
+subtitle: 'They Trust Us. Do You?'
 image: /img/contact.jpg
 i18nlanguage: en
 prive: >-

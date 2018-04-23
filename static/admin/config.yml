@@ -33,6 +33,7 @@ collections:
       - {label: "Description courte du service", name: "desc", widget: "text"}
       - {label: "Image principale", name: "image", widget: "image" , required: false}
       - {label: "Bannière", name: "banner", widget: "image" , required: false}
+      - {label: "Titre dans la bannière", name: "slidertitle", widget: "text"}
       - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "fr"}
       - label: "Section 1"
         name: "section1"
@@ -85,6 +86,7 @@ collections:
       - {label: "Description courte du service", name: "desc", widget: "text"}
       - {label: "Image principale", name: "image", widget: "image" , required: false}
       - {label: "Bannière", name: "banner", widget: "image" , required: false}
+      - {label: "Titre dans la bannière", name: "slidertitle", widget: "text"}
       - {label: "Langue", name: "i18nlanguage", widget: "hidden", default: "en"}
       - label: "Section 1"
         name: "section1"
@@ -362,6 +364,7 @@ collections:
           - {label: "Titre", name: "title", widget: "string"}
           - {label: "Description", name: "desc", widget: "markdown"}
           - {label: "Texte du bouton", name: "btntxt", widget: "string"}
+          - {label: "Ordre", name: "weight", widget: "number"}
           - label: "Lien du bouton"
             name: "btnlink"
             widget: "select"

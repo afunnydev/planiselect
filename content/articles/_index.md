@@ -1,7 +1,7 @@
 ---
-title: This is a title
+title: Blogue
 description: >-
-  This is a desc
+  Le blogue Planiselect est là pour vous faire bénéficier de l'expertise Planiselect gratuitement.
 image: /img/blog.jpg
 titre: Blogue
 subtitle: Nos articles récents

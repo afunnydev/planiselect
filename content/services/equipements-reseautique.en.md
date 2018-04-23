@@ -1,5 +1,6 @@
 ---
-title: Network equipement
+title: Network equipment installation in Laval
+description: "For an efficient network, let Planiselect install your network equipment."
 slug: network-equipment
 identifiant: network-equipment
 titre: Network equipement
@@ -9,6 +10,7 @@ desc: >-
   system.
 image: /img/planification-et-installation-1.jpg
 banner: /img/planification-et-installation-9.png
+slidertitle: "Professional Network Equipment Installation"
 i18nlanguage: en
 section1:
   title: Networking

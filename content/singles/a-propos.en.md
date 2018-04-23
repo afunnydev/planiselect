@@ -1,9 +1,9 @@
 ---
-title: About us
+title: About Us
 slug: about-us
 layout: a-propos
-description: This is a desc
-titre: Planiselect - Specialists in computer network installation
+description: "Strong of 40 years of experience and satisfied customers, Planiselect is the reference in terms of computer network installation in Laval."
+titre: Computer Network Installation Specialists
 image: /img/about.jpg
 i18nlanguage: en
 section1:

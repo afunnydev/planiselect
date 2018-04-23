@@ -206,25 +206,26 @@
                 .slider-content {
                     @include centre(both);
                     background:$white;
-                    max-width: 800px;
+                    max-width: 1000px;
+                    width: 100%;
                     padding:25px;
                     background:none;
                     text-align: center;
                     @include small-lap {
                         padding:30px;
-                        max-width: 550px;
+                        max-width: 900px;
                     }
                     @include breakpoint(laptop) {
-                        width: 600px;
+                        width: 850px;
                     }
                     @include breakpoint(tablet) {
-                        width: 550px;
+                        width: 650px;
                     }
                     @include breakpoint(phone) {
                         width: 100%;
                     }
                     .title {
-                        font-size: 3.3em;
+                        font-size: 2.5em;
                         color:$blue;
                         display: block;
                         font-family: $font-heading;

@@ -15,7 +15,7 @@ slider:
     btnlink: servicesPage
     weight: 1
   - img: /img/fibre-optique-2.jpg
-    title: Nos câblages
+    title: Services diversifiés et professionnels de câblage
     desc: >-
       Que ce soit pour du câblage téléphonique, informatique ou de fibre optique, l'expérience de notre équipe est un atout dans l'atteinte de vos objectifs.
     btntxt: En savoir plus
@@ -23,8 +23,8 @@ slider:
     weight: 2
 about:
   title: À propos
-  secondtitle: Entreprise spécialisée en installation et configuration de réseaux informatiques
-  desc: Découvrez notre vaste gamme de services commerciaux. Votre projet requiert une expertise particulière? Ne cherchez plus!
+  secondtitle: Découvrez notre vaste gamme de services commerciaux
+  desc: Votre projet requiert une expertise particulière? Ne cherchez plus!
   cta: Intéressé par nos services? Contactez-nous maintenant!
   link: contactPage
 cablage:

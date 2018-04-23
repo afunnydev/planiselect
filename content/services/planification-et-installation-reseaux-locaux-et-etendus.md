@@ -1,6 +1,6 @@
 ---
-title: Planification et installation de réseaux locaux et étendus
-description:  
+title: Planification et installation de réseaux locaux et étendus à Laval
+description: "Planiselect est votre référence pour toute planification installation de réseaux locaux et étendus."
 titre: Planification et installation de réseaux locaux et étendus
 desc: "Le réseau est de nos jours d'une importance capitale dans une entreprise. Laissez-nous vous guider parmi les différentes solutions qui s'offrent à vous."
 identifiant: planification-et-installation-reseaux-locaux-et-etendus
@@ -8,6 +8,7 @@ i18nlanguage: fr
 icon: /img/ico/connected-devices.svg
 image: /img/planification-et-installation-7.jpg
 banner: /img/planification-et-installation-8.jpg
+slidertitle: "Planification et installation de réseaux locaux et étendus"
 draft: false
 section1:
   title: De l'élaboration à l'installation

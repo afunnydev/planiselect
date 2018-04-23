@@ -1,5 +1,6 @@
 ---
-title: AV (Audiovisual equipment)
+title: Audiovisual equipment installation and sale in Laval
+description: "Planiselect offers you all sorts of audiovisual equipment so that you can capture quality images and sounds."
 slug: audiovisual-equipement
 identifiant: audiovisual-equipement
 titre: AV (Audiovisual equipment)
@@ -9,6 +10,7 @@ desc: >
   audiovisual projects
 image: /img/audiovisuel-2.jpg
 banner: /img/audiovisuel-banner.jpg
+slidertitle: "Certified Audiovisual Products Offered By Planiselect"
 i18nlanguage: en
 section1:
   title: Wide range of reliable audiovisual systems

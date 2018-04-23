@@ -1,6 +1,6 @@
 ---
-title: Équipements de réseautique
-description:   
+title: "Installation de l'équipement de système de réseautique à Laval"
+description: "Pour une réseautique efficace, laissez Planiselect installer l'équipement de réseautique." 
 titre: Équipements de réseautique
 desc: Installation de la structure qui va accueillir tout le matériel du système de réseautique.
 identifiant: equipements-reseautique
@@ -8,6 +8,7 @@ i18nlanguage: fr
 icon: /img/ico/service3.svg
 image: /img/planification-et-installation-1.jpg
 banner: /img/planification-et-installation-9.png
+slidertitle: "Installation d'équipement réseautique"
 draft: false
 section1:
   title: Réseautique

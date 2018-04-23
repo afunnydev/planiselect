@@ -1,9 +1,9 @@
 ---
-title: Clients
+title: "Nos clients"
 description: >-
-  This is a desc
+  Que vous ayez besoin d'une installation de réseaux informatiques pour la maison ou pour votre entreprise, contactez Planiselect à Laval.
 titre: Nos clients
-subtitle: Ils nous ont fait confiance, et vous?
+subtitle: Ils ont confiance en nous. Et vous?
 slug: clients
 layout: clients
 image: /img/contact.jpg

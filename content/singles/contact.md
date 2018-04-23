@@ -1,7 +1,7 @@
 ---
-title: Contact
+title: Contactez-nous
 description: >-
-  This is a desc
+  Pour trouver, contacter ou connaitre les heures d'ouverture de Planiselect.
 titre: Nous contacter
 subtitle: "Vous avez un projet en tête?"
 slug: contact

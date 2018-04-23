@@ -1,5 +1,6 @@
 ---
-title: Cabling
+title: "Internal cabling installation and sale in Laval"
+description: "For all internal networks, you can count on Planiselect for cabling installation."
 slug: cabling
 identifiant: cabling
 titre: Cabling
@@ -7,6 +8,7 @@ icon: /img/ico/connector-wire.svg
 desc: 'Discover our services of computer, phone and fiber optic cabling.'
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
+slidertitle: "Certified Leviton And Hublon Cabling Installation And Sale By Planiselect"
 i18nlanguage: en
 section1:
   title: Data processing

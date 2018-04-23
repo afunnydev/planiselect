@@ -1,6 +1,6 @@
 ---
-title: "Câblage"
-description:
+title: "Vente et installation de cablâge interne à Laval"
+description: "Pour tous vos réseaux internes, comptez sur Planiselect pour l'installation de câblage."
 titre: Câblage
 identifiant: cablage
 desc: Découvrez nos services de câblage informatique, téléphonique et de fibre optique.
@@ -9,6 +9,7 @@ i18nlanguage: fr
 icon: /img/ico/connector-wire.svg
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
+slidertitle: "Vente et installation de câblage certifiées Leviton et Hublon"
 section1:
   title: Informatique
   description: >-

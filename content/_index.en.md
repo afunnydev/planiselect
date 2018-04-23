@@ -14,22 +14,21 @@ slider:
       deliver a product that the customer can rely on.
     img: /img/slider2.jpg
     title: 'Computer Networks Installation And Configuration Specialized Business'
-    weight: 
+    weight: 1
   - btnlink: cablagePage
     btntxt: Know more
     desc: >-
       Whether for phone, computer or optic fiber cabling, the experience of our
       team is an asset in achieving your goals.
     img: /img/fibre-optique-2.jpg
-    title: Our cablings
-    weight: 
+    title: Professional cabling services
+    weight: 2
 about:
   link: contactPage
-  cta: Interested in our services? Contact us now!
+  cta: Interested in our experience? Contact us now!
   desc: >-
-    Discover our wide range of commercial services. Does your project require
-    special expertise? Don't search anymore!
-  secondtitle: 'Company specialized in installation and configuration of computer networks'
+    Does your project require special expertise? Don't search anymore!
+  secondtitle: 'Discover our wide range of commercial services'
   title: About us
 cablage:
   title: Our cabling services

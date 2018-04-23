@@ -1,8 +1,8 @@
 ---
 title: À propos
 description: >-
-  This is a desc
-titre: Planiselect - Spécialistes en installation de réseaux informatiques
+  Fort de 40 ans d'expérience et de clients satisfaits, Planiselect est la référence en termes d'installation de réseaux informatiques à Laval
+titre: Spécialistes en installation de réseaux informatiques
 slug: a-propos
 layout: a-propos
 image: null

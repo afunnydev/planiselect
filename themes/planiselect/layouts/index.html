@@ -10,7 +10,11 @@
             <div class="slider-caption">
                 <div class="container">
                     <div class="slider-content" data-animation="fadeIn" data-delay="0.3s">
-                        <span class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </span>
+                        {{ if eq .weight 1 }}
+                        <h1 class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </h1>
+                        {{ else }}
+                        <h2 class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </h2>
+                        {{ end }}
                         <p data-animation="fadeInUp" data-delay="0.2s">{{.desc}}</p>
                         <a href='{{ $.Scratch.Get $link }}' class="cta-btn" data-animation="fadeInUp" data-delay="0.7s">{{ .btntxt }}</a>
                     </div>
