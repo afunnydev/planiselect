@@ -13,13 +13,13 @@
 
         <div id="services-listing">
             <div class="row">
-                {{ range where $.Site.RegularPages "Type" "services"}}
+                {{ range .Pages}}
                 <div class="col-md-6 col-sm-6">
                     <a href="{{.Permalink}}">
                         <div class="services-box">
                             <div class="content">
                                 <div class="image-holder">
-                                    <img srcset="{{.Params.icon}}"  alt="" class="svg">
+                                    <img srcset="{{.Params.icon}}"  alt="" class="svg" style="display: none;">
                                 </div>
                                 <!-- // image holder  -->
                                 <h4>{{.Params.titre}}</h4>

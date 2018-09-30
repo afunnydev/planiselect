@@ -29,15 +29,13 @@ section3:
 
     Toutes nos installations viennent avec une garantie du manufacturier, afin de vous assurer une paix d’esprit totale. Vous pouvez voir la liste de nos certifications du manufacturier à droite.
   col2: >-
-    - Partenaire du programme certification SCCL de Leviton 
-    - Intégrateur certifié par Oasis 
-    - Intégrateur certifié par NCC 
-    - Revendeur autorisé à valeur ajoutée 3M Volition 
-    - Concepteur et distributeur agréé de système AMP Netconnect 
-    - Concepteur et distributeur agréé de système (Hubbell) programme de garantie MISSION CRITICAL 
+    * LEVITON : niveau Atlas
 
-section4:
-  need: false
-  title:
-  description:
+    * TOA (intercommunication)
+
+    * HUBBELL
+
+    * Travail en milieu d’amiante
+
+    * Milieu à accès restreint
 ---

@@ -29,6 +29,7 @@ section2:
   image2: /img/planification-et-installation-2.jpg
   image3: /img/planification-et-installation-3.jpg
 section3:
+  title: Manufacturer certifications
   col1: >-
     There are several options for local and wide area networks. The final
     choice, adapted to each client, is mainly based on the needs in terms of
@@ -38,10 +39,15 @@ section3:
 
     All our installations come with a manufacturer's warranty, to ensure total
     peace of mind. On the right is the list of our manufacturer certifications.
-  col2: "* Partner of Leviton's SCCL Certification Program - Oasis Certified Integrator\n  \\- NCC Certified Integrator - Authorized Added Value Reseller 3M Volition\L - Authorized AMP Netconnect System Designer and Distributor - Authorized System Designer and Distributor (Hubbell) MISSION CRITICAL Warranty Program"
-  title: Manufacturer certifications
-section4:
-  need: false
-draft: false
+  col2: >-
+    * LEVITON : Atlas level
+
+    * TOA (intercommunication)
+
+    * HUBBELL
+
+    * Asbestos Safety Training
+
+    * Restricted access areas
 ---
 

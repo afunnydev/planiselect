@@ -1,11 +1,10 @@
 ---
-title: "Internal cabling installation and sale in Laval"
-description: "For all internal networks, you can count on Planiselect for cabling installation."
-slug: cabling
-identifiant: cabling
-titre: Cabling
+title: "Internal cabling, fiber and IP telephony installation and sale in Laval"
+description: "For all internal networks, you can count on Planiselect for cabling, fiber and IP telephony installation."
+slug: cabling-fiber-ip-telephony
+titre: Cabling, fiber and IP telephony
 icon: /img/ico/connector-wire.svg
-desc: 'Discover our services of computer, phone and fiber optic cabling.'
+desc: 'Discover our services of computer, IP telephony and fiber optic cabling.'
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
 slidertitle: "Certified Leviton And Hublon Cabling Installation And Sale By Planiselect"
@@ -32,19 +31,40 @@ section3:
   col1: >-
     Often, computer and telephone cabling services go hand in hand. That's why
     we also offer quality phone wiring facilities.
+
+
+    ![Mitel](/img/mitel-logo.png) ![Grandstream](/img/grandstream-logo.png) ![Digium](/img/digium-logo.png)
+
+
+    ![Snom](/img/snom-logo.png) ![Yealink](/img/yealink-logo.png) ![Algo](/img/algo-logo.png)
   col2: >-
     Standard telephone systems use the same type of installation as structured
     cabling. On the other hand, IP telephony has the advantage of going through
     the structured cabling network, generally reserved for Data.
+
+
+    ![Polycom](/img/polycom-logo.png) ![Jabra](/img/jabra-logo.png) ![Plantronics](/img/plantronics-logo.png)
+
+
+    ![Audiocodes](/img/audiocodes-logo.png) ![Asterisk](/img/asterisk-logo.png)
   title: Standard telephony and IP
 section4:
-  need: true
   title: Optical fiber and fusion
   description: >-
     Singlemode, multimode, 6 strands and more, fiber is a must. With the
     ever-increasing demands of our customers, fiber has become a standard that
     is increasingly accessible and used. We make sure to stay ahead of our field
     and offer unbeatable expertise in fiber optic and fusion installations.
+
+
+    We offer a wide range of products to our clients:
+
+
+    * Fiber Optic products :  SFP, SFP+, WDM, CWDM, XFP, MUX/DMUX)
+
+    * Patch Cables :  SFP+/QSFP+ ACTIF ET PASSIF
+
+    * Compatible with CISCO, HP, AVAYA, BROCADE etc.
   image: /img/fibre-optique-2.jpg
 ---
 

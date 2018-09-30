@@ -8,7 +8,7 @@
 
         <div class="caption">
             <div class="container">
-                <img srcset="{{.Params.icon}}"  alt="" class="svg">
+                <img srcset="{{.Params.icon}}"  alt="" class="svg" style="display: none;">
                 <h1>{{.Params.titre}}</h1>
             </div>
         </div>
@@ -48,14 +48,14 @@
 
                     <div class="col-md-12">
 
-                        <img class="img-responsive small-image" alt="" src="{{.Params.section2.image2}}" />
+                        <img class="img-responsive small-image" alt="" src="/quart{{.Params.section2.image2}}" />
 
                     </div>
                     <!--// md 12 -->
                     {{ with .Params.section2.image3 }}
                     <div class="col-md-12">
 
-                        <img class="img-responsive small-image" alt="" src="{{- . -}}" />
+                        <img class="img-responsive small-image" alt="" src="/quart{{- . -}}" />
 
                     </div>
                     <!--// md 12 -->
@@ -72,42 +72,51 @@
     <!--// container -->
 </div>
 <!--// gallery section -->
-
+{{ if .Params.section3.title }}
 {{- partial "site/bottomcta.html" . -}}
+{{ end }}
 
+{{ with .Params.section3 }}
 <div id="main-services-content">
     <div class="container">
         <header>
-            <h3>{{.Params.section3.title}}</h3>
+            <h3>{{.title}}</h3>
         </header>
         <div class="row">
             <div class="col-md-6">
-                {{.Params.section3.col1 | markdownify}}
+                {{.col1 | markdownify}}
             </div>
             <div class="col-md-6">
-                {{.Params.section3.col2 | markdownify}}
+                {{.col2 | markdownify}}
             </div>
         </div>
         <!-- .row  -->
     </div>
     <!-- // container  -->
 </div>
+{{ end }}
 <!-- // serives content  -->
-{{ if .Params.section4.need }}
+{{ with .Params.section4 }}
 <div id="featured-main-content">
     <div class="container">
         <div class="row">
             
             <div class="col-md-6">
                 <div class="image-holder">
-                    <img src="{{.Params.section4.image}}" alt="" class="img-responsive">
+                    <img src="/half{{.image}}" alt="" class="img-responsive">
                 </div>
+                {{ with .certifications }}
+                <div class="content">
+                    <h4>Certifications</h4>
+                    {{ . | markdownify }}
+                </div>
+                {{ end }}
             </div>
             <!-- // iamge holder  -->
             <div class="col-md-6">
                 <div class="content">
-                    <h4>{{.Params.section4.title}}</h4>
-                    {{.Params.section4.description | markdownify}}
+                    <h4>{{.title}}</h4>
+                    {{.description | markdownify}}
                 </div>
             </div>
             <!-- // content  -->
@@ -127,14 +136,14 @@
         </header>
 
         <div id="other-services-slider">
-            {{ $identifiant := .Params.identifiant }}
-            {{ range where $.Site.RegularPages "Type" "services"}}
-            {{ if not (eq .Params.identifiant $identifiant) }}
+            {{ $identifiant := .UniqueID }}
+            {{ range (shuffle (where $.Site.RegularPages "Type" "services"))}}
+            {{ if not (eq .UniqueID $identifiant) }}
             <div class="item">
                 <div class="services-box">
                     <div class="image-holder">
                         <a href="{{.Permalink}}">
-                            <img src="{{.Params.image}}" alt="" class="img-responsive">
+                            <img src="/half{{.Params.image}}" alt="" class="img-responsive">
                             <div class="caption">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </div>

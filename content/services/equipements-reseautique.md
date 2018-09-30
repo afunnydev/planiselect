@@ -1,9 +1,10 @@
 ---
-title: "Installation de l'équipement de système de réseautique à Laval"
-description: "Pour une réseautique efficace, laissez Planiselect installer l'équipement de réseautique." 
-titre: Équipements de réseautique
-desc: Installation de la structure qui va accueillir tout le matériel du système de réseautique.
-identifiant: equipements-reseautique
+title: "Installation de l'équipement de système de réseautique et d'intercommunication à Laval"
+description: "Pour une réseautique efficace, laissez Planiselect mettre en place un système stable et durable." 
+titre: Équipements de réseautique et intercommunication
+desc: Installation de la structure qui va accueillir tout le matériel du système de réseautique et d'intercommunication.
+identifiant: equipements-reseautique-et-intercommunication
+slug: equipements-reseautique-et-intercommunication
 i18nlanguage: fr
 icon: /img/ico/service3.svg
 image: /img/planification-et-installation-1.jpg
@@ -33,14 +34,14 @@ section3:
 
 
     **UPS (Uninterruptible Power Supply) ou Alimentation sans interruption**: Un élément important dans un réseau. Il sert à régulariser le courant et garder la charge sur des équipements sensibles ou qui doivent rester en fonction assez longtemps pour permettre une mise hors tension sécuritaire si la panne de courant doit durer plus longtemps. 
-
-
 section4:
-  need: true
   title: Intercommunication
   image: /img/intercom-planiselect.jpg
   description: >-
-    La clientèle principale pour les intercoms (ou interphone) sont les écoles. Planiselect Inc est heureux d’avoir plusieurs écoles et commissions scolaires à son actif. Nous travaillons exclusivement avec les produits TOA. La qualité de leurs produits nous permet des installations sans anicroches.
+    La clientèle principale pour les intercoms (ou interphone) sont les écoles. Planiselect Inc est heureux d’avoir plusieurs écoles et commissions scolaires à son actif. Nous travaillons exclusivement avec les produits TOA. La qualité de leurs produits nous permet des installations sans anicroches. **Planiselect est certifié TOA.**
+
+
+    <div class="logo-certified"><img src="/quart/img/toa-logo.png" alt="TOA"></div>
 
 
     Lors d’installation dans des établissements neufs, les défis sont surtout liés aux contraintes de temps. Quand nous devons travailler dans une école existante, l’attention est plutôt portée à l’horaire des classes, aux restrictions même de la bâtisse et à la présence d’amiante. 
@@ -49,15 +50,11 @@ section4:
     L’installation du système comprend généralement les éléments suivants:
 
 
-    - Interface de station
-
-    - Commutateurs 
-
-    - Barres d’alimentation
-
-    - UPS (uninterrupted power supply)
-
-    - Gestionnaire de câble
-
-    - Et plus selon les besoins du système
+    * Système d’intercommunication TOA
+    
+    * Système d’intercommunication IP Astérisk
+    
+    * Système d’intercommunication de Porte VOIP
+    
+    * Système d’HORLOGE IP
 ---

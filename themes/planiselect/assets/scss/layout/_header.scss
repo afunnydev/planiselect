@@ -171,6 +171,16 @@
     @include breakpoint(phone-xs) {
         font-size: 13px;
     }
+    #hero-slider {
+        .slider-caption {
+            display: none;
+        }
+        &.slick-initialized {
+            .slider-caption {
+                display: block !important;
+            }
+        }
+    }
     .hero-slide {
         position: relative;
         .overlay {
@@ -438,6 +448,7 @@
             margin-bottom: 20px;
             width: 60px;
             max-height: 64px;
+            display: inline;
             * {
                 stroke:$red;
             }
@@ -448,6 +459,10 @@
             rect.fil1 {
                 fill: none;
                 stroke: none;
+            }
+            path.st2 {
+                stroke: $red;
+                fill: $red;
             }
         }
         h2 {

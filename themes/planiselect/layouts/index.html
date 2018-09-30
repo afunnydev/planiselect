@@ -55,7 +55,7 @@
                     {{ if eq .Parent.Params.identifiant "services" }}
                     <div class="service-box">
                         <a href="{{.Permalink}}">
-                            <img srcset="{{.Params.icon}}"  alt="" class="svg">
+                            <img srcset="{{.Params.icon}}"  alt="" class="svg" style="display: none;">
                             <h6>{{.Params.titre}}</h6>
                         </a>
                     </div>
@@ -132,7 +132,8 @@
         </header>
 
         <div class="row">
-            {{ range sort .Site.Data.clients.clients "weight" "asce" }}
+            {{ if eq $.Lang "fr" }}
+            {{ range sort .Site.Data.clients.clients.fr "weight" "asce" }}
             <div class="col-md-6">
                 <div class="client-box">
                     <div class="image-holder">
@@ -156,6 +157,33 @@
                 </div>
             </div>
             <!-- // client box  -->
+            {{ end }}
+            {{ else if eq $.Lang "en" }}
+            {{ range sort .Site.Data.clients.clients.en "weight" "asce" }}
+            <div class="col-md-6">
+                <div class="client-box">
+                    <div class="image-holder">
+                        <img src="{{.img}}" alt="" class="img-responsive">
+                        <div class="overlay">
+                            <a href='{{ $.Scratch.Get "clientsPage" }}' class="read-btn">{{ i18n "clients" }}</a>
+                        </div>
+                        
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">{{.name}}</span>
+                        <span class="service-label">{{ i18n "service_offered" 1 }} :</span>
+                        <span class="value">{{.services}}</span>
+                        <div class="service-label">Description:</div>
+                        <p>{{.desc}}</p>
+
+                    </div>
+                    <!-- // content  -->
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- // client box  -->
+            {{ end }}
             {{ end }}
 
         </div>

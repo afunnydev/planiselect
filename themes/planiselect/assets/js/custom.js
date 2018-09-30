@@ -449,7 +449,7 @@ $('.menu-btn').click(function(){
       arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
       firstItem = document.querySelector(".timeline li:first-child"),
       lastItem = document.querySelector(".timeline li:last-child"),
-      xScrolling = 280,
+      xScrolling = 600,
       disabledClass = "disabled";
 
   // START
@@ -566,7 +566,7 @@ $('.menu-btn').click(function(){
     });
   }
   if (timeline) {
-    timeline.style.transform = "translateX(-2200px)";
+    timeline.style.transform = "translateX(-1800px)";
     setBtnState(arrowPrev, false);
     setBtnState(arrowNext);
   }

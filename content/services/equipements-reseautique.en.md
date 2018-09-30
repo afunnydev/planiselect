@@ -1,13 +1,13 @@
 ---
-title: Network equipment installation in Laval
-description: "For an efficient network, let Planiselect install your network equipment."
-slug: network-equipment
-identifiant: network-equipment
-titre: Network equipement
+title: Network equipment and intercom installation in Laval
+description: "For an efficient network, let Planiselect install your network equipment or your intercom."
+slug: network-equipment-and-intercom
+identifiant: network-equipment-and-intercom
+titre: Network equipement and intercom
 icon: /img/ico/service3.svg
 desc: >-
   Installation of the structure that will host all the hardware of the network
-  system.
+  system and intercom.
 image: /img/planification-et-installation-1.jpg
 banner: /img/planification-et-installation-9.png
 slidertitle: "Professional Network Equipment Installation"
@@ -49,13 +49,15 @@ section3:
     the power outage is to last longer.
   title: Definitions
 section4:
-  need: true
   title: Intercommunication
   description: >-
     The main clientele for intercoms are schools. Planiselect Inc. is pleased to
     have several schools and school boards to its credit. We work exclusively
     with TOA products. The quality of their products allows us smooth
-    installations.
+    installations. **Planiselect is TOA certified.**
+
+
+    <div class="logo-certified"><img src="/quart/img/toa-logo.png" alt="TOA"></div>
 
 
     When installing in new establishments, the challenges are mainly related to
@@ -67,17 +69,13 @@ section4:
     The system installation usually includes the following elements:
 
 
-    * Station interface
-
-    * Switches
-
-    * Power bars
-
-    * UPS (Uninterrupted Power Supply)
-
-    * Cable Manager
-
-    * And more according to the needs of the system
+    * TOA Intercom system
+    
+    * Asterisk IP Intercom system
+    
+    * VOIP Door Intercom system
+    
+    * IP CLOCK system
   image: /img/intercom-planiselect.jpg
 draft: false
 ---

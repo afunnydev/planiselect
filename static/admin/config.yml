@@ -51,18 +51,19 @@ collections:
       - label: "Section 3"
         name: "section3"
         widget: "object"
+        required: false
         fields:
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Texte - Colonne gauche", name: "col1", widget: "markdown"} 
-          - {label: "Texte - Colonne droite", name: "col2", widget: "markdown"} 
+          - {label: "Titre", name: "title", widget: "string", required: false}
+          - {label: "Texte - Colonne gauche", name: "col1", widget: "markdown", required: false} 
+          - {label: "Texte - Colonne droite", name: "col2", widget: "markdown", required: false} 
       - label: "Section 4"
         name: "section4"
         widget: "object"
+        required: false
         fields:
-          - {label: "En avez-vous besoin?", name: "need", widget: "boolean", required: false, default: false}
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Image", name: "image", widget: "image" , required: false}
-          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Titre", name: "title", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Rendre l'article invisible?", name: "draft", widget: "boolean", required: false, default: false}
   - name: "services-en" # Used in routes, e.g. /admin/collections/blog
     label: "Services - EN" # Used in the UI
@@ -104,18 +105,19 @@ collections:
       - label: "Section 3"
         name: "section3"
         widget: "object"
+        required: false
         fields:
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Texte - Colonne gauche", name: "col1", widget: "markdown"} 
-          - {label: "Texte - Colonne droite", name: "col2", widget: "markdown"} 
+          - {label: "Titre", name: "title", widget: "string", required: false}
+          - {label: "Texte - Colonne gauche", name: "col1", widget: "markdown", required: false} 
+          - {label: "Texte - Colonne droite", name: "col2", widget: "markdown", required: false} 
       - label: "Section 4"
         name: "section4"
         widget: "object"
+        required: false
         fields:
-          - {label: "En avez-vous besoin?", name: "need", widget: "boolean", required: false, default: false}
-          - {label: "Titre", name: "title", widget: "string"}
-          - {label: "Image", name: "image", widget: "image" , required: false}
-          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Titre", name: "title", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Rendre l'article invisible?", name: "draft", widget: "boolean", required: false, default: false}
 ### SETTINGS
   - name: "autres"

@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const imagemin = require("gulp-imagemin");
 const imageresize = require('gulp-image-resize');
 const parallel = require("concurrent-transform");
+var newer = require('gulp-newer');
 var runSequence = require('run-sequence');
 var del = require('del');
 var exec = require('child_process').exec;
@@ -13,22 +14,15 @@ const imagehalf = 1024;
 const imagequart = 600;
 const imagethumb = 80;
 
-// clean images from dir
-gulp.task("clean-image", function(){
-  return del([
-    'themes/planiselect/static/quart/**/*',
-    'themes/planiselect/static/half/**/*',
-    'themes/planiselect/static/thumb/**/*',
-    'themes/planiselect/static/xl/**/*',
-    'themes/planiselect/static/img/*',
-    // we don't want to clean this file though so we negate the pattern
-    '!themes/planiselect/static/img/ico'
-  ]);
-});
 // resize and optimize images
 gulp.task("image-resize", () => {
-  return gulp.src("themes/planiselect/source-images/*.{jpg,png,jpeg,gif}")
-    .pipe(imagemin())
+  return gulp.src("themes/planiselect/source-images/*.{jpg,png,jpeg,JPG,gif}")
+    .pipe(newer("themes/planiselect/static/img"))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ]))
     .pipe(imageresize({ width: imagexl}))
     .pipe(gulp.dest("themes/planiselect/static/xl/img"))
     .pipe(imageresize({ width: imagefull }))
@@ -52,19 +46,11 @@ gulp.task("hugo", function (cb) {
 
 // watching images and resizing
 gulp.task("watch", function() {
-  gulp.watch('themes/planiselect/source-images/*.{jpg,png,jpeg,gif}', function(){ runSequence('clean-image', 'image-resize') });
-});
-
-// watching images and resizing
-gulp.task("dev",  function(callback) {
-  runSequence('clean-image',
-              'image-resize',
-              'watch');
+  gulp.watch('themes/planiselect/source-images/*.{jpg,png,jpeg,JPG,gif}', function(){ runSequence('image-resize') });
 });
 
 // optimizing images and calling hugo for production
 gulp.task("prod",  function(callback) {
-  runSequence('clean-image',
-              'image-resize',
+  runSequence('image-resize',
               'hugo');
 });

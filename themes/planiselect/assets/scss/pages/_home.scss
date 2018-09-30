@@ -154,7 +154,7 @@
 			background:$red;
 			position: relative;
 			padding:0px;
-			width: 66.6666%;
+			width: 33.333%;
 			&:hover {
 				background:$red-light;
 				h6 {
@@ -359,11 +359,11 @@
 				width: 100%;
 			}
 			img {
-				height: 350px;
+				height: 400px;
 				object-fit: cover;
 				width: 100%;
 				@include breakpoint(laptop) {
-					height: 320px;
+					height: 420px;
 				}
 				@include breakpoint(phone) {
 					height: 320px;
@@ -408,12 +408,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		.content {
 			float: right;
 			width: 50%;
-			height: 350px;
+			height: 400px;
 			background:#eff2f3;
 			padding:25px;
 			padding-top: 50px;
 			@include breakpoint(laptop) {
-				height: 320px;
+				height: 420px;
 			}
 			@include breakpoint(phone) {
 				float: none;
@@ -503,17 +503,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		    	padding:25px;
 		    	height: 140px;
 		    }
-		    &:hover {
-		    	img {
-		    		opacity: 1;
-		    		filter: grayscale(0%);
-		    	}
-		    }
+		    // &:hover {
+		    // 	img {
+		    // 		opacity: 0.3;
+		    // 		filter: grayscale(100%);
+		    // 	}
+		    // }
 		    img {
 		    	@include centre(both);
     			max-width: 180px;	
-    			filter: grayscale(100%);
-    			opacity: 0.3;	
+    			filter: grayscale(0%);
+    			opacity: 1;	
     			@include breakpoint(tablet) {
     				max-width: 140px;
     			}    	

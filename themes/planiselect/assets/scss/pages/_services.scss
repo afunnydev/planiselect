@@ -169,6 +169,10 @@
 						fill: none;
 						stroke: none;
 					}
+					path.st2 {
+		                stroke: $red;
+		                fill: $red;
+		            }
 				}
 			}
 			h4 {
@@ -289,6 +293,12 @@
 	p {
 		@include regular-text;
 		margin-bottom: 30px;
+	}
+	img {
+		max-width: 33%;
+		padding: 0px 10px;
+		display: inline-block;
+		height: auto;
 	}
 	ul {
 		margin-bottom: 20px;
@@ -505,6 +515,15 @@
 		p {
 			@include regular-text;
 			margin-bottom: 30px;
+		}
+	}
+	.logo-certified {
+		text-align: center;
+		margin-bottom: 20px;
+		img {
+			max-height: 110px;
+			width: auto;
+			margin: auto;
 		}
 	}
 	ul {

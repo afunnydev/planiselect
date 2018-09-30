@@ -32,9 +32,16 @@ section3:
   col1: >-
     Over the years, Planiselect has built itself a network of trusted partners,
     in addition to getting various certifications well recognized in the field.
-  col2: "* Partner of Leviton's SCCL Certification Program - Oasis Certified Integrator\L - NCC Certified Integrator - Authorized Added Value Reseller 3M Volition - Authorized AMP Netconnect System Designer and Distributor\L - Authorized System Designer and Distributor (Hubbell) MISSION CRITICAL Warranty Program"
+  col2: >-
+    * LEVITON : Atlas level
+    
+    * TOA (intercommunication)
+    
+    * HUBBELL
+    
+    * Asbestos Safety Training
+    
+    * Restricted access areas
   title: Certifications and partners
-section4:
-  need: false
 ---
 

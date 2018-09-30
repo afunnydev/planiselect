@@ -40,7 +40,7 @@
             <div class="col-sm-3">
                 <div class="vision-box">
                     <div class="image-holder">
-                        <img srcset="{{.icon}}"  alt="" class="svg">
+                        <img srcset="{{.icon}}"  alt="" class="svg" style="display: none;">
                     </div>
                     <!-- // image holder  -->
                     <div class="content">
@@ -79,72 +79,71 @@
 <!-- // about gallery  -->
 
 <div id="story">
+    <div class="row">
+        <header>
+            <h5>{{ .Params.section2.titre }}</h5>
+        </header>
+        <section class="timeline">
+            <ol>
+                {{ range $i, $e := .Params.timeline}}
+                <li class="{{ if $e.crushed }}crushed{{ end }}{{ if $e.grouped }} grouped{{ end }}">
+                    <div class="time-content opened">
+                    {{ if $e.date1 }}<time>{{$e.date1}}{{ with $e.date2}}<br>{{.}}{{end}}</time>{{ end }}
+                        <div class="overflowed">
+                           <p class="text">{{$e.text | markdownify}}</p> 
+                        </div>
+                    </div>
+                </li>
+                {{ end }}
+                <li></li>
+            </ol>
+
+            <div class="arrows">
+                <button class="arrow arrow__prev disabled" disabled>
+                    <img src="/img/ico/arrow-left-green.svg" alt="prev timeline arrow">
+                </button>
+                <button class="arrow arrow__next">
+                    <img src="/img/ico/arrow-right-green.svg" alt="next timeline arrow">
+                </button>
+            </div>
+        </section>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                
-            <header>
-                <h5>{{ .Params.section2.titre }}</h5>
-            </header>
-
-            <section class="timeline">
-                <ol>
-                    {{ range $i, $e := .Params.timeline}}
-                    <li class="{{ if $e.crushed }}crushed{{ end }}{{ if $e.grouped }} grouped{{ end }}">
-                        <div class="time-content opened">
-                        {{ if $e.date1 }}<time>{{$e.date1}}{{ with $e.date2}}<br>{{.}}{{end}}</time>{{ end }}
-                            <div class="overflowed">
-                               <p class="text">{{$e.text | markdownify}}</p> 
-                            </div>
+                <div id="about-gallery" style="margin-bottom: 30px;">
+                    <div class="row no-gutter">
+                        {{ range .Params.section2.gallery }}
+                        <div class="col-sm-3">
+                            <div class="image-holder">
+                                <a data-fancybox="images" href="{{.image}}">
+                                <img src="{{.image}}" alt="" class="img-responsive">
+                                <div class="caption">
+                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                </div>
+                                <!-- // caption  -->
+                                </a>                                
+                            </div>                    
                         </div>
-                    </li>
-                    {{ end }}
-                    <li></li>
-                </ol>
-
-                <div class="arrows">
-                    <button class="arrow arrow__prev disabled" disabled>
-                        <img src="/img/ico/arrow-left-green.svg" alt="prev timeline arrow">
-                    </button>
-                    <button class="arrow arrow__next">
-                        <img src="/img/ico/arrow-right-green.svg" alt="next timeline arrow">
-                    </button>
-                </div>
-            </section>
-
-            <div id="about-gallery" style="margin-bottom: 30px;">
-                <div class="row no-gutter">
-                    {{ range .Params.section2.gallery }}
-                    <div class="col-sm-3">
-                        <div class="image-holder">
-                            <a data-fancybox="images" href="{{.image}}">
-                            <img src="{{.image}}" alt="" class="img-responsive">
-                            <div class="caption">
-                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                            </div>
-                            <!-- // caption  -->
-                            </a>                                
-                        </div>                    
+                        <!-- // col  -->
+                        {{ end }}
                     </div>
-                    <!-- // col  -->
-                    {{ end }}
+                    <!-- // row  -->
                 </div>
-                <!-- // row  -->
-            </div>
-            <!-- // about gallery  -->
+                <!-- // about gallery  -->
 
-            <footer>
-                <p>{{.Params.section2.description}}</p>
-                {{ with .Params.section2.btn1}}
-                {{ $link1 := .link }}
-                <a href='{{ $.Scratch.Get $link1 }}' class="meet-btn">{{.txt}}</a>
-                {{ end }}
-                {{ with .Params.section2.btn2}}
-                {{ $link2 := .link }}
-                <a href='{{ $.Scratch.Get $link2 }}' class="clients-btn">{{.txt}}</a>
-                {{ end }}
-            </footer>
-            <!-- // footer  -->
+                <footer>
+                    <p>{{.Params.section2.description}}</p>
+                    {{ with .Params.section2.btn1}}
+                    {{ $link1 := .link }}
+                    <a href='{{ $.Scratch.Get $link1 }}' class="meet-btn">{{.txt}}</a>
+                    {{ end }}
+                    {{ with .Params.section2.btn2}}
+                    {{ $link2 := .link }}
+                    <a href='{{ $.Scratch.Get $link2 }}' class="clients-btn">{{.txt}}</a>
+                    {{ end }}
+                </footer>
+                <!-- // footer  -->
 
             </div>
         </div>
