@@ -30,18 +30,12 @@ section3:
     Souvent, les services de câblage informatique et téléphonique vont de paire. C’est pourquoi nous offrons également des installations de câblage téléphonique de qualité.
 
 
-    ![Mitel](/img/mitel-logo.png) ![Grandstream](/img/grandstream-logo.png) ![Digium](/img/digium-logo.png)
-
-
-    ![Snom](/img/snom-logo.png) ![Yealink](/img/yealink-logo.png) ![Algo](/img/algo-logo.png)
+    ![Mitel](/quart/img/mitel-logo.png) ![Grandstream](/quart/img/grandstream-logo.png) ![Digium](/quart/img/digium-logo.png) ![Snom](/quart/img/snom-logo.png) ![Yealink](/quart/img/yealink-logo.png) ![Algo](/quart/img/algo-logo.png)
   col2: >-
     Les systèmes téléphoniques standards utilisent le même type d’installation que celui du câblage structuré. En contrepartie, la téléphonie IP a l’avantage de passer par le réseau de câblage structuré, généralement réservé au Data.
 
 
-    ![Polycom](/img/polycom-logo.png) ![Jabra](/img/jabra-logo.png) ![Plantronics](/img/plantronics-logo.png)
-
-
-    ![Audiocodes](/img/audiocodes-logo.png) ![Asterisk](/img/asterisk-logo.png)
+    ![Polycom](/quart/img/polycom-logo.png) ![Jabra](/quart/img/jabra-logo.jpg) ![Plantronics](/quart/img/plantronics-logo.png) ![Audiocodes](/quart/img/audiocodes-logo.png) ![Asterisk](/quart/img/asterisk-logo.png)
 section4:
   title: Fibre optique et fusion
   image: /img/fibre-optique-2.jpg

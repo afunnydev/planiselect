@@ -33,20 +33,14 @@ section3:
     we also offer quality phone wiring facilities.
 
 
-    ![Mitel](/img/mitel-logo.png) ![Grandstream](/img/grandstream-logo.png) ![Digium](/img/digium-logo.png)
-
-
-    ![Snom](/img/snom-logo.png) ![Yealink](/img/yealink-logo.png) ![Algo](/img/algo-logo.png)
+    ![Mitel](/quart/img/mitel-logo.png) ![Grandstream](/quart/img/grandstream-logo.png) ![Digium](/quart/img/digium-logo.png) ![Snom](/quart/img/snom-logo.png) ![Yealink](/quart/img/yealink-logo.png) ![Algo](/quart/img/algo-logo.png)
   col2: >-
     Standard telephone systems use the same type of installation as structured
     cabling. On the other hand, IP telephony has the advantage of going through
     the structured cabling network, generally reserved for Data.
 
 
-    ![Polycom](/img/polycom-logo.png) ![Jabra](/img/jabra-logo.png) ![Plantronics](/img/plantronics-logo.png)
-
-
-    ![Audiocodes](/img/audiocodes-logo.png) ![Asterisk](/img/asterisk-logo.png)
+    ![Polycom](/quart/img/polycom-logo.png) ![Jabra](/quart/img/jabra-logo.jpg) ![Plantronics](/quart/img/plantronics-logo.png) ![Audiocodes](/quart/img/audiocodes-logo.png) ![Asterisk](/quart/img/asterisk-logo.png)
   title: Standard telephony and IP
 section4:
   title: Optical fiber and fusion

@@ -295,10 +295,20 @@
 		margin-bottom: 30px;
 	}
 	img {
-		max-width: 33%;
-		padding: 0px 10px;
+		max-width: 32%;
+		padding: 10px 10px;
 		display: inline-block;
 		height: auto;
+		box-sizing: border-box;
+		@include breakpoint(tablet) {
+			max-width: 23%;
+		}
+		@include breakpoint(phone) {
+			max-width: 32%;
+		}
+		@include breakpoint(phone-xs) {
+			max-width: 49%;
+		}
 	}
 	ul {
 		margin-bottom: 20px;
