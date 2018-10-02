@@ -1,4 +1,4 @@
-baseURL = "https://planiselect.netlify.com/"
+baseURL = "https://www.planiselect.com/"
 DefaultContentLanguage = "fr"
 title = "Planiselect"
 theme = "planiselect"
@@ -7,7 +7,7 @@ description = "Nous sommes des spécialistes en installation de réseaux informa
 # Pointing to this file
 config = "config.toml"
 contentdir = "content"
-disableKinds = ["RSS", "sitemap"]
+disableKinds = ["RSS"]
 # Create an array of files you don't want hugo to build
 ignoreFiles = []
 # Enable Logging
@@ -47,9 +47,17 @@ defaultContentLanguageInSubdir = false
 [Languages.en.permalinks]
   singles = "/:slug/"
 
+[Languages.en.Taxonomies]
+  category= ""
+  tags= ""
+
 [Languages.fr]
 [Languages.fr.permalinks]
   singles = "/:slug/"
+
+[Languages.fr.Taxonomies]
+  category= ""
+  tags= ""
 
 
 # [Languages.fr]

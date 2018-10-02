@@ -38,7 +38,7 @@ section4:
   title: Intercommunication
   image: /img/intercom-planiselect.jpg
   description: >-
-    La clientèle principale pour les intercoms (ou interphone) sont les écoles. Planiselect Inc est heureux d’avoir plusieurs écoles et commissions scolaires à son actif. Nous travaillons exclusivement avec les produits TOA. La qualité de leurs produits nous permet des installations sans anicroches. **Planiselect est certifié TOA.**
+    La clientèle principale pour les intercoms (ou interphone) sont les écoles. Nous sommes heureux d’avoir plusieurs écoles et commissions scolaires à notre actif. **Planiselect est aussi fier d’être certifié TOA.** La qualité des produits TOA nous permet des installations sans anicroches et une quiétude pour les utilisateurs.
 
 
     <div class="logo-certified"><img src="/quart/img/toa-logo.png" alt="TOA"></div>

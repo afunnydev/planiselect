@@ -12,7 +12,7 @@ slidertitle: "Installation de système de vidéo-surveillance"
 section1:
   title: "Un système en lequel on peut avoir confiance" 
   description: >-
-    Avec notre expertise, sommes en mesure de répondre à vos besoins en vidéo-surveillance. Que ce soit pour des utilités intérieurs ou extérieurs, pour des déploiement de petites ou très grande envergure nous avons la solution. Nos services sont disponibles dans le domaine résidentiel, commercial et industriel.
+    Avec notre expertise, nous sommes en mesure de répondre à vos besoins en vidéo-surveillance. Que ce soit pour des usages intérieurs ou extérieurs, pour des déploiements de petite ou très grande envergure nous avons la solution. Nos services sont disponibles dans le domaine résidentiel, commercial et industriel.
 
 
     Nous serons heureux de regarder avec vous, votre projet.

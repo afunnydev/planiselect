@@ -51,10 +51,7 @@ section3:
 section4:
   title: Intercommunication
   description: >-
-    The main clientele for intercoms are schools. Planiselect Inc. is pleased to
-    have several schools and school boards to its credit. We work exclusively
-    with TOA products. The quality of their products allows us smooth
-    installations. **Planiselect is TOA certified.**
+    The main clientele for intercoms is schools. We are pleased to have several schools and school boards to our credit. **Planiselect is also proud to be TOA certified.** The quality of TOA products allows us a smooth installation and peace of mind for the end user.
 
 
     <div class="logo-certified"><img src="/quart/img/toa-logo.png" alt="TOA"></div>

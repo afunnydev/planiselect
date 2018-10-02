@@ -449,7 +449,7 @@ $('.menu-btn').click(function(){
       arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
       firstItem = document.querySelector(".timeline li:first-child"),
       lastItem = document.querySelector(".timeline li:last-child"),
-      xScrolling = 600,
+      xScrolling = 625,
       disabledClass = "disabled";
 
   // START

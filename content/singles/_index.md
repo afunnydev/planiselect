@@ -1,5 +1,6 @@
 ---
-title: Planiselect
-description: This is a description
+title: "Planiselect | Installation de réseaux informatiques"
+description: >-
+  Nous sommes des spécialistes en installation de réseaux informatiques : câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique.
 noindex: true
 ---

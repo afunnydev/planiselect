@@ -1,3 +1,4 @@
 node_modules
 .DS_Store
 themes/planiselect/prepros-6.config
+public
