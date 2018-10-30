@@ -32,8 +32,8 @@ section3:
     structuré.
 
 
-    **Commutateurs (switch)**: Des commutateurs réseau (en anglais switch), est
-    un équipement qui relie plusieurs segments (câbles ou fibres) dans un réseau
+    **Commutateurs (switch)**: Un commutateur réseau (en anglais switch), est un
+    équipement qui relie plusieurs segments (câbles ou fibres) dans un réseau
     informatique et de télécommunication et qui permet de créer des circuits
     virtuels.
 
