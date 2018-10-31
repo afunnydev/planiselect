@@ -7,8 +7,6 @@ backend:
 media_folder: "themes/planiselect/source-images" # Folder where user uploaded files should go
 public_folder: "/img" # The src attribute for uploaded media will begin with
 
-publish_mode: editorial_workflow
-
 collections:
 ### Services
   - name: "services-fr" # Used in routes, e.g. /admin/collections/blog
