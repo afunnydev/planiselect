@@ -1,31 +1,31 @@
 partenaires:
-  - name: Hubbell
-    logo: /img/hubbell-logo.png
-    weight: 2
-  - name: Kramer
-    logo: /img/kramer-logo.png
-    weight: 3
   - name: Leviton
     logo: /img/leviton-logo.jpg
-    weight: 0
-  - name: SFM
-    logo: /img/sfm-logo.png
-    weight: 4
+    weight: 1
   - name: TOA
     logo: /img/toa-logo.png
-    weight: 1
+    weight: 2
+  - name: Hubbell
+    logo: /img/hubbell-logo.png
+    weight: 3
+  - name: Kramer
+    logo: /img/kramer-logo.png
+    weight: 4
+  - name: SFM
+    logo: /img/sfm-logo.png
+    weight: 5
   - name: Vellone Communication
     logo: /img/vellone-communication-logo.png
-    weight: 5
+    weight: 6
   - name: Trendnet
     logo: /img/trendnet-logo.png
-    weight: 6
+    weight: 7
   - name: Edgecore
     logo: /img/edgecore-networks-logo.png
-    weight: 7
+    weight: 8
   - name: Optone
     logo: /img/optone-logo.png
-    weight: 8
+    weight: 9
   - name: Inovasolution
     logo: /img/inova-solutions-logo.png
-    weight: 9 
+    weight: 10

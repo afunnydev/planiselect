@@ -4,40 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Favicons - go to http://realfavicongenerator.net/ for easy generation after you've designed your logo.-->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00ae41">
-	<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00ae41">
+  <meta name="theme-color" content="#ffffff">
   <meta name="robots" content="noindex,nofollow">
   <title>Gestionnaire de contenu</title>
-  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.4/dist/cms.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/cms.css" />
   <link rel="stylesheet" href="/admin/admin.css" />
 </head>
 <body>
-  <script src="https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.js"></script>
-    <script src="https://unpkg.com/netlify-cms@~1.4/dist/cms.js"></script>
-
-    <script>
-    // CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
-    // CMS.registerPreviewTemplate('page', createClass({
-    //     render: function () {
-    //         const entry = this.props.entry
-    //         const title = entry.getIn(['data', 'title']) || ''
-    //         YOAST.setContent({
-    //             title: title,
-    //             description: entry.getIn(['data', 'description']) || '',
-    //             keyword: entry.getIn(['data', 'yoast_keyword']) || '',
-    //             text: entry.getIn(['data', 'body']) || '',
-    //             titleWidth: title.split('').length * 5 // 5px is an average width of each character ;)
-    //         })
-    //         return h('div', {},
-    //             this.props.widgetFor('body'),
-    //             YOAST.getScoresAsHTML(h)
-    //         );
-    //     }
-    // }));
-    </script>
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
