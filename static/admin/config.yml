@@ -304,7 +304,7 @@ collections:
                   - {label: "Nom", name: "name", widget: "string", required: false}
                   - {label: "Image", name: "img", widget: "image", required: false}
                   - {label: "Services offerts", name: "services", widget: "string", required: false}
-                  - {label: "Description", name: "description", widget: "text", required: false}
+                  - {label: "Description", name: "desc", widget: "text", required: false}
                   - {label: "Ordre", name: "weight", widget: "number", required: false}
               - name: en
                 label: "Anglais"
@@ -314,7 +314,7 @@ collections:
                   - {label: "Nom", name: "name", widget: "string", required: false}
                   - {label: "Image", name: "img", widget: "image", required: false}
                   - {label: "Services offerts", name: "services", widget: "string", required: false}
-                  - {label: "Description", name: "description", widget: "text", required: false}
+                  - {label: "Description", name: "desc", widget: "text", required: false}
                   - {label: "Ordre", name: "weight", widget: "number", required: false}
           - name: prive
             label: Compagnie privée
