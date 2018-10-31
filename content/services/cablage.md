@@ -10,7 +10,7 @@ icon: /img/ico/connector-wire.svg
 desc: 'Découvrez nos services de câblage informatique, de fibre et de téléphonie IP.'
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
-slidertitle: Installation de câblage certifié Leviton et Hublon
+slidertitle: Vente et installation de câblage certifié Leviton et Hublon
 i18nlanguage: fr
 section1:
   title: Informatique
