@@ -5,6 +5,7 @@ description: >-
   We are specialists in the installation of computer networks: category 5,
   category 5e, category 6 structured cabling and optic fiber.
 i18nlanguage: en
+image: /img/planification-et-installation-1.jpg
 slider:
   - btnlink: servicesPage
     btntxt: Discover our services
