@@ -1,5 +1,5 @@
 ---
-title: ' Planiselect | Installation of computer networks'
+title: 'Planiselect | Installation of computer networks'
 identifiant: home
 description: >-
   We are specialists in the installation of computer networks: category 5,
@@ -37,6 +37,5 @@ clients:
   title: They trusted us
 partenaires:
   title: Our many partners
-draft: false
 ---
 

@@ -5,7 +5,6 @@ description: >-
 image: /img/planification-et-installation-1.jpg
 identifiant: home 
 i18nlanguage: fr
-draft: false
 slider:
   - img: /img/slider2.jpg
     title: Entreprise spécialisée en installation et configuration de réseaux informatiques
