@@ -3,7 +3,7 @@ title: Vente et installation de cablâge interne, de fibre et de téléphonie IP
 slug: cablage-fibre-telephonie-ip
 identifiant: cablage
 description: Pour tous vos réseaux internes, comptez sur Planiselect pour
-  l'installation de câblage, de fibre et de téléphonie IP
+  l'installation de câblage, de fibre et de téléphonie IP.
 titre: Installation de câblage, de fibre et de téléphonie IP
 icon: /img/ico/connector-wire.svg
 desc: Découvrez nos services de câblage informatique, de fibre et de téléphonie IP.
