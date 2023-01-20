@@ -1,14 +1,13 @@
 {{ define "main" }}
 <header id="about-header">
-    <div class="bcg" 
-    data-top-bottom="background-position: 50% -100px;" 
-    data-bottom-top="background-position: 50% 100px;" 
-    data-anchor-target="#about-header" style="background-image: url('{{.Params.banner}}'); background-size: cover"> 
-    <div class="overlay"></div> 
+    <div class="bcg" data-top-bottom="background-position: 50% -100px;"
+        data-bottom-top="background-position: 50% 100px;" data-anchor-target="#about-header"
+        style="background-image: url('{{.Params.banner}}'); background-size: cover">
+        <div class="overlay"></div>
 
         <div class="caption">
             <div class="container">
-                <img srcset="{{.Params.icon}}"  alt="" class="svg" style="display: none;">
+                <img srcset="{{.Params.icon}}" alt="" class="svg" style="display: none;">
                 <h1>{{.Params.titre}}</h1>
             </div>
         </div>
@@ -100,7 +99,7 @@
 <div id="featured-main-content">
     <div class="container">
         <div class="row">
-            
+
             <div class="col-md-6">
                 <div class="image-holder">
                     <img src="/half{{.image}}" alt="" class="img-responsive">
@@ -136,9 +135,9 @@
         </header>
 
         <div id="other-services-slider">
-            {{ $identifiant := .UniqueID }}
+            {{ $identifiant := .File.UniqueID }}
             {{ range (shuffle (where $.Site.RegularPages "Type" "services"))}}
-            {{ if not (eq .UniqueID $identifiant) }}
+            {{ if not (eq .File.UniqueID $identifiant) }}
             <div class="item">
                 <div class="services-box">
                     <div class="image-holder">

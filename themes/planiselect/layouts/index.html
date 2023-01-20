@@ -16,7 +16,8 @@
                         <h2 class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </h2>
                         {{ end }}
                         <p data-animation="fadeInUp" data-delay="0.2s">{{.desc}}</p>
-                        <a href='{{ $.Scratch.Get $link }}' class="cta-btn" data-animation="fadeInUp" data-delay="0.7s">{{ .btntxt }}</a>
+                        <a href='{{ $.Scratch.Get $link }}' class="cta-btn" data-animation="fadeInUp"
+                            data-delay="0.7s">{{ .btntxt }}</a>
                     </div>
                     <!-- // content  -->
                 </div>
@@ -24,7 +25,7 @@
             <!-- // slider caption  -->
         </div>
         <!-- // slider item  -->
-        {{ end }}                               
+        {{ end }}
 
     </div>
     <!-- // hero slider  -->
@@ -51,16 +52,13 @@
             <div class="col-md-7">
                 <section class="services-list">
 
-                    {{ range where .Site.Pages "Type" "services"}}
-                    {{ if eq .Parent.Params.identifiant "services" }}
+                    {{ range where .Site.RegularPages "Type" "services"}}
                     <div class="service-box">
                         <a href="{{.Permalink}}">
-                            <img srcset="{{.Params.icon}}"  alt="" class="svg" style="display: none;">
+                            <img srcset="{{.Params.icon}}" alt="" class="svg" style="display: none;">
                             <h6>{{.Params.titre}}</h6>
                         </a>
                     </div>
-                    <!-- // service box  -->
-                    {{ end }}
                     {{ end }}
 
                     <div class="service-box cta-box">
@@ -69,7 +67,7 @@
                             <h6>{{- .Params.about.cta -}}</h6>
                         </a>
                     </div>
-                    <!-- // service box  -->                                                                                                                                            
+                    <!-- // service box  -->
 
                 </section>
             </div>
@@ -92,7 +90,8 @@
                 <div class="cables-box">
                     <div class="image-holder">
                         <img src="{{.image}}" alt="" class="img-responsive">
-                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
+                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img
+                                    srcset="/img/ico/plus.svg" alt="" class="svg"></a></div>
                     </div>
                     <h4><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'>{{.nom}}</a></h4>
                     <p>{{.description}}</p>
@@ -107,7 +106,8 @@
                 <div class="cables-box">
                     <div class="image-holder">
                         <img src="{{.image}}" alt="" class="img-responsive">
-                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
+                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img
+                                    srcset="/img/ico/plus.svg" alt="" class="svg"></a></div>
                     </div>
                     <h4><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'>{{.nom}}</a></h4>
                     <p>{{.description}}</p>
@@ -116,7 +116,7 @@
             </div>
             <!-- // cables box  -->
             {{ end }}
-            {{ end }}                                      
+            {{ end }}
 
         </div>
         <!-- // row  -->
@@ -141,7 +141,7 @@
                         <div class="overlay">
                             <a href='{{ $.Scratch.Get "clientsPage" }}' class="read-btn">{{ i18n "clients" }}</a>
                         </div>
-                        
+
                     </div>
                     <!-- // image holder  -->
                     <div class="content">
@@ -167,7 +167,7 @@
                         <div class="overlay">
                             <a href='{{ $.Scratch.Get "clientsPage" }}' class="read-btn">{{ i18n "clients" }}</a>
                         </div>
-                        
+
                     </div>
                     <!-- // image holder  -->
                     <div class="content">
@@ -201,7 +201,7 @@
         </header>
     </div>
     <div class="container logos">
-        
+
         {{ range sort .Site.Data.partenaires.partenaires "weight" "asce"}}
         <div class="logos-box">
             <img src="{{.logo}}" alt="{{.name}}" class="img-responsive">

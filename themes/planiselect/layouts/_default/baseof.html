@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="{{.Lang}}">
-	{{- partial "site-head.html" . -}}
-	{{ $.Scratch.Add "homePage" ("/" | absLangURL) }}
-	{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
-	{{ $.Scratch.Add "servicesPage" ("services/" | absLangURL) }}
-	{{ $.Scratch.Add "articlesPage" ("articles/" | absLangURL) }}
-	{{ $.Scratch.Add "clientsPage" ("clients/" | absLangURL) }}
-	{{ if eq .Lang "fr" }}
-	{{ $.Scratch.Add "aboutPage" ("a-propos/" | absLangURL) }}
-	{{ $.Scratch.Add "cablagePage" ("services/cablage/" | absLangURL) }}
+{{- partial "site-head.html" . -}}
+{{ $.Scratch.Add "homePage" (absLangURL "index") }}
+{{ $.Scratch.Add "contactPage" (absLangURL "contact") }}
+{{ $.Scratch.Add "servicesPage" (absLangURL "services") }}
+{{ $.Scratch.Add "articlesPage" (absLangURL "articles") }}
+{{ $.Scratch.Add "clientsPage" (absLangURL "clients") }}
+{{ if eq .Lang "fr" }}
+{{ $.Scratch.Add "aboutPage" (absLangURL "a-propos") }}
+{{ $.Scratch.Add "cablagePage" (absLangURL "services/cablage") }}
 
-	{{ else if eq .Lang "en" }}
-	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
-	{{ $.Scratch.Add "cablagePage" ("services/cabling/" | absLangURL) }}
+{{ else if eq .Lang "en" }}
+{{ $.Scratch.Add "aboutPage" (absLangURL "about-us") }}
+{{ $.Scratch.Add "cablagePage" (absLangURL "services/cabling") }}
 
-	{{ end }}
-	<body>
-		{{ `<!--[if lt IE 9]>
+{{ end }}
+
+<body>
+	{{ `<!--[if lt IE 9]>
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
 	<![endif]-->` | safeHTML }}
-		{{- partial "header/google-tag-manager.html" . -}}
-		<div id="canvas">
-			<div id="box_wrapper">
-		  	{{- partial "site-header.html" . -}}
-				<div id="all-content-wrapper" class="all-content-wrapper">
-					{{block "main" . }}
-					{{end}}
-				</div>
-				{{- partial "site-footer.html" . -}}
+	{{- partial "header/google-tag-manager.html" . -}}
+	<div id="canvas">
+		<div id="box_wrapper">
+			{{- partial "site-header.html" . -}}
+			<div id="all-content-wrapper" class="all-content-wrapper">
+				{{block "main" . }}
+				{{end}}
 			</div>
-			<!-- eof #box_wrapper -->
+			{{- partial "site-footer.html" . -}}
 		</div>
-		<!-- eof #canvas -->
-		{{- partial "footer/site-scripts.html" . -}}
-	</body>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	{{- partial "footer/site-scripts.html" . -}}
+</body>
+
 </html>

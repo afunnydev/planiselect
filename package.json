@@ -4,7 +4,9 @@
   "description": "Basic gulp file to process images in hugo",
   "main": "no",
   "scripts": {
-    "test": "none"
+    "preinstall": "npx npm-force-resolutions",
+    "test": "none",
+    "prod": "gulp prod"
   },
   "repository": {
     "type": "git",
@@ -23,9 +25,13 @@
     "gulp-image-resize": "^0.13.0",
     "gulp-imagemin": "^3.4.0",
     "gulp-shell": "^0.6.3",
+    "natives": "^1.1.6",
     "run-sequence": "^2.2.0"
   },
   "devDependencies": {
     "gulp-newer": "^1.4.0"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
   }
 }
