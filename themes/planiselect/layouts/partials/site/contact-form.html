@@ -1,0 +1,75 @@
+<div id="contact">
+    <div class="contain">
+        <div class="row no-gutter">
+            
+            <div class="col-md-7 col-lg-8">
+                <div class="map-holder">
+                    <iframe src="{{.Site.Data.globals.contact.map}}" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- // map holder  -->
+
+            <div class="col-md-5 col-lg-4">
+                <div class="map-content">
+                    <div class="content">
+                        <header>
+                            {{ if eq .Lang "fr" }}
+                            <span class="title">{{.Site.Data.globals.contact.fr.title}}</span>
+                            <span class="subtitle">{{.Site.Data.globals.contact.fr.subtitle}}</span>
+                            {{ else if eq .Lang "en" }}
+                            <span class="title">{{.Site.Data.globals.contact.en.title}}</span>
+                            <span class="subtitle">{{.Site.Data.globals.contact.en.subtitle}}</span>
+                            {{ end }}
+                        </header>
+                        <form action='{{ if eq .Lang "fr" }}/merci{{ else if eq .Lang "en" }}/en/thank-you{{end}}' netlify name="cta-contact-{{.Lang}}" role="form" method="post" class="contact-validate" id="contact-snippet-form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" name="first_name" placeholder='{{ i18n "first_name" }}*' required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="last_name" placeholder='{{ i18n "last_name" }}'>
+                                </div>
+                            </div>
+                            <!-- // row  -->
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="email" name="email" placeholder='{{ i18n "email" }}*' required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="tel" name="phone" placeholder='{{ i18n "phone" }}'>
+                                </div>
+                            </div>
+                            <!-- // row  -->      
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea name="message" id="" placeholder="Message*" required></textarea>
+                                </div>
+                            </div>   
+
+                            <div class="row" style="margin-top: 15px">
+                                <div class="col-md-12"> 
+                                    <div data-netlify-recaptcha></div> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit">{{ i18n "send_message" }}</button>       
+                                </div>
+                            </div>              
+                            <!-- // submit  -->
+                        </form>
+
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // map content  -->
+
+        </div>
+    </div>
+    <!-- // contain  -->
+</div>
+<!-- // contact  -->

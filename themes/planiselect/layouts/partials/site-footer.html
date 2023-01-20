@@ -1,3 +1,140 @@
+<footer id="page-footer">
+    <div class="info-bar">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-sm-4">
+                    <div class="info-box">
+                         <img srcset="/img/ico/address.svg"  alt="" class="svg">
+                        <div class="content">
+                            <address>{{.Site.Data.settings.address.road}}, {{.Site.Data.settings.address.city}} ({{.Site.Data.settings.address.province}}), {{.Site.Data.settings.address.postal}} </address>
+                        </div>
+                        <!-- // content  -->
+                    </div>
+                </div>
+                <!-- // info box  -->
 
-<p class="small-text">&copy; 2017. Tous droits réservés. Conçu avec <i class="fa fa-heart" style="margin: 0 5px; color:#00A4C7"></i> par <a href="http://www.akiamarketing.ca" target="_blank">Akia Marketing</a></p>
+                <div class="col-sm-4">
+                    <div class="info-box tele-box">
+                         <img srcset="/img/ico/phone.svg"  alt="" class="svg">
+                        <div class="content">
+                            <p>{{ i18n "call" }}</p>
+                            <span>{{.Site.Data.settings.phone}} </span>
+                        </div>
+                        <!-- // content  -->
+                    </div>
+                </div>
+                <!-- // info box  -->
+
+                <div class="col-sm-4">
+                    <div class="info-box">
+                         <img srcset="/img/ico/email.svg"  alt="" class="svg">
+                        <div class="content">
+                           <p>{{ i18n "email" }}</p>
+                            <span><a href="mailto:{{.Site.Data.settings.email}}">{{.Site.Data.settings.email}}</a></span>
+                        </div>
+                        <!-- // content  -->
+                    </div>
+                </div>
+                <!-- // info box  -->                                                
+
+            </div>
+            <!-- // row  -->
+           
+        </div>
+        <!-- // container  -->
+    </div>
+    <!-- // info bar  -->
+
+    <div class="sitemap-bar">
+         <div class="container">
+                <div class="row">
+
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-box">
+                        <img srcset="/img/site-logo.svg"  alt="" class="svg">
+                    </div>
+                </div>
+        
+                <div class="col-md-2 col-sm-2">
+                    <div class="footer-box">
+                        <span class="title">{{ i18n "sitemap" }}</span>
+                        <ul>
+                            <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
+                            <li><a href='{{ $.Scratch.Get "servicesPage" }}'>{{ i18n "our_services" }}</a></li>
+                            <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
+                            <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
+                            <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // footer box  -->
+
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-box">
+                        <span class="title">{{ i18n "our_services" }} </span>
+                        <ul>
+                            {{ range where .Site.Pages "Type" "services"}}
+                            {{ if eq .Parent.Params.identifiant "services" }}
+                            <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
+                            {{ end }}
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                <!-- // footer box  -->
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-box">
+
+                        <span class="title">{{ i18n "about" }} </span>
+                        <p>{{ if eq .Lang "fr" }}{{.Site.Data.globals.footertxt.fr}}{{ else if eq .Lang "en" }}{{.Site.Data.globals.footertxt.en}}{{ end }}</p>
+                        <!-- <span class="title">{{ i18n "blog" }}</span>
+                        {{ range where .Site.RegularPages "Type" "articles"}}
+                        <div class="blog-box">
+                            <div class="date-box">
+                                <span class="month">Jan</span>
+                                <span class="day">11</span>
+                            </div>
+                            <div class="content">
+                                <h6><a href="{{.Permalink}}">{{.Title}}</a></h6>
+                                <p>{{.Summary}}</p>
+                                <a href="{{.Permalink}}" class="read-btn">{{ i18n "read_more" }}</a>
+                            </div>
+                        </div>
+                        {{ end }}  -->                             
+                    </div>
+                </div>
+                <!-- // footer box  -->                                                
+
+            </div>
+            <!-- // row  -->                     
+         </div>
+    </div>
+    <!-- // sitmeap bar  -->
+
+    <div class="copy-bar">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="copy-notice">
+                        <small>&copy; 2019 Planiselect. {{ i18n "copyright" }}. {{ safeHTML (i18n "akiatagline") }}</small>
+                    </div>
+                </div>
+                <!-- // motice  -->
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- // page footer  -->
+
+<div id="floating-btns">
+    <a href='{{ $.Scratch.Get "contactPage" }}' class="book-float-cta visible-xs"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i></a>
+    <a href="#top" id="to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>
+<!-- // bnts  -->
+
+<!-- <p class="small-text">&copy; 2017. Tous droits réservés. Conçu avec <i class="fa fa-heart" style="margin: 0 5px; color:#00A4C7"></i> par <a href="http://www.akiamarketing.ca" target="_blank">Akia Marketing</a></p> -->

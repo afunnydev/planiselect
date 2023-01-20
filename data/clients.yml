@@ -1,0 +1,83 @@
+clients:
+  fr:
+    - img: /img/client1.jpg
+      name: Palais de Justice
+      desc: >-
+        Nous avons fait les Palais de Justice de Montréal, Laval, Longueuil, Tracy et St-Jérôme. Sales d’audiences, bureaux des juges et du personnel; La qualité de nos travaux est reconnue et appréciée.
+      services: Installation de câblage
+      weight: 0
+    - img: /img/client2.jpg
+      name: STM
+      desc: >-
+        Nous avons procédé à la pose de Fibre Optique pour les nouvelles stations de métro à Laval, en plus de la station existante Henri-Bourassa. Nous avons aussi fait le câblage au complet du 2000, rue Berri, ainsi que d’autre projet d’entretien du câblage pour la STM.
+      services: Installation de câblage
+      weight: 1
+  en:
+    - img: /img/client1.jpg
+      name: The Palais de Justice (Courthouses)
+      desc: >-
+        We have worked for the Courthouses of Montreal, Laval, Longueil, Tracy and St-Jérôme.  Courtrooms, Judges’ offices and staff offices; The quality of our work is valued and appreciated.
+      services: Cable installation
+      weight: 0
+    - img: /img/client2.jpg
+      name: STM
+      desc: >-
+        We were chosen to install the Fibre Optics for the new metre station in Laval. We also did the fiber Optics the existing Henri-Bourassa Station. We have also done the cabling for the 200, rue Berri as well as other projects such and a maintenance contract for the STM.
+      services: Cable installation
+      weight: 1
+prive:
+  - nom: Revenu Québec
+    logo: /img/logo-revenu-quebec.png
+    link: https://www.revenuquebec.ca/
+  - nom: Uniselect
+    logo: /img/logo-uniselect.png 
+    link: http://www.uniselect.com/
+  - nom: L’hôtel Fairmont / Le Reine Élizabeth 
+    logo: /img/fairmont-reine-elizabeth.jpg 
+    link: http://www.fairmont.com/queen-elizabeth-montreal/
+  - nom: STM
+    logo: /img/stm-logo.png
+    link: http://stm.info/fr
+  - nom: Le siège social d’Hydro-Québec
+    logo: /img/logo-hydro-quebec-couleur.png
+    link: https://www.hydroquebec.com
+  - nom: Essilor
+    logo: /img/essilor-logo.jpg
+    link: http://www.essilor.ca/Fr/Pages/default.aspx
+  - nom: La Banque Scotia
+    logo: /img/logo-scotiabank-lrg_fr.jpg
+    link: https://www.scotiabank.com/
+  - nom: Bolloré Logistics Canada (800 câbles)
+    logo: /img/bollore-logo.png
+    link: https://www.bollore-logistics.com/
+  - nom: Nortek
+    logo: /img/nortek-logo.gif
+    link: https://www.nortek.com/
+  - nom: CNESST
+    logo: /img/logo-cnesst.png
+    link: http://www.cnesst.gouv.qc.ca/Pages/accueil.aspx
+institution:
+  - nom: La Commission scolaire Rivière-du-Nord
+    link: http://www2.csrdn.qc.ca/
+    logo: /img/logo-csrdn.jpg
+  - nom: La Commission scolaire de la Seigneurie-des-Mille-Îles
+    link: https://www.cssmi.qc.ca/
+    logo: /img/logo-cssmi.png
+  - nom: La Commission scolaire de Laval
+    link: http://www2.cslaval.qc.ca/?
+    logo: /img/logo-csl.jpg
+  - nom: La Commission scolaire de Montréal
+    link: http://csdm.ca/
+    logo: /img/logo-csdm.png
+  - nom: Collège Bois de Boulogne 
+    link: http://www.bdeb.qc.ca/
+    logo: /img/logo-cbdeb.png
+  - nom: Collège Rosemont
+    link: http://www.crosemont.qc.ca/
+    logo: /img/logo-college-rosemont.png
+  - nom: Collège Marie-Victorin
+    link: https://www.collegemv.qc.ca/
+    logo: /img/logo-marie-victorin.jpg
+  - nom: Collège Maisonneuve
+    link: https://www.cmaisonneuve.qc.ca/
+    logo: /img/logo-college-maisonneuve.jpg

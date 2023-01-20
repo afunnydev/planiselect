@@ -1,5 +1,217 @@
 {{ define "main" }}
-<main class="main" id="a-propos">
+<header id="about-header">
+    <div class="bcg" 
+    data-top-bottom="background-position: 50% -100px;" 
+    data-bottom-top="background-position: 50% 100px;" 
+    data-anchor-target="#about-header"> 
+    <div class="overlay"></div> 
 
-</main>
+        <div class="caption">
+            <div class="container">
+                <h2>{{ i18n "about" }}</h2>
+                <h1>{{.Params.titre}}</h1>
+            </div>
+        </div>
+        <!-- // caption  -->
+
+    </div>
+    <!-- // bcg  -->
+</header>
+<!-- // about header  -->
+
+<div id="about-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>{{.Params.section1.titre}}</h3>
+                {{.Params.section1.description | markdownify}}
+            </div>
+        </div>
+        <!-- // row  -->
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // about intro  -->
+
+<div id="vision">
+    <div class="container">
+        <div class="row">
+            {{ range .Params.icons }}
+            <div class="col-sm-3">
+                <div class="vision-box">
+                    <div class="image-holder">
+                        <img srcset="{{.icon}}"  alt="" class="svg" style="display: none;">
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <h4>{{.titre}}</h4>
+                        <p>{{.description}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- // vision box  -->
+            {{ end }}
+        </div>
+        <!-- // row  -->
+    </div>
+</div>
+<!-- // vision  -->
+
+<div id="about-gallery">
+    <div class="row no-gutter">
+        {{ range .Params.gallery }}
+        <div class="col-sm-6">
+            <div class="image-holder">
+                <a data-fancybox="images" href="{{.image}}">
+                <img src="{{.image}}" alt="" class="img-responsive">
+                <div class="caption">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </div>
+                <!-- // caption  -->
+                </a>                                
+            </div>                    
+        </div>
+        <!-- // col  -->
+        {{ end }}
+    </div>
+    <!-- // row  -->
+</div>
+<!-- // about gallery  -->
+
+<div id="story">
+    <div class="row">
+        <header>
+            <h5>{{ .Params.section2.titre }}</h5>
+        </header>
+        <section class="timeline">
+            <ol>
+                {{ range $i, $e := .Params.timeline}}
+                <li class="{{ if $e.crushed }}crushed{{ end }}{{ if $e.grouped }} grouped{{ end }}">
+                    <div class="time-content opened">
+                    {{ if $e.date1 }}<time>{{$e.date1}}{{ with $e.date2}}<br>{{.}}{{end}}</time>{{ end }}
+                        <div class="overflowed">
+                           <p class="text">{{$e.text | markdownify}}</p> 
+                        </div>
+                    </div>
+                </li>
+                {{ end }}
+                <li></li>
+            </ol>
+
+            <div class="arrows">
+                <button class="arrow arrow__prev disabled" disabled>
+                    <img src="/img/ico/arrow-left-green.svg" alt="prev timeline arrow">
+                </button>
+                <button class="arrow arrow__next">
+                    <img src="/img/ico/arrow-right-green.svg" alt="next timeline arrow">
+                </button>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div id="about-gallery" style="margin-bottom: 30px;">
+                    <div class="row no-gutter">
+                        {{ range .Params.section2.gallery }}
+                        <div class="col-sm-3">
+                            <div class="image-holder">
+                                <a data-fancybox="images" href="{{.image}}">
+                                <img src="{{.image}}" alt="" class="img-responsive">
+                                <div class="caption">
+                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                </div>
+                                <!-- // caption  -->
+                                </a>                                
+                            </div>                    
+                        </div>
+                        <!-- // col  -->
+                        {{ end }}
+                    </div>
+                    <!-- // row  -->
+                </div>
+                <!-- // about gallery  -->
+
+                <footer>
+                    <p>{{.Params.section2.description}}</p>
+                    {{ with .Params.section2.btn1}}
+                    {{ $link1 := .link }}
+                    <a href='{{ $.Scratch.Get $link1 }}' class="meet-btn">{{.txt}}</a>
+                    {{ end }}
+                    {{ with .Params.section2.btn2}}
+                    {{ $link2 := .link }}
+                    <a href='{{ $.Scratch.Get $link2 }}' class="clients-btn">{{.txt}}</a>
+                    {{ end }}
+                </footer>
+                <!-- // footer  -->
+
+            </div>
+        </div>
+        <!-- // row  -->
+    </div>
+</div>
+<!-- // story  -->
+
+<div id="team">
+    <div class="container">
+        <header>
+            <h5>{{.Params.titre3}}</h5>
+        </header>
+
+        <div class="row">
+            {{ range sort .Site.Data.equipe.equipe "ordre" "asce" }}
+            <div class="col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="image-holder">
+                        {{ if .both }}
+                        <img srcset="/img/ico/male.svg"  alt="" class="svg">
+                        <img srcset="/img/ico/female.svg"  alt="" class="svg">
+                        {{ else }}
+                        <img srcset="/img/ico/{{- .sex -}}.svg"  alt="" class="svg">
+                        {{ end }}
+                    </div>
+                    <!-- // icon  -->
+                    <div class="content">
+                        <span class="title">{{ if eq $.Lang "fr" }}{{.titre}}{{ else if eq $.Lang "en" }}{{.titreen}}{{end}}</span>
+                        <span class="team-title">{{ if eq $.Lang "fr" }}{{.nom}}{{ else if eq $.Lang "en" }}{{.nomen}}{{end}}</span>
+                        <a href='{{ $.Scratch.Get "contactPage" }}' class="read-btn">Contact</a>
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // team box  -->
+            {{ end }}                                                                                           
+
+        </div>
+        <!-- // row  -->
+
+    </div>
+    <!-- // cotnaienr  -->
+</div>
+<!-- // team  -->
+
+<div id="clients-block">
+    <div class="container">
+        <header>
+            <h5>{{.Params.titre4}}</h5>
+        </header>
+
+        <div id="clients-slider">
+
+            {{ range sort .Site.Data.partenaires.partenaires "weight" "asce"}}
+            <div class="item">
+                <div class="logos-box">
+                    <img src="{{.logo}}" alt="{{.name}}" class="img-responsive">
+                </div>
+                <!-- // logos box  -->
+            </div>
+            <!-- // item  -->
+            {{ end }}
+
+        </div>
+        <!-- // slider  -->
+
+    </div>
+</div>
+<!-- // clients  -->
 {{ end }}

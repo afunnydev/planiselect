@@ -1,6 +1,12 @@
-form:
-  email:
-  fname:
-  lname:
-  subject:
-  message:
+contact:
+  fr:
+    title: Contactez-nous
+    subtitle: Remplissez le formulaire ci-dessous
+  en:
+    title: Contact Us
+    subtitle: Fill the form below
+  map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.7998671541213!2d-73.7063791844395!3d45.55435137910206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9226b48448031%3A0xd06e819657b64738!2s653+Avenue+L%C3%A9o-Lacombe%2C+Laval%2C+QC+H7N+3Y7%2C+Canada!5e0!3m2!1sen!2srs!4v1512658510784
+liengmaps: https://goo.gl/maps/fLS7kmQprxD2
+footertxt:
+  fr: Nous sommes des spécialistes en installation de réseaux informatiques. Depuis 1989, notre entreprise est entièrement dédiée à la configuration, à la mise en place et au service de systèmes de câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique.
+  en: We are specialists in the installation of computer networks. Since 1989 our company has devoted itself entirely to configuring, installing and servicing structured cable systems of categories 5, 5e and 6 as well as fiber optic ones.

@@ -1,0 +1,27 @@
+<section id="middle-cta">
+    <div class="bcg" 
+    data-top-bottom="background-position: 50% -100px;" 
+    data-bottom-top="background-position: 50% 100px;" 
+    data-anchor-target="#middle-cta"> 
+    <div class="overlay"></div> 
+        
+        <div class="container">
+            <div class="content">
+                {{ if eq .Lang "fr" }}
+                {{ $link := .Site.Data.cta.cta.fr.link }}
+                <h5>{{.Site.Data.cta.cta.fr.title}}</h5>
+                <a href='{{ $.Scratch.Get $link }}'>{{.Site.Data.cta.cta.fr.btn}}</a>
+                {{ else if eq .Lang "en" }}
+                {{ $link := .Site.Data.cta.cta.en.link }}
+                <h5>{{.Site.Data.cta.cta.en.title}}</h5>
+                <a href='{{ $.Scratch.Get $link }}'>{{.Site.Data.cta.cta.en.btn}}</a>
+                {{ end }}
+            </div>
+            <!-- // content  -->
+        </div>
+        <!-- // container  -->
+
+    </div>
+    <!-- // bcg  -->
+</section>
+<!-- // middle cta  -->

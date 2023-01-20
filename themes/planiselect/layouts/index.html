@@ -1,227 +1,220 @@
-<!DOCTYPE html>
+{{ define "main" }}
+<header id="hero-header">
+    <div id="hero-slider">
 
-<html lang="en-US">
-
-{{- partial "site-head.html" . -}}
-
-<body class=" frame">
-
-<div id="outer-wrapper" class="animate translate-z-in">
-    <div id="inner-wrapper">
-        <div id="table-wrapper" class="center">
-            <div class="container">
-                <div id="row-header">
-                    <header><a href="#home" id="brand" class="animate animate fade-in animation-time-3s"><img src="/img/logo-planiselect-1.png" alt=""></a></header>
+        {{ range .Params.slider }}
+        {{ $link := .btnlink }}
+        <div class="item hero-slide">
+            <img src="{{.img}}" alt="">
+            <div class="overlay"></div>
+            <div class="slider-caption">
+                <div class="container">
+                    <div class="slider-content" data-animation="fadeIn" data-delay="0.3s">
+                        {{ if eq .weight 1 }}
+                        <h1 class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </h1>
+                        {{ else }}
+                        <h2 class="title" data-animation="fadeInDown" data-delay="0.5s">{{.title}} </h2>
+                        {{ end }}
+                        <p data-animation="fadeInUp" data-delay="0.2s">{{.desc}}</p>
+                        <a href='{{ $.Scratch.Get $link }}' class="cta-btn" data-animation="fadeInUp" data-delay="0.7s">{{ .btntxt }}</a>
+                    </div>
+                    <!-- // content  -->
                 </div>
-                <!--end row-header-->
-                <div id="row-content">
-                    <div id="content-wrapper">
-                        <div id="content" class="animate translate-z-in animation-time-2s delay-03s">
-                            <h1 class="opacity-70">En construction!</h1>
-                            <h2 class="opacity-50">Nous travaillons fort pour vous donner une meilleure expérience</h2>
-                            <a href="#services" class="open-side-panel btn btn-default btn-framed">Services</a>
-                            <a href="#about-us" class="open-side-panel btn btn-default btn-framed">À propos</a>
-                            <a href="#contact" class="open-side-panel btn btn-default btn-framed">Contactez-nous</a>
+            </div>
+            <!-- // slider caption  -->
+        </div>
+        <!-- // slider item  -->
+        {{ end }}                               
+
+    </div>
+    <!-- // hero slider  -->
+</header>
+<!-- // hero  -->
+
+<div id="about">
+    <div class="contain">
+        <div class="row no-gutter">
+            {{ with .Params.about }}
+            <div class="col-md-5">
+                <section class="about-intro">
+                    <div class="content">
+                        <h2>{{.title}}</h2>
+                        <h1>{{.secondtitle}}</h1>
+                        <p>{{.desc}}</p>
+                    </div>
+                    <!-- // content  -->
+                </section>
+            </div>
+            <!-- // intro about  -->
+            {{ end }}
+
+            <div class="col-md-7">
+                <section class="services-list">
+
+                    {{ range where .Site.Pages "Type" "services"}}
+                    {{ if eq .Parent.Params.identifiant "services" }}
+                    <div class="service-box">
+                        <a href="{{.Permalink}}">
+                            <img srcset="{{.Params.icon}}"  alt="" class="svg" style="display: none;">
+                            <h6>{{.Params.titre}}</h6>
+                        </a>
+                    </div>
+                    <!-- // service box  -->
+                    {{ end }}
+                    {{ end }}
+
+                    <div class="service-box cta-box">
+                        {{ $linkcta := .Params.about.link }}
+                        <a href='{{ $.Scratch.Get $linkcta }}'>
+                            <h6>{{- .Params.about.cta -}}</h6>
+                        </a>
+                    </div>
+                    <!-- // service box  -->                                                                                                                                            
+
+                </section>
+            </div>
+            <!-- // serviecs list  -->
+
+        </div>
+    </div>
+</div>
+<!-- // about  -->
+
+<div id="cables">
+    <div class="container">
+        <header>
+            <h3>{{.Params.cablage.title}}</h3>
+        </header>
+        <div class="row">
+            {{ if eq .Lang "fr" }}
+            {{ range .Site.Data.cablage.fr }}
+            <div class="col-sm-4">
+                <div class="cables-box">
+                    <div class="image-holder">
+                        <img src="{{.image}}" alt="" class="img-responsive">
+                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
+                    </div>
+                    <h4><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'>{{.nom}}</a></h4>
+                    <p>{{.description}}</p>
+                    <a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}' class="read-btn">{{ i18n "know_more" }}</a>
+                </div>
+            </div>
+            <!-- // cables box  -->
+            {{ end }}
+            {{ else if eq .Lang "en" }}
+            {{ range .Site.Data.cablage.en }}
+            <div class="col-sm-4">
+                <div class="cables-box">
+                    <div class="image-holder">
+                        <img src="{{.image}}" alt="" class="img-responsive">
+                        <div class="caption"><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'><img srcset="/img/ico/plus.svg"  alt="" class="svg"></a></div>
+                    </div>
+                    <h4><a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}'>{{.nom}}</a></h4>
+                    <p>{{.description}}</p>
+                    <a href='{{ $.Scratch.Get "cablagePage" }}#{{.link}}' class="read-btn">{{ i18n "know_more" }}</a>
+                </div>
+            </div>
+            <!-- // cables box  -->
+            {{ end }}
+            {{ end }}                                      
+
+        </div>
+        <!-- // row  -->
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // cables  -->
+
+<div id="clients">
+    <div class="container">
+        <header>
+            <h4>{{.Params.clients.title}}</h4>
+        </header>
+
+        <div class="row">
+            {{ if eq $.Lang "fr" }}
+            {{ range sort .Site.Data.clients.clients.fr "weight" "asce" }}
+            <div class="col-md-6">
+                <div class="client-box">
+                    <div class="image-holder">
+                        <img src="{{.img}}" alt="" class="img-responsive">
+                        <div class="overlay">
+                            <a href='{{ $.Scratch.Get "clientsPage" }}' class="read-btn">{{ i18n "clients" }}</a>
                         </div>
-                        <!--end content-->
+                        
                     </div>
-                    <!--end content-wrapper-->
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">{{.name}}</span>
+                        <span class="service-label">{{ i18n "service_offered" 1 }} :</span>
+                        <span class="value">{{.services}}</span>
+                        <div class="service-label">Description:</div>
+                        <p>{{.desc}}</p>
+
+                    </div>
+                    <!-- // content  -->
+                    <div class="clearfix"></div>
                 </div>
-                <!--end row-content-->
-                <div id="row-footer">
-                    <footer>
-                        <div class="social-icons">
-                            <a href="#" class="animate fade-in animation-time-1s delay-1s"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="animate fade-in animation-time-1s delay-08s"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="animate fade-in animation-time-1s delay-06s"><i class="fa fa-youtube"></i></a>
-                            <a href="#" class="animate fade-in animation-time-1s delay-06s"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="animate fade-in animation-time-1s delay-08s"><i class="fa fa-pinterest"></i></a>
-                            <a href="#" class="animate fade-in animation-time-1s delay-1s"><i class="fa fa-google-plus"></i></a>
+            </div>
+            <!-- // client box  -->
+            {{ end }}
+            {{ else if eq $.Lang "en" }}
+            {{ range sort .Site.Data.clients.clients.en "weight" "asce" }}
+            <div class="col-md-6">
+                <div class="client-box">
+                    <div class="image-holder">
+                        <img src="{{.img}}" alt="" class="img-responsive">
+                        <div class="overlay">
+                            <a href='{{ $.Scratch.Get "clientsPage" }}' class="read-btn">{{ i18n "clients" }}</a>
                         </div>
-                    </footer>
-                </div>
-                <!--end row-footer-->
-            </div>
-            <!--end container-->
-        </div>
-        <!--end table-wrapper-->
-        <div class="background-wrapper has-vignette">
-            <div id="particles-js" class="opacity-40"></div>
-            <div class="bg-transfer opacity-20"><img src="assets/img/background-08.jpg" alt=""></div>
-        </div>
-        <!--end background-wrapper-->
-    </div>
-    <!--end inner-wrapper-->
-</div>
-<!--end outer-wrapper-->
-
-
-<div class="side-panel" id="services">
-    <div class="close-panel"><i class="fa fa-chevron-left"></i></div>
-    <div class="wrapper">
-        <div class="tse-scrollable">
-            <div class="tse-content">
-                <div class="wrapper">
-                    <h2>Service</h2>
-                    <section>
-                        <h3>Pourquoi Planiselect?</h3>
-                        <p>Nous sommes des spécialistes en installation de réseaux informatiques. Depuis 1989, notre entreprise est entièrement dédiée à la configuration, à la mise en place et au service de systèmes de câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique.</p>
-                    </section>
-                    <section>
-                        <h3>Nos services</h3>
-                        <ul>
-                        	<li>Planification & installation de réseaux locaux et étendus</li>
-													<li>Installation de câblage structuré garantis par différents manufacturiers</li>
-													<li>Câblage catégorie 5e, catégorie 6, catégorie 6e</li>
-													<li>Câblage de fibre optique et fusion</li>
-													<li>Câblage coaxial, twinaxial, et IBM</li>
-													<li>Équipements de réseautiques</li>
-													<li>Cabinets et rateliers pour salles d'équipements</li>
-                        </ul>
-                    </section>
-                </div>
-                <!--end wrapper-->
-            </div>
-            <!--end tse-content-->
-        </div>
-        <!--end tse-scrollable-->
-    </div>
-    <!--end wrapper-->
-</div>
-<!--end services-->
-
-<div class="side-panel" id="about-us">
-    <div class="close-panel"><i class="fa fa-chevron-left"></i></div>
-    <div class="wrapper">
-        <div class="tse-scrollable">
-            <div class="tse-content">
-                <div class="wrapper">
-                    <div class="container">
-                        <section>
-                            <h3>À propos de Planiselect</h3>
-                            <p>
-                                Au fil des années, nous avons su nous bâtir une solide réputation grâce entre autres, à la qualité de nos installations et à la qualité du matériel utilisé. De plus, nos installations certifiées sont supportées par la garantie de performance de différents manufacturiers pour une période de 15 ans, 25 ans ou performance à vie.
-                            </p>
-                            <p>
-                                Dans le but de continuer à offrir un service à la mesure de vos exigences, nous améliorons sans cesse nos méthodes de travail, nos équipements et surtout nos connaissances. Avec plus de 500 clients à notre actif à travers le Québec et l'Ontario dont la STCUM, Hydro-Québec et le gouvernement du Québec, Planiselect est en mesure de répondre à vos différents besoins de câblage. N'hésitez surtout pas à communiquer avec nous pour plus d'information.
-                            </p>
-                        </section>
+                        
                     </div>
-                    <!--end container-->
-                </div>
-                <!--end wrapper-->
-            </div>
-            <!--end tse-content-->
-        </div>
-        <!--end tse-scrollable-->
-    </div>
-    <!--end wrapper-->
-</div>
-<!--end about-us-->
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">{{.name}}</span>
+                        <span class="service-label">{{ i18n "service_offered" 1 }} :</span>
+                        <span class="value">{{.services}}</span>
+                        <div class="service-label">Description:</div>
+                        <p>{{.desc}}</p>
 
-<div class="side-panel" id="contact">
-    <div class="close-panel"><i class="fa fa-chevron-left"></i></div>
-    <div class="wrapper">
-        <div class="tse-scrollable">
-            <div class="tse-content">
-                <div class="wrapper">
-                    <div class="container">
-                        <h2>Contactez-nous</h2>
-                        <section>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <h3>Addresse</h3>
-                                    <address>
-                                        653, Avenue Léo Lacombe, 
-																				Laval-des-rapides (Québec),
-																				H7N 3Y7
-                                        <br>
-                                        (450) 663-3973 
-                                        <br>
-                                        <a href="mailto:yfares@planiselect.com">yfares@planiselect.com</a>
-                                    </address>
-                                </div>
-                                <!--end col-sm-6-->
-                                <div class="col-md-6 col-sm-6">
-                                    <h3>Plan</h3>
-                                    <div class="map" id="map-contact"></div>
-                                </div>
-                                <!--end col-sm-6-->
-                            </div>
-                        </section>
-                        <section>
-                            <h3>Contactez-nous</h3>
-                            <form id="form-contact" method="post" class="form clearfix inputs-underline" name="contact" netlify action="/">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Votre nom" required>
-                                        </div>
-                                        <!--end form-group -->
-                                    </div>
-                                    <!--end col-md-6 col-sm-6 -->
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Votre courriel" required>
-                                        </div>
-                                        <!--end form-group -->
-                                    </div>
-                                    <!--end col-md-6 col-sm-6 -->
-                                </div>
-                                <!--end row -->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="form-contact-message" rows="8" name="message" placeholder="Votre message" required></textarea>
-                                        </div>
-                                        <!--end form-group -->
-                                    </div>
-                                    <!--end col-md-12 -->
-                                </div>
-                                <!--end row -->
-                                <div class="form-group clearfix">
-                                    <button type="submit" class="btn pull-right btn-default btn-framed btn-rounded" id="form-contact-submit">Envoyer votre message</button>
-                                </div>
-                            </form>
-                            <!--end form-contact -->
-                        </section>
                     </div>
-                    <!--end container-->
+                    <!-- // content  -->
+                    <div class="clearfix"></div>
                 </div>
-                <!--end wrapper-->
             </div>
-            <!--end tse-content-->
+            <!-- // client box  -->
+            {{ end }}
+            {{ end }}
+
         </div>
-        <!--end tse-scrollable-->
+        <!-- // row  -->
+
     </div>
-    <!--end wrapper-->
+    <!-- // container  -->
 </div>
-<!--end contact-->
+<!-- // clients  -->
 
-<div class="backdrop"></div>
+<div id="brands" class="hidden-xs">
+    <div class="container">
+        <header>
+            <h4>{{.Params.partenaires.title}}</h4>
+        </header>
+    </div>
+    <div class="container logos">
+        
+        {{ range sort .Site.Data.partenaires.partenaires "weight" "asce"}}
+        <div class="logos-box">
+            <img src="{{.logo}}" alt="{{.name}}" class="img-responsive">
+        </div>
+        <!-- // logos box  -->
+        {{ end }}
 
-<script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIrtjJHstiEgmEFOA3xWO745Qg99jhCEs"
-  type="text/javascript"></script>
-<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.trackpad-scroll-emulator.min.js"></script>
-<script type="text/javascript" src="assets/js/particles.min.js"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
+    </div>
+</div>
+<!-- // brands  -->
 
-<script type="text/javascript">
-    var latitude = 45.554351;
-    var longitude = -73.704190;
-    var markerImage = "assets/img/map-marker.png";
-    var mapTheme = "light";
-    var mapElement = "map-contact";
-    google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme, mapElement));
-
-    particlesJS.load("particles-js", "assets/json/particles-default-light-theme.json");
-
-</script>
+{{- partial "site/cta.html" . -}}
+{{- partial "site/contact-form.html" . -}}
 
 
-</body>
+{{ end }}

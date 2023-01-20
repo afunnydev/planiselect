@@ -1,5 +1,166 @@
 {{ define "main" }}
-<main class="main" id="contact">
+<div class="inner-header">
+    <img src="{{.Params.image}}" alt="" class="img-responsive">
+    <div class="caption">
+        <div class="container">
+            <header>
+                <h1>{{.Params.titre}}</h1>
+                <p class="desc">{{.Params.subtitle}}</p>
+            </header>
+        </div>
+        <!-- // container  -->
+    </div>
+    <!-- // caption  -->
+</div>
+<!-- // inner header   -->
 
-</main>
+<div class="breadcrumb-block">
+    <div class="container">
+        <ul>
+            <li><a href="{{.Site.BaseURL}}">{{ i18n "home" }}</a></li>
+            <li><a href="{{.Permalink}}">{{ i18n "contact" }}</a></li>
+        </ul>
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // breadcrumb  -->
+
+<div id="contact-info-block">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <div class="image-holder">
+                        <img srcset="/img/ico/address.svg"  alt="" class="svg">
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">{{ i18n "we_are_here" }}</span>
+                        <p>{{.Site.Data.settings.address.road}}, {{.Site.Data.settings.address.city}} ({{.Site.Data.settings.address.province}}), {{.Site.Data.settings.address.postal}}</p>
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // contact box  -->
+
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <div class="image-holder">
+                        <img srcset="/img/ico/timer.svg"  alt="" class="svg">
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">{{ i18n "office_hours" }}</span>
+                        {{ if eq .Lang "fr" }}
+                        {{ range .Site.Data.settings.heures.fr}}
+                        <p>{{.jour}} <br> {{.heures}}</p>
+                        {{ end }}
+                        {{ else if eq .Lang "en" }}
+                        {{ range .Site.Data.settings.heures.en}}
+                        <p>{{.jour}} <br> {{.heures}}</p>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // contact box  -->
+
+            <div class="col-sm-4">
+                <div class="contact-box">
+                    <div class="image-holder">
+                        <img srcset="/img/ico/phone.svg" alt="" class="svg hidden-xs">
+                        <a href="tel:{{.Site.Data.settings.mphone}}" class="visible-xs">
+                            <img srcset="/img/ico/phone.svg" alt="" class="svg">
+                        </a>
+                    </div>
+                    <!-- // image holder  -->
+                    <div class="content">
+                        <span class="title">{{ i18n "contact_us" }}</span>
+                        <p>{{.Site.Data.settings.phone}}</p>
+                    </div>
+                    <!-- // content  -->
+                </div>
+            </div>
+            <!-- // contact box  -->                                        
+
+        </div>
+        <!-- // row  -->
+    </div>
+</div>
+<!-- // contact info block  -->
+
+<section id="map-contact-block">
+    <div class="bcg" 
+    data-top-bottom="background-position: 50% -100px;" 
+    data-bottom-top="background-position: 50% 100px;" 
+    data-anchor-target="#map-contact-block"> 
+    <div class="overlay"></div> 
+
+        <a href="{{.Site.Data.globals.liengmaps}}" target="_blank" class="view-btn">{{ i18n "view_map" }}</a>
+
+    </div>
+    <!-- // bcg -->
+</section>
+<!-- // map  -->
+
+<div id="contact-form-block">
+    <div class="container">
+        <header>
+            <h4>{{ i18n "required_fields" }}</h4>
+            <h3>{{ i18n "contact_us" }}</h3>
+        </header>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form action='{{ if eq .Lang "fr" }}/merci{{ else if eq .Lang "en" }}/en/thank-you{{end}}' netlify name="contact-{{.Lang}}" role="form" method="post" id="contact-page-form" class="contact-validate">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" name="first_name" placeholder='{{ i18n "first_name" }}*' required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="last_name" placeholder='{{ i18n "last_name" }}'>
+                        </div>
+                    </div>
+                    <!-- // row  -->
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="email" name="email" placeholder='{{ i18n "email" }}*' required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="tel" name="phone" placeholder='{{ i18n "phone" }}'>
+                        </div>
+                    </div>
+                    <!-- // row  -->      
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea name="message" id="" placeholder="Message*" required></textarea>
+                        </div>
+                    </div>    
+                    
+                    <div class="row" style="margin-top: 15px">
+                        <div class="col-md-12">
+                            <div data-netlify-recaptcha></div> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit">{{ i18n "send_message" }}</button>       
+                        </div>
+                    </div>              
+                    <!-- // submit  -->
+                </form>
+                
+            </div>
+            <!-- // offset  -->
+        </div>
+        <!-- // row  -->
+
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // form  -->
 {{ end }}

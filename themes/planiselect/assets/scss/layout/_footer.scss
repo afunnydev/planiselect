@@ -1,0 +1,573 @@
+/*=================================
+=            Mddle CTA            =
+=================================*/
+
+#middle-cta {
+	font-size: 16px;
+	@include breakpoint(laptop) {
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 15px;
+	}
+	@include breakpoint(phone) {
+		font-size: 14px;
+	}
+	@include breakpoint(phone-xs) {
+		font-size: 13px;
+	}
+	.container {
+		height: 100%;
+		position: relative;
+		.content {
+			@include centre(both);
+			width: 80%;
+			color:$white;
+			text-align: center;
+			h5 {
+				font-family: $font-light;
+				font-size: 2em;
+				line-height: 1.5;
+				font-weight: 300;
+				margin-bottom: 40px;
+				@include breakpoint(phone) {
+					line-height: 1.3;
+				}
+			}
+			a {
+				@include cta-btn;
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+/*=====  End of Mddle CTA  ======*/
+
+/*===============================
+=            Contact            =
+===============================*/
+
+#contact {
+	font-size: 16px;
+	height:600px;
+	background: #eff2f3;
+	@include breakpoint(laptop) {
+		height: 550px;
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		height: auto;
+		font-size: 15px;
+	}
+	@include breakpoint(phone) {
+		height: auto;
+		font-size: 14px;
+	}
+	iframe {
+		height: 100%!important;
+		@include breakpoint(phone) {
+			height: 250px!important;
+		}
+	}
+	.contain {
+		height: 100%;
+		.row {
+			height: 100%;
+			[class*='col-'] {
+				height: 100%;
+				@include breakpoint(tablet) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				@include breakpoint(phone) {
+					padding-left: 0px;
+					padding-right: 0px;
+				}
+			}
+			.map-holder {
+				height: 100%;
+			}
+			.map-content {
+				background: #eff2f3;
+				height: 100%;
+				text-align: center;
+				.content {
+					@include centre(both);
+					@include breakpoint(tablet) {
+						@include clear-pos;
+						padding:50px;
+						width: 100%;
+					}
+					@include breakpoint(phone) {
+						@include clear-pos;
+						padding:20px;
+						width: 100%;
+						padding-top: 30px;
+					}
+					width: 80%;
+					.col-md-6 {
+						padding-left:5px;
+						padding-right: 5px;
+						@include breakpoint(tablet) {
+							padding-left: 15px;
+							padding-right: 15px;
+						}
+						@include breakpoint(phone) {
+							padding-left: 15px;
+							padding-right: 15px;
+						}
+					}
+					.col-md-12 {
+						padding-left: 5px;
+						padding-right: 5px;
+						@include breakpoint(tablet) {
+							padding-left: 15px;
+							padding-right: 15px;
+						}
+						@include breakpoint(phone) {
+							padding-left: 0px;
+							padding-right: 0px;
+						}
+					}
+					header {
+						padding-bottom: 40px;
+						@include breakpoint(phone) {
+							padding-bottom: 25px;
+						}
+						.title {
+							display: block;
+							@include upper-heading;
+						}
+						.subtitle {
+							display: block;
+							@include section-heading;
+						}
+					}
+					input[type="text"], input[type="email"], input[type="tel"] {
+						width: 100%;
+						background:$white;
+						border:1px solid #e1e1e1;
+						padding:15px;
+						margin-bottom: 15px;
+						font-size: 1em;
+					}
+					textarea {
+						width: 100%;
+						background:$white;
+						border:1px solid #e1e1e1;
+						padding:15px;
+						font-size: 1em;
+						height: 120px;
+					}
+					button {
+						@include cta-btn;
+						padding-left: 30px;
+						padding-right: 80px;
+						border:none;
+						margin-top: 20px;
+					}
+				}
+			}			
+		}
+	}
+}
+
+/*=====  End of Contact  ======*/
+
+/*===================================
+=            Page Footer            =
+===================================*/
+
+#page-footer {
+	background:#1c1c1c;
+	font-size: 16px;
+	@include breakpoint(laptop) {
+		font-size: 14px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 14px;
+	}
+	@include breakpoint(phone) {
+		font-size: 14px;
+	}
+	.info-bar {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid #353535;
+		@include breakpoint(laptop) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		@include breakpoint(tablet) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		@include breakpoint(phone) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.tele-box {
+			span {
+				font-size: 2em!important;
+				@include breakpoint(laptop) {
+					font-size: 1.7em !important;
+				}
+				@include breakpoint(tablet) {
+					font-size: 1.7em!important;
+				}
+				@include breakpoint(phone-xs) {
+					font-size: 1.7em!important;
+				}
+			}
+		}
+		.info-box {
+			position: relative;
+		    text-align: left;
+		    padding: 30px;
+		    border: 1px solid #4a4a4a;
+		    border-radius: 5px;
+		    height: 108px;	
+		    @include breakpoint(laptop) {
+		    	height: 90px;
+		    }		
+		    @include breakpoint(tablet) {
+		    	height: 135px;
+		    	padding:15px;
+		    }
+		    @include breakpoint(phone) {
+		    	height: 120px;
+		    	margin-bottom: 15px;
+		    }
+		    &:hover {
+		    	svg {
+		    		margin-top: -10px;
+		    	}
+		    }
+			svg {
+				max-width: 60px;
+				position: absolute;
+				@include centre(y);
+				left:30px;
+				@include animate-fade;
+				height: auto;
+				@include breakpoint(laptop) {
+					left:20px;
+					max-width: 50px;
+				}
+				@include breakpoint(tablet) {
+					@include clear-pos;
+					margin:0px auto;
+					display: block;
+					margin-bottom: 10px;
+					max-width: 45px;
+				}
+				@include breakpoint(phone-xs) {
+					max-width: 50px;
+					left:20px;
+				}
+				* {
+					fill:$white;
+				}
+			}		    
+			.content {
+				@include centre(y);
+				right: 15px;
+				left:120px;
+				color:$white;
+				font-size: 0.875em;
+				line-height: 1.4;
+				padding-right: 20px;
+				@include breakpoint(laptop) {
+					left:90px;
+				}
+				@include breakpoint(phone-xs) {
+					left:90px;
+				}
+				@include breakpoint(tablet) {
+					@include clear-pos;
+					text-align: center;
+					right: auto;
+					left: auto;
+					padding-right: 0px;
+				}
+				address {
+					font-style: normal;
+				}
+				p {
+					font-size: 0.875em;
+					a {
+						color:$white;
+					}
+				}
+				span {
+					font-size: 1.2em;
+					a {
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+	.sitemap-bar {
+		padding-top: 40px;
+		padding-bottom: 20px;
+		@include breakpoint(phone) {
+			padding-top: 20px;
+		}
+		.footer-box {
+			padding-right: 40px;
+			@include breakpoint(tablet) {
+				padding-right: 0px;
+			}
+			@include breakpoint(phone) {
+				padding-top: 0px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			span.title {
+				display: block;
+				text-transform: uppercase;
+				color:$white;
+				font-size: 0.875em;
+				font-family: $font-light;
+				margin-bottom: 15px;
+			}
+			p {
+				@include regular-text;
+				color: white;
+				opacity: 0.7;
+			}
+			ul {
+				li {
+					a {
+						color:$white;
+						opacity: 0.7;
+						font-size: 0.875em;
+						display: block;
+						padding-top: 6px;
+						padding-bottom: 6px;
+						line-height: 1.4;
+						position: relative;
+						padding-left: 15px;
+						&:before {
+							@include font-ico;
+							content:'\f105';
+							top:8px;
+							left:0px;
+						}
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* blog box */
+	.blog-box {
+		color:$white;
+		position: relative;
+		margin-bottom: 15px;
+		.date-box {
+			position: absolute;
+			left:0px;
+			top:0px;
+			.month {
+				display: block;
+				background:$dark;
+				color:$white;
+				text-align: center;
+				height: 25px;
+				line-height: 25px;
+				width: 50px;
+				font-size: 0.875em;
+			}
+			.day {
+				display: block;
+				background:$white;
+				color:$black;
+				text-align: center;
+				padding-top: 10px;
+				font-family: $font-heading;
+				font-size: 1.2em;
+				padding-bottom: 10px;
+				background:rgba(0,0,0,0.5);
+				color:$white;
+			}
+		}
+		.content {
+			padding-left: 80px;
+			@include breakpoint(tablet) {
+				padding-left: 60px;
+			}
+		}
+		h6 {
+			font-size: 1em;
+			line-height: 1.4;
+			margin-bottom: 5px;
+			a {
+				color:$red;
+			}
+		}
+		.read-btn {
+			font-weight: $bold;
+			color:$white;
+			font-size: 0.875em;
+			display: inline-block;
+			margin-top: 15px;
+			position: relative;
+			&:after {
+				@include font-ico;
+				content:'\f178';
+				margin-left: 10px;
+				color:$red;
+				@include animate-fade;
+			}
+			&:hover {
+				&:after {
+					margin-left: 15px;
+				}
+			}
+		}
+		p {
+			font-size: 0.875em;
+			line-height: 1.4;
+		}
+	}
+	.copy-bar {
+	    background: #151515;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    font-size: 0.875em;
+	    color:$white;
+	    opacity: 0.7;
+	    @include breakpoint(phone) {
+	    	text-align: center;
+	    }
+	    .copy-notice {
+	    	a {
+	    		color: white;
+	    		position: relative;
+	    		&:after {
+	    			position: absolute;
+	    			width: 100%;
+	    			border-top: 1px solid $red-light;
+	    			content: '';
+	    			bottom: 0;
+	    			left: 0;
+	    		}
+	    	}
+	    	i {
+	    		color: $red-light;
+	    	}
+	    }
+	}
+}
+
+/*=====  End of Page Footer  ======*/
+
+/*============================
+=            Btns            =
+============================*/
+
+#floating-btns {
+	position: fixed;
+	bottom:15px;
+	right:15px;
+	@include breakpoint(phone) {
+		right: 5px;
+		bottom:5px;
+	}
+	#to-top {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		background:$red;
+		text-align: center;
+		color:$white;
+		font-size: 24px;
+		display: block;
+		border-radius:50%;
+		opacity: 0;
+		@include breakpoint(phone) {
+			opacity: 1;
+		}
+		&:hover {
+			line-height: 40px;
+		}
+	}
+	.book-float-cta {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		background:$blue;
+		text-align: center;
+		color:$white;
+		margin-bottom: 5px;
+		margin-right: 5px;
+		border-radius:100%;
+	}
+}
+
+.move-up {
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+.show-arrow {
+	opacity:1!important;
+}
+
+/*=====  End of Btns  ======*/
+
+/*========================================
+=            Small CTA Bottom            =
+========================================*/
+
+.small-cta-bottom {
+	background:$blue;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 16px;
+	@include breakpoint(tablet) {
+		font-size: 14px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+	}
+	 @include breakpoint(phone) {
+	 	font-size: 14px;
+	 	text-align: center;
+	 }
+	.container {
+		position: relative;
+	}
+	p {
+		font-size: 1.6em;
+		font-family: $font-medium;
+		color:$white;
+		line-height: 1.3;
+	}
+	a {
+		@include cta-btn;
+		@include centre(y);
+		right: 15px;
+		@include breakpoint(tablet) {
+			@include clear-pos;
+			margin-top: 20px;
+			right: 0px;
+		}
+		@include breakpoint(phone) {
+			@include clear-pos;
+			margin-top: 20px;
+			right: 0px;
+		}
+	}
+}
+
+/*=====  End of Small CTA Bottom  ======*/

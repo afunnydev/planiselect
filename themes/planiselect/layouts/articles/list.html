@@ -1,0 +1,97 @@
+{{ define "main" }}
+{{ $mymonths := $.Site.Data.mois.mois }}
+{{ $mydays := $.Site.Data.jour.jour }}
+<div class="inner-header">
+    <img src="{{.Params.image}}" alt="" class="img-responsive">
+    <div class="caption">
+        <div class="container">
+            <header>
+                <h1>{{.Params.titre}}</h1>
+                <p class="desc">{{.Params.subtitle}}</p>
+            </header>
+        </div>
+        <!-- // container  -->
+    </div>
+    <!-- // caption  -->
+</div>
+<!-- // inner header   -->
+
+<div class="breadcrumb-block">
+    <div class="container">
+        <ul>
+            <li><a href="{{.Site.BaseURL}}">{{ i18n "home" }}</a></li>
+            <li><a href="{{.Permalink}}">{{ i18n "blog" }}</a></li>
+        </ul>
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // breadcrumb  -->
+
+<div id="blog-wrapper-block">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-8 col-sm-8">
+                <section id="blog-listing">
+                    {{ range where .Site.RegularPages "Section" "articles"}}
+                    <article class="blog-box">
+                        <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+                        <div class="image-holder">
+                            <a href="{{.Permalink}}">
+                            <img src="{{.Params.image}}" alt="" class="img-responsive">
+                            <div class="caption">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                            <!-- // caption  -->
+                            </a>
+                        </div>
+                        <!-- // image holder  -->
+                        <div class="meta-info">
+                            <small><i class="fa fa-clock-o" aria-hidden="true"></i> {{ if eq $.Lang "fr" }}{{.Date.Day}} {{ index $mymonths .Date.Month }}{{ else if eq $.Lang "en" }}{{.Date.Month}} {{ index $mydays .Date.Day }},{{ end }} {{.Date.Year}}</small>
+                        </div>
+                        <!-- //  metas  -->
+                        <p>{{.Summary}}</p>
+                        <a href="{{.Permalink}}" class="read-btn">{{ i18n "read_more" }}</a>
+                    </article>
+                    <!-- // article  -->
+                    {{ end }}                                                      
+
+                </section>
+            </div>
+            <!-- // blog listing  -->
+
+            <div class="col-md-4 col-sm-4">
+                <aside id="blog-sidebar">
+
+                    <div class="recent-box">
+                        <h5>{{ i18n "our_services" }}</h5>
+                        <ul>
+                            {{ range where .Site.Pages "Type" "services"}}
+                            {{ if eq .Parent.Params.identifiant "services" }}
+                            <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
+                            {{ end }}
+                            {{ end }}   
+                        </ul>
+                    </div>
+                    <!-- // recnet box  -->
+
+                    <nav class="cat-box">
+                        <h4>{{ i18n "about" }}</h4>
+                        <p>{{.Params.sidebartext}}</p>
+                    </nav>
+                    <!-- // cat box  -->
+
+                </aside>
+            </div>
+            <!-- // blog sidebar  -->
+
+        </div>
+        <!-- // row  -->
+    </div>
+    <!-- // container  -->
+</div>
+<!-- // blog wrapper block  -->
+
+{{- partial "site/bottomcta.html" . -}}
+
+{{ end }}

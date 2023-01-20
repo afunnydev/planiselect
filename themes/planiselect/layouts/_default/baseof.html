@@ -1,6 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{.Lang}}">
 	{{- partial "site-head.html" . -}}
+	{{ $.Scratch.Add "homePage" ("/" | absLangURL) }}
+	{{ $.Scratch.Add "contactPage" ("contact/" | absLangURL) }}
+	{{ $.Scratch.Add "servicesPage" ("services/" | absLangURL) }}
+	{{ $.Scratch.Add "articlesPage" ("articles/" | absLangURL) }}
+	{{ $.Scratch.Add "clientsPage" ("clients/" | absLangURL) }}
+	{{ if eq .Lang "fr" }}
+	{{ $.Scratch.Add "aboutPage" ("a-propos/" | absLangURL) }}
+	{{ $.Scratch.Add "cablagePage" ("services/cablage/" | absLangURL) }}
+
+	{{ else if eq .Lang "en" }}
+	{{ $.Scratch.Add "aboutPage" ("about-us/" | absLangURL) }}
+	{{ $.Scratch.Add "cablagePage" ("services/cabling/" | absLangURL) }}
+
+	{{ end }}
 	<body>
 		{{ `<!--[if lt IE 9]>
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>

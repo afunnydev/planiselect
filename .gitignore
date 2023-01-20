@@ -1,3 +1,5 @@
 node_modules
 .DS_Store
-themes/airevisuelle/prepros-6.config
+themes/planiselect/prepros-6.config
+public
+/public

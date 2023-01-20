@@ -1,8 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.planiselect.com/"
 DefaultContentLanguage = "fr"
 title = "Planiselect"
 theme = "planiselect"
-description = " Nous sommes des spécialistes en installation de réseaux informatiques : câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique."
+description = "Nous sommes des spécialistes en installation de réseaux informatiques: câblage structurés catégorie 5, catégorie 5e, catégorie 6 et fibre optique."
 
 # Pointing to this file
 config = "config.toml"
@@ -24,15 +24,15 @@ defaultContentLanguageInSubdir = false
   ## Include google maps, with API Key
   googleapikey = ""
   ## This is used when the BaseURL does not need to modified (eg, in share links)
-  siteaddress = "/"
-  siteaddressno = ""
+  siteaddress = "https://www.planiselect.com/"
+  siteaddressno = "https://www.planiselect.com"
   ## FB share info
   fbpagename = ""
   fbappid = ""
   ## Business name in Schema.org
-  schemabiz = ""
+  schemabiz = "Planiselect"
   ## Google Tag Manager tracking ID
-  gtmid = ""
+  gtmid = "GTM-KSHK8KW"
 
 # MARKDOWN
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
@@ -42,8 +42,23 @@ defaultContentLanguageInSubdir = false
   angledQuotes = false
   latexDashes = true
 
-[permalinks]
+[Languages]
+[Languages.en]
+[Languages.en.permalinks]
   singles = "/:slug/"
+
+[Languages.en.Taxonomies]
+  category= ""
+  tags= ""
+
+[Languages.fr]
+[Languages.fr.permalinks]
+  singles = "/:slug/"
+
+[Languages.fr.Taxonomies]
+  category= ""
+  tags= ""
+
 
 # [Languages.fr]
 # [Languages.fr.Taxonomies]

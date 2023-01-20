@@ -1,0 +1,545 @@
+/*============================
+=            Blog            =
+============================*/
+
+#blog-wrapper-block {
+	padding-bottom: 100px;
+	@include breakpoint(laptop) {
+		padding-bottom: 70px;
+	}
+	@include breakpoint(tablet) {
+		padding-bottom: 70px;
+	}
+	 @include breakpoint(phone) {
+	 	padding-bottom: 50px;
+	 }
+	/* blog listing */
+	#blog-listing {
+		font-size: 16px;
+		@include breakpoint(laptop) {
+			font-size: 15px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 15px;
+		}
+		 @include breakpoint(phone) {
+		 	font-size: 14px;
+		 }
+		.blog-box {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid #eeeeee;
+			@include breakpoint(laptop) {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			@include breakpoint(tablet) {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			 @include breakpoint(phone) {
+			 	padding-top: 25px;
+			 	padding-bottom: 25px;
+			 }
+			h2 {
+			    font-size: 1.875em;
+			    line-height: 1.2;
+			    margin-bottom: 25px;
+				a {
+					color: $text;
+					&:hover {
+						color:$red;
+					}
+				}
+			}
+			.image-holder {
+				position: relative;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 350px;
+					object-fit: cover;
+					@include breakpoint(laptop) {
+						height: 320px;
+					}
+					@include breakpoint(tablet) {
+						height: 280px;
+					}
+					 @include breakpoint(phone) {
+					 	height: 260px;
+					 }
+				}
+				.caption {
+					@extend .dark-overlay;
+					opacity: 0;
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba3486+0,ba3486+100&0.33+0,0.86+100 */
+					background: -moz-linear-gradient(top,  rgba(186,52,134,0.33) 0%, rgba(186,52,134,0.86) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(top,  rgba(186,52,134,0.33) 0%,rgba(186,52,134,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to bottom,  rgba(186,52,134,0.33) 0%,rgba(186,52,134,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54ba3486', endColorstr='#dbba3486',GradientType=0 ); /* IE6-9 */
+					i {
+						width: 80px;
+						height: 80px;
+						background:$white;
+						vertical-align: middle;
+						border-radius:100%;
+						line-height: 80px;
+						@include font-ico;
+						@include centre(both);
+						text-align: center;
+						font-size: 50px;
+						color:$red;			
+						&:before {
+							@include centre(both);
+							margin-left: 3px;
+						}			
+					}
+				}
+				a {
+					&:hover {
+						img {
+							transform: scale(1.1);
+						}
+						.caption {
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.meta-info {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				small {
+					color:$gray-light;
+					font-size: 0.875em;
+					i {
+						margin-right: 5px;
+					}
+				}
+			}
+			p {
+				@include regular-text;
+			}
+			a.read-btn {
+				@include read-btn;
+				color:$red;
+			}
+		}
+	}
+	/* blog sidebar */
+	#blog-sidebar {
+		font-size: 16px;
+		margin-top: 50px;
+		padding-left: 30px;
+		@include breakpoint(laptop) {
+			font-size: 15px;
+			margin-top: 40px;
+		}
+		@include breakpoint(tablet) {
+			font-size: 15px;
+			margin-top: 40px;
+			padding-left: 0px;
+		}
+		@include breakpoint(phone) {
+		 	font-size: 14px;
+		 	margin-top: 30px;
+		 	padding-left: 0px;
+		 }
+		p {
+			@include regular-text;
+		}
+		.cat-box {
+			margin-bottom: 35px;
+			 @include breakpoint(phone) {
+			 	margin-bottom: 20px;
+			 }
+			h4 {
+				@include section-subheading;
+				color:$blue;
+				font-size: 1.2em;
+				padding-left: 20px;
+				margin-bottom: 15px;
+				@include breakpoint(laptop) {
+					margin-bottom: 10px;
+				}
+				@include breakpoint(tablet) {
+					margin-bottom: 10px;
+				}
+			}
+			ul {
+				li {
+					a {
+						display: block;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						font-size: 1em;
+						font-family: $font-light;
+						color:$gray-light;
+						@include breakpoint(laptop) {
+							padding-top: 8px;
+							padding-bottom: 8px;
+						}
+						&:hover {
+							color:$red;
+						}
+					}
+				}
+			}
+		}
+		.recent-box {
+			margin-bottom: 35px;
+			h5 {
+				@include section-subheading;
+				color:$blue;
+				font-size: 1.2em;
+				padding-left: 20px;
+				margin-bottom: 15px;
+			}
+			ul {
+				li {
+					a {
+						display: block;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						font-size: 1em;
+						font-family: $font-medium;
+						color:$black;
+						line-height: 1.4;
+						time {
+							display: block;
+							color:$gray-light;
+							text-transform: uppercase;
+							font-size: 13px;
+							font-family: $font-medium;
+							padding-bottom: 5px;
+							i {
+								margin-right: 3px;
+							}
+						}
+						&:hover {
+							color:$red;
+						}
+					}
+				}
+			}
+		}		
+	}
+}
+
+/*=====  End of Blog  ======*/
+
+/*========================================
+=            Single Page Blog            =
+========================================*/
+
+#blog-single-block {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	font-size: 16px;
+	@include small-lap {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(laptop) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	@include breakpoint(tablet) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		font-size: 14px;
+	}
+	@include breakpoint(phone) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		font-size: 15px;
+	}
+	.article-info {
+		text-align: center;
+		font-size: 0.875em;
+		.author-box {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e3e3e3;
+			small {
+				color:$gray-light;
+			}
+			img {
+				margin:0px auto;
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+		.date-box {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e3e3e3;
+			small {
+				color:$black;
+				i {
+					margin-right: 3px;
+				}
+			}
+		}
+		.share-box {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e3e3e3;
+		}
+	}
+	.blog-article {
+		@include breakpoint(phone) {
+			padding-top: 30px;
+		}
+		h2 {
+			font-size: 1.875em;
+		    line-height: 1.2;
+		    margin-bottom: 25px;	
+		    margin-bottom: 20px;		
+		}
+		h3 {
+			font-size: 1.5em;
+			margin-bottom: 20px;
+			color:$blue;
+		}
+		h4 {
+			font-size: 1.3em;
+			margin-bottom: 15px;
+			color:$red;
+		}
+		h5 {
+			font-size: 1.1em;
+			color:$blue;
+			margin-bottom: 15px;
+		}
+		h6 {
+			font-size: 1em;
+			color:$black;
+			margin-bottom: 15px;
+		}
+		ul {
+			margin-bottom: 20px;
+			li {
+				display: block;
+				color:$text;
+				line-height: 1.4;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				padding-left: 15px;
+				position: relative;
+				&:before {
+					content:'';
+					width: 6px;
+					height: 6px;
+					border-radius:100%;
+					background:$blue;
+					display: block;
+					left:0px;
+					top:17px;
+					position: absolute;
+				}
+				a {
+					color:$red;
+				}
+			}
+		}
+		p {
+			@include regular-text;
+			margin-bottom: 20px;
+		}
+		img {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	footer {
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid #e3e3e3;
+		@include small-lap {
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+		@include breakpoint(laptop) {
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+		@include breakpoint(tablet) {
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+		@include breakpoint(phone) {
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+		ul {
+			li {
+				display: inline-block;					
+				a {
+					display: inline-block;
+				    padding: 0 14px;
+				    text-decoration: none;
+				    moz-border-radius: 30px;
+				    -webkit-border-radius: 30px;
+				    border-radius: 30px;
+				    border: 1px solid #e4e4e4;
+				    font-size: 13px !important;
+				    background-size: 100% 100%;
+				    background-position: center center;
+				    float: left;
+				    position: relative;
+				    text-transform: uppercase;
+				    font-weight: bold;
+				    letter-spacing: 1px;
+				    z-index: 2;
+				    height: 30px;
+				    max-height: 30px;
+				    line-height: 26px;		
+				    margin-right: 5px;
+				    color:$gray-light;
+				    &:hover {
+				    	background:$red;
+				    	color:$white;
+				    }				
+				}
+			}
+		}
+	}	
+}
+
+/*=====  End of Single Page Blog  ======*/
+
+/*=======================================
+=            Latest Articles            =
+=======================================*/
+
+#latest-articles {
+	background:#eff2f3;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-size: 16px;
+	@include small-lap {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(laptop) {
+		font-size: 15px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include breakpoint(tablet) {
+		font-size: 14px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	@include breakpoint(phone) {
+		font-size: 14px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	header {
+		padding-bottom: 50px;
+		@include small-lap {
+			padding-bottom: 30px;
+		}
+		@include breakpoint(laptop) {
+			padding-bottom: 30px;
+		}
+		@include breakpoint(tablet) {
+			padding-bottom: 30px;
+		}
+		h6 {
+			@include upper-heading;
+			margin-bottom: 5px;
+		}
+		h5 {
+			@include section-heading;
+		}
+	}
+	.article-box {
+		background:$white;
+		@include breakpoint(phone) {
+			margin-bottom: 15px;
+		}
+		.image-holder {
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 250px;
+				object-fit: cover;
+				@include breakpoint(laptop) {
+					height: 220px;
+				}
+				@include breakpoint(tablet) {
+					height: 210px;
+				}
+				@include breakpoint(phone) {
+					height: 210px;
+				}
+			}
+			.caption {
+				@extend .dark-overlay;
+				opacity: 0;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ba3486+0,ba3486+100&0.33+0,0.86+100 */
+				background: -moz-linear-gradient(top,  rgba(186,52,134,0.33) 0%, rgba(186,52,134,0.86) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  rgba(186,52,134,0.33) 0%,rgba(186,52,134,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  rgba(186,52,134,0.33) 0%,rgba(186,52,134,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54ba3486', endColorstr='#dbba3486',GradientType=0 ); /* IE6-9 */
+				i {
+					width: 60px;
+					height: 60px;
+					background:$white;
+					vertical-align: middle;
+					border-radius:100%;
+					line-height: 60px;
+					@include font-ico;
+					@include centre(both);
+					text-align: center;
+					font-size: 35px;
+					color:$red;			
+					&:before {
+						@include centre(both);
+						margin-left: 3px;
+					}			
+				}
+			}
+			a {
+				&:hover {
+					img {
+						transform: scale(1.1);
+					}
+					.caption {
+						opacity: 1;
+					}
+				}
+			}
+		}		
+		.content {
+			padding:20px;
+			h4 {
+			    font-size: 1.1em;
+			    line-height: 1.2;
+			    margin-bottom: 12px;
+				a {
+					color: $text;
+					&:hover {
+						color:$red;
+					}
+				}
+			}
+			time {
+				color:$gray-light;
+				font-size: 0.875em;
+				i {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Latest Articles  ======*/

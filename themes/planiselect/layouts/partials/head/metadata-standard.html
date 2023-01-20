@@ -1,5 +1,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+{{ if eq .Lang "fr" }}
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Data.settings.sitedescription }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Data.settings.sitedescription }}{{ end }}" />
-<title>{{if .IsHome}}{{.Site.Data.settings.sitetitle}}{{ else }}{{.Title}}{{end}}{{if .Site.Data.settings.titleautocompletion}} | {{.Site.Title}}{{end}}</title>
+<title>Planiselect | {{if .IsHome}}{{.Site.Data.settings.sitetitle}}{{ else }}{{if .Title}}{{ .Title }}{{else}}{{.Site.Data.settings.sitetitle}}{{end}}{{end}}</title>
+{{ else if eq .Lang "en" }}
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Data.settings.sitedescriptionen }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Data.settings.sitedescriptionen }}{{ end }}" />
+<title>Planiselect | {{if .IsHome}}{{.Site.Data.settings.sitetitleen}}{{ else }}{{if .Title}}{{ .Title }}{{else}}{{.Site.Data.settings.sitetitleen}}{{end}}{{end}}</title>
+{{ end }}
 

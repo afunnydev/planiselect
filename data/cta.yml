@@ -1,0 +1,18 @@
+cta:
+  fr:
+    title: Faites appel à la compagnie avec le plus d'expertise en câblage structuré au Québec
+    btn: Notre histoire
+    link: aboutPage
+  en:
+    title: Hire the company with the most expertise in Quebec in structured cabling
+    btn: Our story
+    link: contactPage
+bottomcta:
+  fr:
+    title: Vous cherchez un partenaire d'expérience dans le domaine?
+    btn: Contactez-nous
+    link: contactPage
+  en:
+    title: Looking for an experienced partner in the field?
+    btn: Contact Us
+    link: contactPage
