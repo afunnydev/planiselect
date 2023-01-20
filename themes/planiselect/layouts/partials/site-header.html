@@ -16,28 +16,29 @@
                     <li><a href="{{.Permalink}}">{{.Params.titre}}</a></li>
                     {{ end }}
                 </ul>
-            </li>                      
+            </li>
             <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
             <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
-            <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
-            <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li> 
+            <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>
+            <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>
             {{ if .Params.translationlink }}
-                {{ $link := .Params.translationlink }}
-                <li><a href='{{ $link | absURL }}' class="title lang">{{ if eq $.Lang "fr" }}EN{{ else if eq $.Lang "en" }}FR{{ end }}</a></li>
+            {{ $link := .Params.translationlink }}
+            <li><a href='{{ $link | absURL }}'
+                    class="title lang">{{ if eq $.Lang "fr" }}EN{{ else if eq $.Lang "en" }}FR{{ end }}</a></li>
             {{ else if .Translations }}
-                {{ range .Translations }}
-                <li><a href="{{.Permalink}}" class="title lang">{{ upper .Lang}}</a></li>
-                {{ end }}
-            {{ end }} 
+            {{ range .Translations }}
+            <li><a href="{{.Permalink}}" class="title lang">{{ upper .Lang}}</a></li>
+            {{ end }}
+            {{ end }}
 
         </ul>
         <!-- // ul  -->
-    
+
     </div>
     <!-- // menu  -->
 
 </div>
-<!-- // menu sidebar  -->        
+<!-- // menu sidebar  -->
 
 <a name="top"></a>
 <header id="mas-header" class="navbar-fixed-top">
@@ -48,10 +49,13 @@
 
                 <div class="col-lg-8 col-md-8 col-sm-9">
                     <div class="info-box">
-                        <p><i class="fa fa-building" aria-hidden="true"></i> {{.Site.Data.settings.address.road}}, {{.Site.Data.settings.address.city}}</p>
+                        <p><i class="fa fa-building" aria-hidden="true"></i> {{.Site.Data.settings.address.road}},
+                            {{.Site.Data.settings.address.city}}</p>
                         <ul>
-                            <li><a href='{{ $.Scratch.Get "contactPage"}}'><i class="fa fa-map-marker" aria-hidden="true"></i> {{ i18n "find" }}</a></li>
-                            <li><a href="mailto:{{.Site.Data.settings.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> {{ i18n "write_us" }}</a></li>
+                            <li><a href='{{ $.Scratch.Get "contactPage"}}'><i class="fa fa-map-marker"
+                                        aria-hidden="true"></i> {{ i18n "find" }}</a></li>
+                            <li><a href="mailto:{{.Site.Data.settings.email}}"><i class="fa fa-envelope"
+                                        aria-hidden="true"></i> {{ i18n "write_us" }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,14 +73,14 @@
         </div>
     </div>
     <!-- // top bar  -->
-    
+
     <div class="branding-bar">
         <div class="container">
 
-              <div class="navbar navbar-default yamm">
-                  <div class="navbar-header">
+            <div class="navbar navbar-default yamm">
+                <div class="navbar-header">
                     <a href='{{ $.Scratch.Get "homePage" }}' class="navbar-brand">
-                        <img srcset="/img/site-logo.svg"  alt="" class="svg">
+                        <img srcset="/img/site-logo.svg" alt="" class="svg">
                     </a>
 
                     <div id="menu-btn-wrapepr" class="visible-xs">
@@ -86,49 +90,52 @@
                                 <span></span>
                                 <span></span>
                             </a>
-                        </span>            
+                        </span>
                     </div>
                     <!-- // wrapper  -->
 
-                  </div>
-                  <div id="navbar-collapse-grid" class="navbar-collapse collapse">
-               <ul class="nav navbar-nav navbar-right">
-                  <!-- Grid 12 Menu -->
-                  <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
-                  <li class="dropdown"><a href='{{ $.Scratch.Get "servicesPage" }}' class="dropdown-toggle">{{ i18n "our_services" }}</a>
-                    <ul class="dropdown-menu animated fadeIn">
-                    {{ range where .Site.RegularPages "Type" "services"}}
-                      <li>
-                        <h6><a href="{{.Permalink}}">{{.Params.titre}}</a></h6>
-                      </li>
-                    {{ end }}
-                    </ul>
-                  </li>
-                  <!--With Offsets 
+                </div>
+                <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Grid 12 Menu -->
+                        <li><a href='{{ $.Scratch.Get "homePage" }}'>{{ i18n "home" }}</a></li>
+                        <li class="dropdown"><a href='{{ $.Scratch.Get "servicesPage" }}'
+                                class="dropdown-toggle">{{ i18n "our_services" }}</a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                {{ range where .Site.RegularPages "Type" "services"}}
+                                <li>
+                                    <h6><a href="{{.Permalink}}">{{.Params.titre}}</a></h6>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                        <!--With Offsets 
                   -->
 
-                    <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
-                    <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
-                    <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>      
-                    <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>
-                    {{ if .Params.translationlink }}
+                        <li><a href='{{ $.Scratch.Get "aboutPage" }}'>{{ i18n "about" }}</a></li>
+                        <!-- <li><a href='{{ $.Scratch.Get "articlesPage" }}'>{{ i18n "blog" }}</a></li> -->
+                        <li><a href='{{ $.Scratch.Get "clientsPage" }}'>{{ i18n "clients" }}</a></li>
+                        <li><a href='{{ $.Scratch.Get "contactPage" }}'>{{ i18n "contact" }}</a></li>
+                        {{ if .Params.translationlink }}
                         {{ $link := .Params.translationlink }}
-                        <li><a href='{{ $link | absURL }}' class="title lang">{{ if eq $.Lang "fr" }}EN{{ else if eq $.Lang "en" }}FR{{ end }}</a></li>
-                    {{ else if .Translations }}
+                        <li><a href='{{ $link | absURL }}'
+                                class="title lang">{{ if eq $.Lang "fr" }}EN{{ else if eq $.Lang "en" }}FR{{ end }}</a>
+                        </li>
+                        {{ else if .Translations }}
                         {{ range .Translations }}
                         <li><a href="{{.Permalink}}" class="title lang">{{ upper .Lang}}</a></li>
                         {{ end }}
-                    {{ end }}  
+                        {{ end }}
 
-                </ul>
-                  </div>
+                    </ul>
                 </div>
-              </div>
             </div>
-            <!-- // menu  -->
-
         </div>
-        <!-- // container  -->
+    </div>
+    <!-- // menu  -->
+
+    </div>
+    <!-- // container  -->
     </div>
     <!-- // branding bar  -->
 
