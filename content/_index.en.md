@@ -1,5 +1,5 @@
 ---
-title: 'Planiselect | Installation of computer networks'
+title: "Planiselect | Installation of computer networks"
 identifiant: home
 description: >-
   We are specialists in the installation of computer networks: category 5,
@@ -14,10 +14,10 @@ slider:
       regular training, give our company the basic skills to plan, install and
       deliver a product that the customer can rely on.
     img: /img/slider2.jpg
-    title: 'Computer Networks Installation And Configuration Specialized Business'
+    title: "Computer Networks Installation And Configuration Specialized Business"
     weight: 1
   - btnlink: cablagePage
-    btntxt: Know more
+    btntxt: Learn more
     desc: >-
       Whether for phone, computer or optic fiber cabling, the experience of our
       team is an asset in achieving your goals.
@@ -29,7 +29,7 @@ about:
   cta: Interested in our experience? Contact us now!
   desc: >-
     Does your project require special expertise? Don't search anymore!
-  secondtitle: 'Discover our wide range of commercial services'
+  secondtitle: "Discover our wide range of commercial services"
   title: About us
 cablage:
   title: Our cabling services
@@ -38,4 +38,3 @@ clients:
 partenaires:
   title: Our many partners
 ---
-

@@ -1,10 +1,11 @@
 ---
 title: "Internal cabling, fiber and IP telephony installation and sale in Laval"
 description: "For all internal networks, you can count on Planiselect for cabling, fiber and IP telephony installation."
+identifiant: cablage
 slug: cabling-fiber-ip-telephony
 titre: Cabling, fiber and IP telephony
 icon: /img/ico/connector-wire.svg
-desc: 'Discover our services of computer, IP telephony and fiber optic cabling.'
+desc: "Discover our services of computer, IP telephony and fiber optic cabling."
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
 slidertitle: "Certified Leviton And Hublon Cabling Installation And Sale By Planiselect"
@@ -61,4 +62,3 @@ section4:
     * Compatible with CISCO, HP, AVAYA, BROCADE etc.
   image: /img/fibre-optique-2.jpg
 ---
-
