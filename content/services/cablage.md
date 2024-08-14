@@ -9,7 +9,8 @@ icon: /img/ico/connector-wire.svg
 desc: Découvrez nos services de câblage informatique, de fibre et de téléphonie IP.
 image: /img/gal3.jpg
 banner: /img/cablage-informatique.jpg
-slidertitle: Vente et installation de câblage certifié Leviton et Hublon
+slidertitle: Vente et installation de câblage certifié Leviton Hubbell Belden
+  Siemon Commscope
 i18nlanguage: fr
 section1:
   title: Informatique
@@ -22,7 +23,7 @@ section1:
     Nous effectuons l’installation de tout le réseau interne de votre entreprise, et sommes des spécialistes de tout ce qui a trait aux réseaux filaires et sans-fil. L’objectif est de tout connecter ensemble, et de permettre une communication entre les ordinateurs et l’extérieur. 
 
 
-    Certification complète de l’installation: **Certification Leviton**, **Hubbell Belden Siemon**
+    Certification complète de l’installation: **Certification Leviton**, **Hubbell Belden Siemon Commscope**
 section2:
   image1: /img/cablage-informatique-et-telephonique.jpg
   image2: /img/cablage-telephonique.jpg
