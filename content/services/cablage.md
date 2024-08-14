@@ -22,7 +22,7 @@ section1:
     Nous effectuons l’installation de tout le réseau interne de votre entreprise, et sommes des spécialistes de tout ce qui a trait aux réseaux filaires et sans-fil. L’objectif est de tout connecter ensemble, et de permettre une communication entre les ordinateurs et l’extérieur. 
 
 
-    Certification complète de l’installation: **Certification Leviton**, **Hubbell**
+    Certification complète de l’installation: **Certification Leviton**, **Hubbell Belden Siemon**
 section2:
   image1: /img/cablage-informatique-et-telephonique.jpg
   image2: /img/cablage-telephonique.jpg
