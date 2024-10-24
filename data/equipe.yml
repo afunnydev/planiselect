@@ -5,35 +5,56 @@ equipe:
     titre: Président
     titreen: President
     sex: male
-  - nom: Fradj Amor
-    nomen: Fradj Amor
-    ordre: 2
-    titre: Contrôleur
-    titreen: Inspector
-    sex: male
   - both: false
     nom: Joël Kolodenchuck
     nomen: Joël Kolodenchuck
     titre: Directeur division Sécurité Électronique
     titreen: Director of Electronic Security Division
-    ordre: 3
+    ordre: 2
     sex: male
   - nom: Éric Belmont
     nomen: Éric Belmont
-    ordre: 4
+    ordre: 3
     titre: Directeur des ventes
     titreen: Sales director
     sex: male
     both: false
+  - nom: Fradj Amor
+    nomen: Fradj Amor
+    ordre: 4
+    titre: Contrôleur financier
+    titreen: Financial controller
+    sex: male
+  - both: false
+    nom: Josué Meilleur
+    nomen: Josué Meilleur
+    titre: Contrôleur aux opérations
+    titreen: Operation controller
+    ordre: 5
+    sex: male
   - nom: Marguerite Howells
     nomen: Marguerite Howells
-    ordre: 5
-    titre: Chargée de projet
-    titreen: Project manager
+    ordre: 6
+    titre: Adjointe & Chargée de projet
+    titreen: Assistant & Project Manager
+    sex: female
+  - both: false
+    nom: Simon Lahaie
+    nomen: Simon Lahaie
+    titre: Chef estimateur
+    titreen: Chief estimator
+    ordre: 7
+    sex: male
+  - both: false
+    nom: Amélie Joannic
+    nomen: Amélie Joannic
+    titre: Estimatrice et coordonnatrice de projet
+    titreen: Project Coordinator and Estimator
+    ordre: 8
     sex: female
   - nom: Compétents et minutieux
     nomen: Qualified and meticulous
-    ordre: 6
+    ordre: 9
     titre: Techniciens
     titreen: Technicians
     both: true
