@@ -28,7 +28,7 @@ slider:
     weight: 3
     btntxt: Service - Video surveillance
     btnlink: cablagePage
-    title: Service video surveillance
+    title: Installation and programming of video surveillance systems
 about:
   link: contactPage
   cta: Interested in our experience? Contact us now!
