@@ -27,9 +27,9 @@ slider:
     weight: 2
   - img: /img/videosurveillance_page-d-acceuil.jpeg
     title: Service d'installation et programmation de vidéosurveillance
-    desc: A﻿vec une équipe d'expérience, nous sommes en mesure d'offrir un service
-      clé en main d'installation et programmation de système de
-      vidéosurveillance
+    desc: A﻿vec une équipe forte de plusieurs années d'expérience, nous sommes en
+      mesure d'offrir un service clé en main d'installation et programmation de
+      système de vidéosurveillance
     weight: 3
     btntxt: Service - Vidéosurveillance
     btnlink: cablagePage
