@@ -29,7 +29,7 @@ slider:
     title: Service d'installation et programmation de vidéosurveillance
     desc: Forte de nombreuses années d’expérience, notre équipe est en mesure de
       vous offrir un service clé en main pour l'installation et la programmation
-      de systèmes de vidéosurveillance
+      de systèmes de vidéosurveillance.
     weight: 3
     btntxt: Service - Vidéosurveillance
     btnlink: cablagePage
