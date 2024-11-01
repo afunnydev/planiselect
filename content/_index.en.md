@@ -21,7 +21,7 @@ slider:
     img: /img/fibre-optique-2.jpg
     title: Professional cabling services
     weight: 2
-  - img: /img/videosurveillance_page-d-acceuil.jpeg
+  - img: /img/videosurveillance_page-d-acceuil_1.jpg
     desc: With many years of experience, our team is able to offer you a turnkey
       service for the installation and programming of video surveillance
       systems.
