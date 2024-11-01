@@ -1,5 +1,5 @@
 ---
-title: Planiselect Inc. | Installation de réseaux informatiques
+title: Planiselect | Installation de réseaux informatiques
 identifiant: home
 description: "Nous sommes des spécialistes en installation de réseaux
   informatiques : câblage structuré catégorie 5, catégorie 5e, catégorie 6 et
