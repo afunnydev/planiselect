@@ -25,14 +25,6 @@ slider:
     btntxt: En savoir plus
     btnlink: cablagePage
     weight: 2
-  - img: /img/videosurveillance_page-d-acceuil_1.jpg
-    title: Service d'installation et programmation de vidéosurveillance
-    desc: Forte de nombreuses années d’expérience, notre équipe est en mesure de
-      vous offrir un service clé en main pour l'installation et la programmation
-      de systèmes de vidéosurveillance.
-    weight: 3
-    btntxt: Service - Vidéosurveillance
-    btnlink: cablagePage
 about:
   title: À propos
   secondtitle: Découvrez notre vaste gamme de services commerciaux
