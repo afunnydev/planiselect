@@ -29,3 +29,6 @@ partenaires:
   - name: Inovasolution
     logo: /img/inova-solutions-logo.png
     weight: 10
+  - name: Kantech
+    logo: /img/kantech-logo.png
+    weight: 11
