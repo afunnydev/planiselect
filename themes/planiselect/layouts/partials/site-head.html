@@ -14,4 +14,7 @@
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]--> ` | safeHTML }}
+{{ if getenv "IS_PROD" }}
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/15974e893971b150733fbce4/script.js"></script>
+{{ end }}
 </head>
